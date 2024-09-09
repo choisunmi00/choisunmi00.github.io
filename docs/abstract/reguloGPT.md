@@ -1,6 +1,6 @@
 ---
 title: reguloGPT
-nav_order: 7
+nav_order: 6
 ---
 
 # 논문 리뷰: reguloGPT
