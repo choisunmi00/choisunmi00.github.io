@@ -5,7 +5,7 @@ nav_order: 6
 
 # 논문 리뷰: reguloGPT
 {: .no_toc }
-[reguloGPT: Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways ](https://pubmed.ncbi.nlm.nih.gov/38313267/)
+[reguloGPT: Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10836076/)
 
 ## Table of contents
 {: .no_toc .text-delta }
