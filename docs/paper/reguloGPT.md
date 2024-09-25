@@ -21,7 +21,8 @@ nav_order: 6
 - end-to-end learning: 입력에서 출력까지 파이프라인 네트워크 없이 신경망으로 한 번에 처리. 양끝단 상에서 라벨링된 데이터가 많을 때 잘 동작하는 경향이 있다.           
 - m<sup>6</sup>A(N6-methyladenosine): mRNA(단백질 설계도)에 부여하는 화학적 변형. 유전자 발현을 조절하기 위한 기작.
 - ICL: in-context learning.
-- outdegree: 방향성 그래프에서 node로부터 시작하는 고유한 edge.{: .fs-5 }
+- outdegree: 방향성 그래프에서 node로부터 시작하는 고유한 edge.
+{: .fs-4 }
 
 ## 0. Abstract
 
