@@ -2,14 +2,13 @@
 title: reguloGPT
 date: 2024-11-20 14:10:00 +0800
 categories: [LLM]
-tags: [paper, llm, gpt]
+tags: [paper]
 ---
 
 # 논문 리뷰: reguloGPT
 
 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10836076/">reguloGPT: Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways</a>
 
----
 ## (Background)
 
 - MRP: Molecualr Regulatory Pathways(분자 조절 경로).
