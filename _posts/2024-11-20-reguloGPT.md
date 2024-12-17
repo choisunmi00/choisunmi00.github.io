@@ -12,7 +12,7 @@ tags: [paper, llm, gpt]
 ---
 ## (Background)
 
-- MRP: Molecualr Regulartory Pathways(분자 조절 경로).
+- MRP: Molecualr Regulatory Pathways(분자 조절 경로).
 - KG: Knowledge Graph(지식 그래프). 개체, 사건 또는 개념과 같은 실체에 대한 상호 연결된 설명 모음     
 - end-to-end learning: 입력에서 출력까지 파이프라인 네트워크 없이 신경망으로 한 번에 처리. 양끝단 상에서 라벨링된 데이터가 많을 때 잘 동작하는 경향이 있다.           
 - m<sup>6</sup>A(N6-methyladenosine): mRNA(단백질 설계도)에 부여하는 화학적 변형. 유전자 발현을 조절하기 위한 기작.
@@ -44,7 +44,7 @@ tags: [paper, llm, gpt]
   <img src="https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0001.jpg" alt="1" width="70%" height="70%"/>  
 
   METTLL3가 위암의 진행을 조절하는 메커니즘을 전체적으로 설명
-  MRP를 위해 이러한 그래프를 얻기 위해서는 기존 NLP, 컨텍스트 식별, NER(Named Entity Recignition), N항 RE(N-ary Relationship Extraction) 필요.
+  MRP를 위해 이러한 그래프를 얻기 위해서는 기존 NLP, 컨텍스트 식별, NER(Named Entity Recognition), N항 RE(N-ary Relationship Extraction) 필요.
 
   여러 시스템이 있지만 N항 RE는 생물의학 분야에서 충분히 탐구되지 못했다.  
   
@@ -89,7 +89,7 @@ tags: [paper, llm, gpt]
   완전한 문장, 여러 유전자에 대한 참조를 포함하는 제목 -> m<sup>6</sup>A와 유전자/단백질 사이의 경로 매핑  
 
 - 벤치마크 데이터세트에 대한 주석 방법  
-  컴퓨터 과학과 생물의학 분야 전문가 5명을 주석자로 삼고 400개의 제목에 주석을 닮. 세 단계를 거침.  
+  컴퓨터 과학과 생물의학 분야 전문가 5명을 주석자로 삼고 400개의 제목에 주석을 달음. 세 단계를 거침.  
   1__ 연습 주석 단계  
   2__ 그룹 주석 단계  
   3__ 심사 단계  
@@ -133,7 +133,7 @@ tags: [paper, llm, gpt]
 ## 3. Results  
 
 **A. 벤치마크 데이터 세트의 주석**  
-- m<sup>6</sup>A 연구 논문 400개의 제목에 대한 컨텍스트 인식 그래프에 주석을 닮.
+- m<sup>6</sup>A 연구 논문 400개의 제목에 대한 컨텍스트 인식 그래프에 주석을 달음.
 - 데이터 세트의 정규화된 컨텍스트에서 24개의 다른 TCGA 암 유형을 추출할 수 있었음.
 
 **B. 우수한 성능의 reguloGPT**  
