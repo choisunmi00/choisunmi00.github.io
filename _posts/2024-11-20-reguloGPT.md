@@ -1,8 +1,9 @@
 ---
-title: reguloGPT
-date: 2024-11-20
-categories: [LLM]
-tags: [paper, llm, gpt]
+title: Writing a New Post
+author: cotes
+date: 2019-08-08 14:10:00 +0800
+categories: [Blogging, Tutorial]
+tags: [writing]
 ---
 
 # 논문 리뷰: reguloGPT
