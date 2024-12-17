@@ -7,7 +7,7 @@ tags: [paper, llm, gpt]
 
 # 논문 리뷰: reguloGPT
 
-[reguloGPT: Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10836076/)
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10836076/">reguloGPT: Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways</a>
 
 ---
 ## (Background)
@@ -28,7 +28,7 @@ tags: [paper, llm, gpt]
   G-Eval 체계: 성능 평가 위해 GPT-4를 활용. 기존 주석 기반 평가와 일치.
 - Availability and implementation:     
    reguloGPT의 소스 코드, m<sup>6</sup>A 관련 제목 및 벤치마크 데이터 세트, m<sup>6</sup>A-KG  
-   [https://github.com/Huang-AI4Medicine-Lab/reguloGPT](https://github.com/Huang-AI4Medicine-Lab/reguloGPT)
+   <a href="https://github.com/Huang-AI4Medicine-Lab/reguloGPT">https://github.com/Huang-AI4Medicine-Lab/reguloGPT</a>
 - Key words: MRP, KG, GPT, In Context Learning, m6A mRNA Methylation                   
 
 ## 1. Introduction    
