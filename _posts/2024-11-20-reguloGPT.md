@@ -1,5 +1,6 @@
 ---
 title: reguloGPT
+author: csm
 date: 2024-11-20 14:10:00 +0800
 categories: [LLM]
 tags: [paper]
