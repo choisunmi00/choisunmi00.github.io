@@ -18,3 +18,9 @@ body {
   }
 
   
+  .glightbox-clean .gslide img {
+    max-width: 80vw; /* 브라우저 화면 너비의 80%로 제한 */
+    max-height: 90vh; /* 브라우저 화면 높이의 90%로 제한 */
+    width: auto; /* 이미지 비율 유지 */
+    height: auto;
+  }
