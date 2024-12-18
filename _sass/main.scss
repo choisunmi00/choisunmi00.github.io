@@ -18,3 +18,9 @@ body {
   }
 
   
+  .glightbox-clean .gslide-image img {
+    max-width: 90vw; /* 화면 너비의 90% */
+    max-height: 90vh; /* 화면 높이의 90% */
+    object-fit: contain; /* 원본 비율 유지 */
+  }
+  
