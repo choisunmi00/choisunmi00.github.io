@@ -6,8 +6,8 @@
 .gslide-inner-content {
   width: auto !important;
   height: auto !important;
-  max-width: 90%; /* 뷰포트의 90% 너비 */
-  max-height: 90%; /* 뷰포트의 90% 높이 */
+  max-width: 90vw; /* 뷰포트의 90% 너비 */
+  max-height: 90vh; /* 뷰포트의 90% 높이 */
   display: flex;
   justify-content: center; /* 중앙 정렬 */
   align-items: center; /* 수직 중앙 정렬 */
