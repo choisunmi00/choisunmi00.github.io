@@ -3,6 +3,29 @@
 @use '../abstracts/mixins' as mx;
 @use '../abstracts/placeholders';
 
+.gslide {
+  display: flex;
+  flex-direction: column; /* 세로 정렬 */
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  max-width: 90vw; /* 화면 너비의 90% */
+  max-height: 90vh; /* 화면 높이의 90% */
+  margin: auto; /* 자동 중앙 정렬 */
+  overflow: hidden; /* 스크롤바 제거 */
+}
+
+.gslide img {
+  max-width: 100%; /* 부모 요소에 맞게 크기 제한 */
+  max-height: 100%; /* 부모 요소에 맞게 크기 제한 */
+  object-fit: contain; /* 이미지 비율 유지 */
+}
+
+.gslide-content {
+  display: block; /* 블록 요소로 설정 */
+  max-width: 100%;
+  max-height: 100%;
+}
+
 %-btn-post-nav {
   width: 50%;
   position: relative;
