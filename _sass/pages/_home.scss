@@ -157,7 +157,7 @@
     }
 
     &.disabled {
-      // cursor: not-allowed;
+      cursor: default;
 
       .page-link {
         color: rgba(108, 117, 125, 0.57);
