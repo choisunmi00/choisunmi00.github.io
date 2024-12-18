@@ -38,8 +38,8 @@ class MyProblem:
 
 # PyGMO Problem 객체로 변환
 problem = pg.problem(MyProblem())
-
 ```
+
 **2. Pygmo 내장 UDPs**
 
 ```python3
