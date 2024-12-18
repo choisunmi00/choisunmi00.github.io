@@ -173,7 +173,7 @@ header {
       @extend %-btn-post-nav;
 
       pointer-events: auto;
-      cursor: not-allowed;
+      // cursor: not-allowed;
       background: none;
       color: gray;
     }
