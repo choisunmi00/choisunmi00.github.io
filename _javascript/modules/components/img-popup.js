@@ -8,14 +8,6 @@ const lightImages = '.popup:not(.dark)';
 const darkImages = '.popup:not(.light)';
 let selector = lightImages;
 
-
-document.querySelectorAll(".glightbox img").forEach((img) => {
-  img.style.width = "auto";
-  img.style.height = "auto";
-  img.style.maxWidth = "90vw";
-  img.style.maxHeight = "90vh";
-});
-
 function updateImages(current, reverse) {
   if (selector === lightImages) {
     selector = darkImages;
