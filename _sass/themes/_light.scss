@@ -127,16 +127,19 @@
     border-spacing: 0;
     margin: 0 0;
     font-size: 16px;
-    border: 1px solid #e9e9e9
   }
 
   table th {
-    border: 1px solid #f9f9f9;
+    border: 1px solid #34343c;
     background-color: #487584; /* 헤더 배경색 */
-    color: #ffffff; /* 헤더 글자색 */
+    color: #34343c; /* 헤더 글자색 */
     font-weight: bold;
     text-transform: uppercase;
   }
+
+  // table td {
+  //   border: 1px solid #34343c
+  // }
 
   // .highlight table td {
   //   padding: 5px;
