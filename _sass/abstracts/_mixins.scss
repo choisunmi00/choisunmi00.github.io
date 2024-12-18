@@ -44,9 +44,11 @@
 }
 
 @mixin align-center {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  // position: relative;
+  // left: 50%;
+  // transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
 }
 
 @mixin prompt($type, $fa-content, $fa-style: 'solid', $rotate: 0) {
