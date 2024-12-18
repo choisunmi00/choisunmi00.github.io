@@ -36,24 +36,8 @@ export function imgPopup() {
     selector = darkImages;
   }
 
-  // let current = GLightbox({ selector: `${selector}` });
-  let current = GLightbox({
-    selector: '.popup',
-    touchNavigation: true,
-    loop: true,
-    zoomable: true,
-    width: '90vw',
-    height: '90vh',
-    onOpen: () => {
-      document.body.style.overflow = 'hidden';
-    },
-    onClose: () => {
-      document.body.style.overflow = '';
-    },
-  });
-  
-  
-  
+  let current = GLightbox({ selector: `${selector}` });
+
   if (hasDualImages && Theme.switchable) {
     let reverse = null;
 
