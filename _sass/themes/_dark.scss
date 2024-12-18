@@ -59,7 +59,7 @@
   --toc-highlight: #85a8b4;
   --toc-popup-border-color: #373737;
   --tag-hover: rgb(43, 56, 62);
-  --tb-odd-bg: rgb(31, 31, 31); /* odd rows of the posts' table */
+  --tb-odd-bg: rgb(28, 28, 28); /* odd rows of the posts' table */
   --tb-even-bg: rgb(25, 25, 25); /* even rows of the posts' table */
   --tb-border-color: var(--tb-odd-bg);
   --footnote-target-bg: rgb(63, 81, 181);
@@ -170,16 +170,16 @@
   }
 
   table th {
-    border: 1px solid #292929;
+    border: 1px solid rgb(25, 25, 25);
     background-color: #2d464e; /* 헤더 배경색 */
     color: rgb(175, 176, 177); /* 헤더 글자색 */
     font-weight: bold;
     text-transform: uppercase;
   }
 
-  table td {
-    border: 1px solid #2e2e2e
-  }
+  // table td {
+  //   border: 1px solid #2e2e2e
+  // }
 
   // .highlight table td {
   //   padding: 5px;
