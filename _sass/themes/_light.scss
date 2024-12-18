@@ -130,19 +130,12 @@
   }
 
   table th {
-    border: 1px solid #848484;
+    border: 1px solid #f7f7f7;
     background-color: #2d464e; /* 헤더 배경색 */
     color: #ffffff; /* 헤더 글자색 */
     font-weight: bold;
     text-transform: uppercase;
   }
-
-  // @media screen and (max-width: 600px) {
-  //   table th, table td {
-  //     font-size: 14px;
-  //     padding: 8px; /* 작은 화면에서 여백 줄이기 */
-  //   }
-  // }
 
   // .highlight table td {
   //   padding: 5px;

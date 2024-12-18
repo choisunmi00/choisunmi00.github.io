@@ -160,13 +160,30 @@
     color: #87939d;
   }
 
-  .highlight table td {
-    padding: 5px;
+  //table style
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0 0;
+    font-size: 16px;
   }
 
-  .highlight table pre {
-    margin: 0;
+  table th {
+    border: 1px solid #424242;
+    background-color: #2d464e; /* 헤더 배경색 */
+    color: #ffffff; /* 헤더 글자색 */
+    font-weight: bold;
+    text-transform: uppercase;
   }
+
+  // .highlight table td {
+  //   padding: 5px;
+  // }
+
+  // .highlight table pre {
+  //   margin: 0;
+  // }
 
   .highlight,
   .highlight .w {
