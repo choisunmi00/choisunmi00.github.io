@@ -8,6 +8,22 @@ const lightImages = '.popup:not(.dark)';
 const darkImages = '.popup:not(.light)';
 let selector = lightImages;
 
+const glightboxOptions = {
+  selector: ".glightbox",
+  elements: null,
+  skin: "clean",
+  theme: "clean",
+  closeButton: true,
+  startAt: null,
+  autoplayVideos: true,
+  autofocusVideos: true,
+  descPosition: "bottom",
+  width: "auto", // 너비를 자동으로
+  height: "auto", // 높이를 자동으로
+  videos: true, // 동영상 활성화
+};
+
+
 function updateImages(current, reverse) {
   if (selector === lightImages) {
     selector = darkImages;
@@ -38,6 +54,8 @@ export function imgPopup() {
 
   let current = GLightbox({ selector: `${selector}` });
 
+  
+
   if (hasDualImages && Theme.switchable) {
     let reverse = null;
 
@@ -48,3 +66,4 @@ export function imgPopup() {
     });
   }
 }
+
