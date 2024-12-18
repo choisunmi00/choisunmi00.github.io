@@ -132,7 +132,7 @@
     }
 
     .page-link {
-      color: var(--btn-patinator-text-color);
+      color: #85a8b4;
       padding: 0 0.6rem;
       display: -webkit-box;
       -webkit-box-pack: center;
@@ -144,7 +144,7 @@
 
     &.active {
       .page-link {
-        background-color: #487584;
+        background-color: var(--btn-paginator-hover-color);
       }
     }
 
