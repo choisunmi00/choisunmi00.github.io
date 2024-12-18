@@ -125,6 +125,7 @@ div[class^='language-'] {
   }
 
   .code-header {
+    display: none;
     @include bp.sm {
       @include mx.ml-mr(0);
 
@@ -175,6 +176,7 @@ div {
 }
 
 .code-header {
+  display: none;
   @extend %no-cursor;
 
   display: flex;
