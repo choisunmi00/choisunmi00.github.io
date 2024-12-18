@@ -3,24 +3,35 @@
 @forward 'layout';
 @forward 'pages';
 
-// .gslide-inner-content {
-//   width: auto !important;
-//   height: auto !important;
-//   max-width: 90%; /* 뷰포트의 90% 너비 */
-//   max-height: 90%; /* 뷰포트의 90% 높이 */
-//   display: flex;
-//   justify-content: center; /* 중앙 정렬 */
-//   align-items: center; /* 수직 중앙 정렬 */
-//   overflow: hidden;
-// }
+.gslide-inner-content {
+  width: auto !important;
+  height: auto !important;
+  max-width: 90%; /* 뷰포트의 90% 너비 */
+  max-height: 90%; /* 뷰포트의 90% 높이 */
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  overflow: hidden;
+}
 
-// .gslide-inner-content img {
-//   object-fit: contain; /* 이미지 비율 유지 */
-//   max-width: 100%; /* 부모 요소에 맞게 조정 */
-//   max-height: 100%; /* 부모 요소에 맞게 조정 */
-//   display: block;
-//   margin: auto;
-// }
+.gslide-inner-content img {
+  object-fit: contain; /* 이미지 비율 유지 */
+  max-width: 100%; /* 부모 요소에 맞게 조정 */
+  max-height: 100%; /* 부모 요소에 맞게 조정 */
+  display: block;
+  margin: auto;
+}
+
+.gslide-image img {
+  width: auto; /* 가로 비율 유지 */
+  height: auto; /* 세로 비율 유지 */
+  max-width: 90vw; /* 화면 너비의 90% */
+  max-height: 90vh; /* 화면 높이의 90% */
+  object-fit: contain; /* 이미지 비율을 유지하며 컨테이너에 맞춤 */
+  margin: auto;
+  display: block;
+}
+
 
 body {
 //     // font-size: 80%; 
