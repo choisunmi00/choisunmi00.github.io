@@ -43,14 +43,15 @@ export function imgPopup() {
     loop: true,
     zoomable: true,
     width: '90vw',
-    height: 'auto',
+    height: '90vh',
     onOpen: () => {
-      document.body.style.overflow = 'hidden'; // 스크롤 비활성화
+      document.body.style.overflow = 'hidden';
     },
     onClose: () => {
-      document.body.style.overflow = ''; // 스크롤 활성화
+      document.body.style.overflow = '';
     },
   });
+  
   
   
   if (hasDualImages && Theme.switchable) {
