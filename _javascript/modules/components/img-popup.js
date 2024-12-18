@@ -8,21 +8,13 @@ const lightImages = '.popup:not(.dark)';
 const darkImages = '.popup:not(.light)';
 let selector = lightImages;
 
-const glightboxOptions = {
-  selector: ".glightbox",
-  elements: null,
-  skin: "clean",
-  theme: "clean",
-  closeButton: true,
-  startAt: null,
-  autoplayVideos: true,
-  autofocusVideos: true,
-  descPosition: "bottom",
-  width: "auto", // 너비를 자동으로
-  height: "auto", // 높이를 자동으로
-  videos: true, // 동영상 활성화
-};
 
+document.querySelectorAll(".glightbox img").forEach((img) => {
+  img.style.width = "auto";
+  img.style.height = "auto";
+  img.style.maxWidth = "90vw";
+  img.style.maxHeight = "90vh";
+});
 
 function updateImages(current, reverse) {
   if (selector === lightImages) {
