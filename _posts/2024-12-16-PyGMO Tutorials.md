@@ -20,7 +20,7 @@ tags: [PG]
 **1. User Defined Problems(UDPs) 정의**  
 - `pygmo.problem`을 상속
 
-```python3
+```python
 import pygmo as pg
 
 # 사용자 정의 문제 클래스
@@ -42,7 +42,7 @@ problem = pg.problem(MyProblem())
 
 **2. Pygmo 내장 UDPs**
 
-```python3
+```python
 import pygmo as pg
 
 prob = pg.problem(pg.rosenbrock(dim=10))
@@ -92,7 +92,7 @@ Problem name: Multidimensional Rosenbrock Function
 - 입력 변수 `x`에서의 목적 함수의 그래디언트를 반환  
 
 
-```python3
+```python
 import pygmo as pg
 
 class ConstrainedProblem:
@@ -134,7 +134,7 @@ print("최적의 변수:", pop.champion_x)
 **1. User Defined Algorithms(UDAs) 정의**   
 -  `pg.algorithm`을 통해 생성  
 
-```python3
+```python
 # Differential Evolution 알고리즘 생성
 algo = pg.algorithm(pg.de(gen=100))  # 100 세대 실행
 
@@ -166,7 +166,7 @@ print("최적의 설계 변수 값:", island.get_population().champion_x)
 ```
 **2. Pygmo 내장 UDAs**  
 
-```python3
+```python
 import pygmo as pg
 
 algo = pg.algorithm(pg.cmaes(gen=100, sigma0=0.3))
@@ -243,7 +243,7 @@ print(algo.get_name())
 
 **1. `population` 객체 생성**   
 
-```python3
+```python
 import pygmo as pg
 
 prob = pg.problem(pg.rosenbrock(dim=4))
@@ -319,26 +319,26 @@ Champion fitness: [2691.53]
   - `prob`: 최적화 문제 객체 (`pg.problem`)
   - `size`: 개체군의 초기 크기 (기본값은 1)
 
-```python3
+```python
 pop = pg.population(prob=problem, size=10)  # 문제와 크기 설정
 ```
 2. 개체군 크기 관련 메서드
 - `size`: 현재 개체군의 크기를 반환
 
-```python3
+```python
 print(pop.size)  # 출력: 개체 수
 ```
 - `push_back(x)`: 개체군에 새로운 개체를 추가
   - `x`: 설계 변수 값 리스트
 
-```python3
+```python
 pop.push_back([0.5, 0.5, 0.5, 0.5, 0.5])  # 새로운 개체 추가
 ```
 3. 최적 해 관련 메서드
 - `champion_x`: 개체군에서 가장 좋은 해의 설계 변수 값을 반환
 - `champion_f`: 개체군에서 가장 좋은 해의 목적 함수 값을 반환
 
-```python3
+```python
 print(pop.champion_x)  # 최적의 설계 변수 값
 print(pop.champion_f)  # 최적의 목적 함수 값
 ```
@@ -346,7 +346,7 @@ print(pop.champion_f)  # 최적의 목적 함수 값
 - `get_x(i)`: 인덱스 `i`에 해당하는 개체의 설계 변수 값을 반환
 - `get_f(i)`: 인덱스 `i`에 해당하는 개체의 목적 함수 값을 반환
 
-```python3
+```python
 print(pop.get_x(0))  # 첫 번째 개체의 설계 변수 값
 print(pop.get_f(0))  # 첫 번째 개체의 목적 함수 값
 ```
@@ -354,14 +354,14 @@ print(pop.get_f(0))  # 첫 번째 개체의 목적 함수 값
 - `problem`: 개체군이 해결하고 있는 문제를 반환
 
 
-```python3
+```python
 print(pop.problem.get_name())  # 문제 이름 출력
 ```
 6. 병합 및 진화
 - `crossover(p1, p2)`: 두 개체 간 교차 연산을 수행합니다.
 - `mutate(i)`: 특정 개체의 돌연변이를 수행합니다.
 
-```python3
+```python
 import pygmo as pg
 
 # 문제 정의
@@ -394,7 +394,7 @@ print("최적의 설계 변수 값:", pop.champion_x)
 
 **1. `island` 객체 생성**    
 
-```python3
+```python
 import pygmo as pg
 
 # 문제 정의
@@ -424,14 +424,14 @@ print("최적의 설계 변수 값:", island.get_population().champion_x)
   - `prob`: 문제 객체 (`pg.problem`).
   - `size`: 개체군 크기.
 
-```python3
+```python
 island = pg.island(algo=pg.algorithm(pg.de(gen=100)), prob=problem, size=30)
 ```
 2. 진화
 - `evolve()`: 섬 내의 개체군을 알고리즘을 사용해 진화
 - `wait_check()`: 진화가 끝났는지 확인
 
-```python3
+```python
 island.evolve()
 island.wait_check()
 ```
@@ -439,7 +439,7 @@ island.wait_check()
 - `get_population()`: 섬 내의 개체군 객체를 반환
 - `set_population(population)`: 특정 개체군으로 섬의 개체군을 설정
 
-```python3
+```python
 population = island.get_population()
 print(population.champion_f)  # 최적의 목적 함수 값
 ```
@@ -447,14 +447,14 @@ print(population.champion_f)  # 최적의 목적 함수 값
 - `migrate(other_island)`: 현재 섬에서 다른 섬으로 개체를 이주
 - `status()`: 섬의 상태를 확인
 
-```python3
+```python
 island1.migrate(island2)
 print(island1.status())
 ```
 
 
 
-```python3
+```python
 import pygmo as pg
 
 # 문제 정의
@@ -492,7 +492,7 @@ print("섬 2 최적의 목적 함수 값:", island2.get_population().champion_f)
 **1. `archipelago` 객체 생성**    
 
 
-```python3
+```python
 archi = pg.archipelago(
     n=10,                # 섬의 개수
     algo=pg.algorithm(pg.de(gen=100)),  # 알고리즘
@@ -502,7 +502,7 @@ archi = pg.archipelago(
 ```
 
 
-```python3
+```python
 import pygmo as pg
 
 # 문제 정의
@@ -526,7 +526,7 @@ for idx, isl in enumerate(archi):
 ```
 
 
-```python3
+```python
 import pygmo as pg
 
 class toy_problem:
@@ -608,20 +608,20 @@ Islands summaries:
 - `get_islands()`: 모든 섬 객체를 반환
 - `push_back(island)`: 새로운 섬을 추가
 
-```python3
+```python
 archi.push_back(pg.island(algo=pg.algorithm(pg.pso(gen=100)), prob=problem, size=20))
 ```
 4. 결과 확인
 - 각 섬의 개체군(population)에 접근하여 최적 해를 확인
 
-```python3
+```python
 for isl in archi:
     print(isl.get_population().champion_f)  # 최적의 목적 함수 값
 ```
 
 
 
-```python3
+```python
 import pygmo as pg
 
 # 문제 정의
