@@ -342,7 +342,7 @@ main {
 }
 
 /* Overwrite bootstrap outline button */
-.btn.btn-outline-primary {
+.btn.btn-outline-info {
   &:not(.disabled):hover {
     border-color: #126d8c !important;
   }
