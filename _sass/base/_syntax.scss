@@ -14,7 +14,7 @@
   @extend %code-snippet-bg;
 
   overflow: auto;
-  padding-bottom: 0.75rem;
+  // padding-bottom: 0.75rem;
 
   @at-root figure#{&} {
     @extend %code-snippet-bg;
@@ -153,8 +153,8 @@ div[class^='language-'] {
   }
 
   .highlight {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-top-left-radius: 50;
+    border-top-right-radius: 50;
   }
 }
 
