@@ -10,9 +10,10 @@ description: 논문 리뷰 reguloGPT
 # 논문 리뷰: reguloGPT
 
 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10836076/">reguloGPT: Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways</a>
+---
 
 ## (Background)
-
+---
 - MRP: Molecualr Regulatory Pathways(분자 조절 경로).
 - KG: Knowledge Graph(지식 그래프). 개체, 사건 또는 개념과 같은 실체에 대한 상호 연결된 설명 모음     
 - end-to-end learning: 입력에서 출력까지 파이프라인 네트워크 없이 신경망으로 한 번에 처리. 양끝단 상에서 라벨링된 데이터가 많을 때 잘 동작하는 경향이 있다.           
@@ -21,7 +22,7 @@ description: 논문 리뷰 reguloGPT
 - outdegree: 방향성 그래프에서 node로부터 시작하는 고유한 edge.
 
 ## Abstract
-
+---
 - Motivation: MRP에 대한 KG 구축이 현재로선 미미하다.
 - Results: reguloGPT의 문헌에서 생물학적 지식 추출 가능성  
   reguloGPT 통한 예측 -> m<sup>6</sup>A-KG 구축 -> m<sup>6</sup>A 조절 메커니즘 밝힘.       
@@ -33,7 +34,7 @@ description: 논문 리뷰 reguloGPT
 - Key words: MRP, KG, GPT, In Context Learning, m6A mRNA Methylation                   
 
 ## 1. Introduction    
-
+---
 - 왜 필요한가   
   MRP: 생물의학 연구 핵심.     
   KG: MRP를 위한 도구. KG는 복잡한 생물학적 지식을 구조화하여 표현한다.  
@@ -61,7 +62,7 @@ description: 논문 리뷰 reguloGPT
     6__ m<sup>6</sup>A-KG 구축: 2013-2023년 PubMed에서 수집한 문헌 제목에 reguloGPT 적용
 
 ## 2. Methods
-
+---
 - reguloGPT: end-to-end 추출 위해 GPT-4 기반 ICL 활용. 6개의 모듈을 포함한다.  
 
   ![Figure 2](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0002.jpg){: w="70%" h="70%" }  
@@ -132,7 +133,7 @@ description: 논문 리뷰 reguloGPT
     평가를 위한 G-Eval 프롬프트 / A: 컨텍스트 평가, B: 그래프 평가  
 
 ## 3. Results  
-
+---
 ### A. 벤치마크 데이터 세트의 주석  
 - m<sup>6</sup>A 연구 논문 400개의 제목에 대한 컨텍스트 인식 그래프에 주석을 달음.
 - 데이터 세트의 정규화된 컨텍스트에서 24개의 다른 TCGA 암 유형을 추출할 수 있었음.
@@ -172,7 +173,7 @@ description: 논문 리뷰 reguloGPT
   CoT 프롬프트가 가장 우수.
 
 ## 4. m<sup>6</sup>A-KG, A context-aware KG of m<sup>6</sup>A regulatory fuctions  
-
+---
 ### A. reguloGPT를 이용한 m6A-KG 구축  
 
 - 포괄적인 m<sup>6</sup>A-KG에서 가장 연결 차수가 높은 m<sup>6</sup>(827)는 그래프의 중심이 된다.  
@@ -205,7 +206,7 @@ description: 논문 리뷰 reguloGPT
   m<sup>6</sup>A 조절자, 질병 표현형, 종양 전이 관여, 종양 억제 유전자의 암 의존적 조절 등 조절 메커니즘을 KG를 통해 해석할 수 있다.
 
 ## 5. Conclusion  
-
+---
 - reguloGPT: MRP 영역에서 KG의 end-to-end 구축을 위한 GPT-4의 새로운 응용 프로그램.  
 - ICL 프롬프팅 개발.  
 - 벤치마크 데이터베이스에 대한 reguloGPT의 효능 평가, G-Eval 평가와 사람 주석의 유사성.  
