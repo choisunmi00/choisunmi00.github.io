@@ -235,7 +235,7 @@ Extra info:
 ## population  
 ---
 **0. class `population`**  
-- 개체군(population)은 최적화 문제(problem)의 후보 해(solution)의 저장소: 결정 벡터 및 적합도 벡터 포함.
+- 개체군(population)은 최적화 문제(problem)의 후보 해(solution)의 저장소: 결정 벡터 및 적합도 포함
 - 구성 요소  
   1) 개체(individual): 개체군의 각 요소는 하나의 후보 해. 설계 변수와 이에 따른 목적 함수 값을 포함  
   2) 크기(size): 개체군 내 개체의 수  
