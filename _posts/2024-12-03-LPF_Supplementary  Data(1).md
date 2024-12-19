@@ -1,9 +1,11 @@
 ---
 title: LPF_Supplementary Data(1)
 author: csm
-date: 2024-12-03 14:10:00 +0800
+date: 2024-12-03 14:10:00 +0900
 categories: [LPF]
 tags: [paper]
+description: LPF a framework for exploring the wing color pattern formation of ladybird beetles in Python
+math: true
 ---
 
 # 논문 리뷰: LPF_Supplementary Data
@@ -54,7 +56,7 @@ tags: [paper]
 - ``model_dict``: determines the batch size
 - 모델 파일(JSON 형식)을 불러와 사전 정의된 모델 설정 가능
 
-**2.1.2**  Creating an initializer   
+#### 2.1.2  Creating an initializer   
 - 초기화 프로그램 생성  
 
 ```python
@@ -66,10 +68,10 @@ params = LiawModel.parse_params(model_dicts)
 ```  
 
 - 초기화 클래스 제공   
-- ``LiawInitializer``: 2D공간에서 사용자 정의 위치에 대해서만 $u$를 $u_0$으로 초기화, 모든 $v$를 $v_0$으로 초기화   
-- ``TwoComponentConstantInitializer``: 2D 공간에서 $u$와 $v$의 모든 점에 $u_0$, $v_0$을 할당   
+- ``LiawInitializer``: 2D공간에서 사용자 정의 위치에 대해서만 $$u$$를 $$u_0$$으로 초기화, 모든 $$v$$를 $$v_0$$으로 초기화   
+- ``TwoComponentConstantInitializer``: 2D 공간에서 $$u$$와 $$v$$의 모든 점에 $$u_0$$, $$v_0$$을 할당   
 
-**2.1.3**  Creating an array of parameters sets   
+#### 2.1.3  Creating an array of parameters sets   
 - 매개변수 집합의 배열 생성
 
 ```python
@@ -111,15 +113,15 @@ class LiawModel(TwoComponentModel):
 - ```parmas```: ```LiawModel```에서 반환된 값   
 - ```parse_params```: ```LiawModel```에서 static method로, 분석하지 않고 배열 생성 가능   
 
-**2.1.4**  Creating a PDE model       
+#### 2.1.4  Creating a PDE model       
 - LPF에 정의된 PDE model   
 
 |        Model        |        Class        |     Reactions     |     Parameters     |
 |:-------------------:|:-------------------:|:-----------------:|:------------------:|
-| Gierer-Meinhardt    | ```GiererMeinhardtModel```|    $f(u, v) = \rho_u \frac{u^2}{v} - \mu u$ <br> $g(u, v) = \rho_v u^2 - \nu v$   |       $ρ_u$: ``ru``, $ρ_v$: ``rv``,  $µ$: ``mu``, $ν$: ``nu``     |
-| Gray-Scott          | ```GrayScottModel```      |     $f(u, v) = -u^2 v + F(1 - u)$ <br> $g(u, v) = u^2 v - (F + k)v$     |   $F$: ``F``, $k$: ``k``      |
-| Gierer-Meinhardt    | ```LiawModel```           |    $f(u, v) = \rho_u \frac{u^2 v}{1 + \kappa u^2} + \sigma_u - \mu u$ <br> $g(u, v) = -\rho_v \frac{u^2 v}{1 + \kappa u^2} + \sigma_v$   |   $ρ_u$: ``ru``, $ρ_v$: ``rv``, $κ$: ``k``, $σ_u$: ``su``, $σ_v$: ``sv``, $µ$: ``mu``     |
-| Gray-Scott          | ```SchnakenbergModel```   |     $f(u, v) = \sigma_u - \mu u + \rho_u^2 v$ <br> $g(u, v) = \sigma_v - \rho_u^2 v$     |   $σ_v$: ``sv``, $σ_u$: ``su``, $ρ$: ``rho``, $µ$: ``mu``      |  
+| Gierer-Meinhardt    | ```GiererMeinhardtModel```|    $$f(u, v) = \rho_u \frac{u^2}{v} - \mu u$$ <br> $$g(u, v) = \rho_v u^2 - \nu v$$   |       $$ρ_u$$: ``ru``, $$ρ_v$$: ``rv``,  $$µ$$: ``mu``, $$ν$$: ``nu``     |
+| Gray-Scott          | ```GrayScottModel```      |     $$f(u, v) = -u^2 v + F(1 - u)$$ <br> $$g(u, v) = u^2 v - (F + k)v$$     |   $$F$$: ``F``, $$k$$: ``k``      |
+| Gierer-Meinhardt    | ```LiawModel```           |    $$f(u, v) = \rho_u \frac{u^2 v}{1 + \kappa u^2} + \sigma_u - \mu u$$ <br> $$g(u, v) = -\rho_v \frac{u^2 v}{1 + \kappa u^2} + \sigma_v$$   |   $$ρ_u$$: ``ru``, $$ρ_v$$: ``rv``, $$κ$$: ``k``, $$σ_u$$: ``su``, $$σ_v$$: ``sv``, $$µ$$: ``mu``     |
+| Gray-Scott          | ```SchnakenbergModel```   |     $$f(u, v) = \sigma_u - \mu u + \rho_u^2 v$$ <br> $$g(u, v) = \sigma_v - \rho_u^2 v$$     |   $$σ_v$$: ``sv``, $$σ_u$$: ``su``, $$ρ$$: ``rho``, $$µ$$: ``mu``      |  
 
 - custom PDE model class
 
@@ -177,17 +179,17 @@ model = LiawModel(
 )
 ```   
 
-**2.1.5**  Performing a numerical simulation   
+#### 2.1.5  Performing a numerical simulation   
 - LPF에 구현된 Numerical methods   
 
 | **Method**     | **Class** | **Definition**  |
 |-----------------|--------------------|--------------------|
-| Euler          | `EulerSolver`      | $y_{n+1} = y_n + h \cdot f(t, y_n)$ |
-| Heun           | `HeunSolver`       | $k_1 = h \cdot f(t, y_n)$ <br> $k_2 = h \cdot f(t + h, y_n + k_1)$ <br> $y_{n+1} = y_n + \frac{k_1 + k_2}{2}$                                                                                                                                                                                       
-| Runge-Kutta    | `RungeKuttaSolver` | $k_1 = h \cdot f(t, y_n)$ <br> $k_2 = h \cdot f(t + \frac{h}{2}, y_n + \frac{k_1}{2})$ <br> $k_3 = h \cdot f(t + \frac{h}{2}, y_n + \frac{k_2}{2})$ <br> $k_4 = h \cdot f(t + h, y_n + k_3)$ <br> $y_{n+1} = y_n + \frac{k_1 + 2k_2 + 2k_3 + k_4}{6}$  
+| Euler          | `EulerSolver`      | $$y_{n+1} = y_n + h \cdot f(t, y_n)$$ |
+| Heun           | `HeunSolver`       | $$k_1 = h \cdot f(t, y_n)$$ <br> $$k_2 = h \cdot f(t + h, y_n + k_1)$$ <br> $$y_{n+1} = y_n + \frac{k_1 + k_2}{2}$$                                                                                                                                                                                       
+| Runge-Kutta    | `RungeKuttaSolver` | $$k_1 = h \cdot f(t, y_n)$$ <br> $$k_2 = h \cdot f(t + \frac{h}{2}, y_n + \frac{k_1}{2})$$ <br> $$k_3 = h \cdot f(t + \frac{h}{2}, y_n + \frac{k_2}{2})$$ <br> $$k_4 = h \cdot f(t + h, y_n + k_3)$$ <br> $$y_{n+1} = y_n + \frac{k_1 + 2k_2 + 2k_3 + k_4}{6}$$  
 
 - Neumann boundary conditions of two-component model   
-$\text{boundary} \left( \frac{\partial u}{\partial t} \right) = 0 \quad \rightarrow \quad u'(0:h-1,\, 0:w-1) = 0$ <br> $\text{boundary} \left( \frac{\partial v}{\partial t} \right) = 0 \quad \rightarrow\quad v'(0:h-1, \, 0:w-1) = 0$
+$$\text{boundary} \left( \frac{\partial u}{\partial t} \right) = 0 \quad \rightarrow \quad u'(0:h-1,\, 0:w-1) = 0$$ <br> $$\text{boundary} \left( \frac{\partial v}{\partial t} \right) = 0 \quad \rightarrow\quad v'(0:h-1, \, 0:w-1) = 0$$
 
 
 - Performing a numerical simulation
@@ -215,7 +217,7 @@ solver.solve(
 - `dpath_ladybird`: 무당벌레 형태 이미지  
 - `dpath_model`: 모델 정보 파일  
 
-**2.1.6**  Visualizing the results   
+#### 2.1.6  Visualizing the results   
 - 무당벌레 형태, 패턴의 진화 시각화
 
 ```python
