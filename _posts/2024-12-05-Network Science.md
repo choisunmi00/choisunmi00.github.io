@@ -1,12 +1,14 @@
 ---
 title: Network Science
 author: csm
-date: 2024-12-05 14:10:00 +0800
+date: 2024-12-05 14:10:00 +0900
 categories: [Network science]
 tags: [study]
+description: Network science, Graph theory, GNN
 ---
 
-# Network science  
+## Network science
+---  
 - 복잡한 시스템을 분석하는 데 network를 수학적으로 기술하여 이용하는 학문. 구조와 동작을 연구한다.   
 - 소셜, 생물학적, 통신, 경제 및 금융, 교통, 생태 네트워크 등에서 응용.
 
@@ -20,7 +22,8 @@ tags: [study]
   - Fitness model: vertex의 내재적 피트니스 값 할당, vertex 간 연결이 피트니스와 차수의 결합 함수에 의해 결정. 허브 형성뿐 아니라, vertex의 개별적 중요성을 모델링. 매개변수 해석이 어려울 수 있음.
   - Exponential random graph models (ERGM): 그래프의 전역적 특징을 나타나는 매개변수 설정, 특정 확률 분포를 기반으로 그래프 생성. 매개변수 설정과 계산 복잡도 높음.  
 
-# Graph theory    
+## Graph theory
+---    
 - 오일러가 Königsberg Bridge Problem에 대한 풀이를 보이며 처음 제시했다.   
   강의 섬들을 vertex로, 다리를 edge로 표현하여 문제를 그래프 형태로 변환했다.   
 - Euler's Theorem   
@@ -33,7 +36,7 @@ tags: [study]
 - 그래프 알고리즘의 응용: Edsger Dijkstra의 최단 경로 알고리즘, Kruskal과 Prim의 Minimum Spanning Tree, 네트워크 유량 문제를 해결하는 Ford-Fulkerson Algorithm 등.   
 - NP-hard 문제와의 연관성: Graph Coloring Problem, Hamiltonian Circuit Problem 등.
   
-## 그래프 이론과 현대 과학  
+### 그래프 이론과 현대 과학  
 - 빅데이터와 네트워크 과학  
   - Social Network Analysis  
     - 친구 추천 알고리즘: 사용자를 vertex로, 친구 관계를 edge로 하여 공통 친구 수는 네트워크 내 연결성을 분석하여 추천한다.   
@@ -57,7 +60,8 @@ tags: [study]
 - AI와 머신러닝
   - GNN(Graph Neural Network): 머신러닝에서 그래프 데이터를 분석하고 예측하는 데 사용.  
 
-# GNN
+## GNN
+---
 - 그래프 구조 학습
   - 비정형 데이터로 vertex와 edge의 관계가 표현되는 것이 특징.
   - Local Features: 각 vertex는 인접한 vertex(Neighborhood)과 edge 정보를 통해 의미 있는 특징을 가진다.
