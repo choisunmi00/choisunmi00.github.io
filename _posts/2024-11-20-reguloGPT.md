@@ -70,7 +70,7 @@ description: 논문 리뷰 reguloGPT
 
 ### A. reguloGPT에 대한 ICL 프롬프트
 
-   ![Figure 3](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0003.jpg){: w="70%" h="70%" }  
+   ![Figure 3](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0003.jpg){: w="80%" h="80%" }  
    
 - 기준 프롬프트 (A): 지침, 정의 및 출력 형식을 포함한 기준 프롬프트  
   1__ 작업 목표 제시  
@@ -127,7 +127,7 @@ description: 논문 리뷰 reguloGPT
   수동 주석 작업을 자동화하기 위해 LLM 사용.  
   프레임워크 GPT-4-evaluation 제안.  
   
-    ![Figure 4](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0004.jpg){: w="70%" h="70%" }
+    ![Figure 4](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0004.jpg){: w="80%" h="80%" }
 
     평가를 위한 G-Eval 프롬프트 / A: 컨텍스트 평가, B: 그래프 평가  
 
@@ -187,7 +187,7 @@ description: 논문 리뷰 reguloGPT
 
 - 다양한 범주 node의 outdegree-rate
 
-  ![Figure 5](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0005.jpg){: w="70%" h="70%" }
+  ![Figure 5](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0005.jpg){: w="80%" h="80%" }
 
   m<sup>6</sup>A와 WERs(Writers, Erasers, Readers)는 핵심 조절자.  
   GO/pathwat node는 하류 조절자.   
