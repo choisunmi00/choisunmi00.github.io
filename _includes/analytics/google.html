@@ -1,6 +1,12 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google.id }}"></script>
 <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const lazyImages = document.querySelectorAll("img[loading='lazy']");
+    lazyImages.forEach((img) => {
+      img.src = img.dataset.src;
+    });
+  });
   document.addEventListener('DOMContentLoaded', () => {
     window.dataLayer = window.dataLayer || [];
     function gtag() {
