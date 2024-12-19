@@ -1,9 +1,11 @@
 ---
 title: LPF_Supplementary Data(2)
 author: csm
-date: 2024-12-04 14:10:00 +0800
+date: 2024-12-04 14:10:00 +0900
 categories: [LPF]
 tags: [paper]
+description: LPF a framework for exploring the wing color pattern formation of ladybird beetles in Python
+math: true
 ---
 
 # 논문 리뷰: LPF - Supplementary Data
@@ -11,9 +13,10 @@ tags: [paper]
 [LPF: a framework for exploring the wing color pattern formation of ladybird beetles in Python](https://doi.org/10.1093/bioinformatics/btad430)  
 [Supplementary Data](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/7/10.1093_bioinformatics_btad430/2/btad430_supplementary_data.pdf?Expires=1736057160&Signature=ynQSiSKNANknwTVvSYi5cTxcCp9gHsKwCX1ply7Ys0QzNZ0TQilTTt0xPhjEJXNwXfgbw3M-Rk7jPuxqt9JicwdLO-RS1wej0LarlSNwLrT3~I8iV8b6YrDm-UhelBilpi5P4lgoq-s9mn8M-89FfFf0LIn7ZiE6cPwYsdqRvdMP3CQNw0wocNRet~9qnUMM25qWD7wD68GOKpbxIEBE9eOiGfDq33m6tzWM3fUMTuMXqL8YAm53YsL54Dw8ZPb0T7UZ62vRyCSCmn-vGKRjrcD65lM-C1fJ1krF9hUAAFRdFHgmHiDG~YRJjy9Jn-AaroBOVcLBPGZDkBGki3nocg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)
 
----
+
 
 ## 3. Pattern visualization  
+---
 - 무당벌레의 색상 패턴 다형성이 두드러지는 딱지날개(앞날개)에 초점  
 - Gautier et al. 표현형 참고, 단순화된 이미지 고안  
 
@@ -58,7 +61,7 @@ img_output.save("morphs.png", dpi=(600, 600))
 - ```create video```: 프레임 병합, MP4 비디오 생성.
 
 ## 4. Evolutionary search
-
+---
 - PyGMO에 기반한 진화 탐색 알고리즘 제공  
 - A workflow of searching mathematical models for *H. axyridis*  
 
@@ -80,7 +83,7 @@ img_output.save("morphs.png", dpi=(600, 600))
 - ```pygmo.pso```: particle swarm optimization  
 - ```pygmo.problem```: ```fitness``` 함수 정의하는 모든 개체 포함  
 - ```fitness```: decision vector의 objective score혹은 fitness score 평가  
-- ```Converter```: floating-point 숫자 배열인 decision vector를 모델의 매개변수에 매핑, 반대의 경우도 마찬가지(예를 들어 ```LiawConverter.to params()```는 decision vector의 첫 번째 및 두 번째 값을 각각 ```LiawModel```의 확산 변수 $D_u$, $D_v$에 매핑 )
+- ```Converter```: floating-point 숫자 배열인 decision vector를 모델의 매개변수에 매핑, 반대의 경우도 마찬가지(예를 들어 ```LiawConverter.to params()```는 decision vector의 첫 번째 및 두 번째 값을 각각 ```LiawModel```의 확산 변수$$D_u$,$$D_v$에 매핑 )
 - ```LiawConverter.to initializer()```: decision vector로부터 ```LiawInitializer```를 인스턴스화
 
 - Fitness function EvoSearch class in LPF.  
@@ -131,23 +134,23 @@ $$
 F = c_1 \cdot S_{\text{MSE}} + c_2 \cdot S_{\text{CP}} + c_3 \cdot S_{\text{VGG16}} + c_4 \cdot S_{\text{LPIPS:VGG16}} + c_5 \cdot S_{\text{LPIPS:ALEX}}
 $$  
 
-- $S$: 유사도 점수, $c$: 계수  
-- $S_{\text{MSE}}$: $MSE$에 기반한 유사도 점수. 여러 대상 이미지에 대한 $MSE$의 평균  
+-$$S$: 유사도 점수,$$c$: 계수  
+-$$S_{\text{MSE}}$:$$MSE$에 기반한 유사도 점수. 여러 대상 이미지에 대한$$MSE$의 평균  
 
 $$
 S_{\text{MSE}} = \frac{1}{m} \sum_{i=1}^{m} \text{MSE}(X, T(i))
 $$  
 
-- $m$: 타겟의 수  
-- 형태, 타겟 이미지 사이의 $MSE$  
+-$$m$: 타겟의 수  
+- 형태, 타겟 이미지 사이의$$MSE$$  
 
 $$
 \text{MSE}(X, T) = \frac{1}{n} \sum_{j=1}^{n} (X_j - T_j)^2
 $$
 
-- $X$: 형태 이미지, $T$: 타겟 이미지, $n$: 이미지의 픽셀 수  
+-$$X$: 형태 이미지,$$T$: 타겟 이미지,$$n$: 이미지의 픽셀 수  
 
-- $S_{\text{CP}}$: 색상 비율에 기반한 유사도 점수. OpenCV의 ```inRange```를 사용해 비율 계산.  
+-$$S_{\text{CP}}$: 색상 비율에 기반한 유사도 점수. OpenCV의 ```inRange```를 사용해 비율 계산.  
 
 $$
 pdf(x, \mu, \sigma) = \frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2} \left(\frac{x - \mu}{\sigma}\right)^2}
@@ -157,17 +160,17 @@ $$
 S_{\text{CP}} = \frac{1}{m} \sum_{i=1}^{m} \frac{1}{pdf(\text{CP}(X), \text{CP}(T(i)), 0.1)}
 $$  
 
-- *pdf*: probability density function of normal distribution, $CP$: color proportion  
+- *pdf*: probability density function of normal distribution,$$CP$$: color proportion  
 
-- $S_{\text{VGG16}}$: VGG16 perceptual loss에 기반한 유사도 점수. $VGG16$ perceptual loss를 형태, 타겟 이미지 feature maps 사이의 $LAE$ 혹은 $L1$ loss로 정의  
+-$$S_{\text{VGG16}}$: VGG16 perceptual loss에 기반한 유사도 점수.$$VGG16$$ perceptual loss를 형태, 타겟 이미지 feature maps 사이의$$LAE$$ 혹은$$L1$$ loss로 정의  
 
 $$
 S_{\text{VGG16}} = \frac{1}{m} \sum_{i=1}^{m} \sum_{j=1}^{4} \text{L1-loss} \left( \phi_j(X) - \phi_j(T(i)) \right)
 $$  
 
-- $S_{\text{LPIPS}}$: learned perceptual image patch similarity(LPIPS)을 기반으로 하여 $S_{\text{VGG16}}$와 유사
+-$$S_{\text{LPIPS}}$: learned perceptual image patch similarity(LPIPS)을 기반으로 하여$$S_{\text{VGG16}}$와 유사
 
-- 4개의 붉은 반점이 있는 spectabilis(반점 사이의 간격이 다소 좁다)와 가장 유사한 morph-3의 경우, 3개의 합성 신경망을 갖춘 $LPIPS$ 지표가 유사성을 정확히 설명  
+- 4개의 붉은 반점이 있는 spectabilis(반점 사이의 간격이 다소 좁다)와 가장 유사한 morph-3의 경우, 3개의 합성 신경망을 갖춘$$LPIPS$$ 지표가 유사성을 정확히 설명  
 
 ### 4.3 Results of a case study: reproducing schematic images  
 - *H. axyridis*의 succinea subtype 조사   
@@ -187,7 +190,7 @@ $$
 - 300번째 세대에서 유사한 형태 관찰. 이는 LPF를 통해 실제 이미지를 재현할 수 있는 수학적 모델을 발견할 수 있음을 시사. 다만 노이즈가 많고 비대칭 패턴은 수치적 오류를 일으킬 수 있음.
 
 ## 5. Diploid model 
-
+---
 - 유전자 교배 실험은 *H. axyridis*의 날개 색상 패턴이 단일 상염색체에서 분리되는 다양한 대립유전자에서 유래함을 입증  
 - ‘mosaic dominance’ phenomena: 이형접합체의 색상 패턴은 두 대립유전자의 색상 패턴의 조합   
 - *H. axyridis*의 색상 패턴 다형성의 근원은 repeated inversion within a *pannier* intron.   
@@ -195,7 +198,7 @@ $$
 
 <img src="https://i.ibb.co/kHZDk6H/541a998f-4b89-44eb-b6fb-e725c52fed78.png" alt="6" width="40%" height="40%"/>       
 
-- 유전적 특징을 반영하기 위해 diploid models 개발. *pannier*의 발현이 부계와 모계 대립유전자에서 발현되는 가상의 형태발생인자에 의해 조절된다 가정. 또한 $u$와 $v$ 사이의 crosstalks 고려.  
+- 유전적 특징을 반영하기 위해 diploid models 개발. *pannier*의 발현이 부계와 모계 대립유전자에서 발현되는 가상의 형태발생인자에 의해 조절된다 가정. 또한$$u$와$$v$$ 사이의 crosstalks 고려.  
 - two-component system에서 PDE 모델 정의  
 
 $$
@@ -214,8 +217,8 @@ $$
 \frac{\partial v_m}{\partial t} = D_{v_m} \nabla^2 v_m + g_m(u_m, v_m),
 $$  
 
-- $m$, $p$는 부계와 모계의 origins.  
-- 자손 모델의 total $u$, $v$는 부계와 모계 상태의 선형 조합으로 정의.  
+-$$m$,$$p$는 부계와 모계의 origins.  
+- 자손 모델의 total$$u$,$$v$는 부계와 모계 상태의 선형 조합으로 정의.  
 
 $$
 u = \alpha u_p + \beta u_m,
