@@ -17,14 +17,14 @@ body {
     // border-color: #545b62;
   }
 
-  // .gslide-inner-content {
-  //   display: flex;
-  //   justify-content: center; /* 중앙 정렬 */
-  //   align-items: center; /* 수직 중앙 정렬 */
-  //   max-width: 90vw; /* 화면 너비의 90% */
-  //   max-height: 90vh; /* 화면 높이의 90% */
-  //   overflow: hidden; /* 넘치는 내용 숨기기 */
-  // }
+  .gslide-inner-content {
+    display: flex;
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    max-width: 90vw; /* 화면 너비의 90% */
+    max-height: 90vh; /* 화면 높이의 90% */
+    overflow: hidden; /* 넘치는 내용 숨기기 */
+  }
   
   // .gslide-image img {
   //   width: auto; /* 가로 비율 유지 */
