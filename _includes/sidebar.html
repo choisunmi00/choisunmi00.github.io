@@ -8,17 +8,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/glightbox@3.0.5/dist/js/glightbox.min.js"></script>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const lightbox = GLightbox({
-          selector: '.glightbox',
-          touchNavigation: true,
-          loop: true,
-          closeButton: true
-        });
-      });
-    </script>
-    
     <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <p class="site-subtitle mb-0">{{ site.tagline }}</p>
   </header>
@@ -101,5 +90,17 @@
     {% endfor %}
   </div>
   <!-- .sidebar-bottom -->
+
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const lightbox = GLightbox({
+        selector: '.glightbox',
+        touchNavigation: true,
+        loop: true,
+        closeButton: true
+      });
+    });
+  </script>
 </aside>
 <!-- #sidebar -->
