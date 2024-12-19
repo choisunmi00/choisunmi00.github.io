@@ -118,6 +118,19 @@ refactor: true
 </div>
 <!-- #post-list -->
 
+<script src="https://cdn.jsdelivr.net/npm/glightbox@3.0.5/dist/js/glightbox.min.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const lightbox = GLightbox({
+      selector: '.glightbox',  // glightbox를 사용할 모든 요소 선택
+      touchNavigation: true,
+      loop: true,
+      closeButton: true
+    });
+  });
+</script>
+
 {% if paginator.total_pages > 1 %}
   {% include post-paginator.html %}
 {% endif %}
