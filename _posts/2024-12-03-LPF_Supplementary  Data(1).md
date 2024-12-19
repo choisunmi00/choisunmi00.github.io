@@ -37,7 +37,7 @@ tags: [paper]
 - 2D 공간에서의 RD 시스템
 - ``width``, ``height``: detirmined the size of 2D space
 
-![Figure 1](https://buly.kr/C08umjM){: w="40%" h="40%" } 
+![Figure 1](https://private-user-images.githubusercontent.com/81906078/397180037-e916f2a3-7cdf-4349-b993-707b2dcb794e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzEzMTUsIm5iZiI6MTczNDU3MTAxNSwicGF0aCI6Ii84MTkwNjA3OC8zOTcxODAwMzctZTkxNmYyYTMtN2NkZi00MzQ5LWI5OTMtNzA3YjJkY2I3OTRlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMTY1NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI0MWU3NmFjZjViN2YwODE3ZTY3OGZlZGFlZjgwNWE5MWY1ODc4ZjUzZTllMDQ4ZmQ4ZmQ0MzRmMmVlOGVjZTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.whN1ducBvWeaW_tlCk1NNRAnhtXnVdNsK7s7g-WqNSM){: w="40%" h="40%" } 
 
 - ``dx``: determines both sapce step sizes of the SD cartesian space (∆x = ∆y)   
  
