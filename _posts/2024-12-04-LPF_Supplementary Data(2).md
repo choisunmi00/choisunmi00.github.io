@@ -20,7 +20,7 @@ tags: [paper]
 ### 3.1 Visualizing a single morph  
 - 무당벌레의 날개 색상 패턴은 대칭적이라 가정(생물학적 시스템의 대칭성과 모듈성)   
 
-<img src="https://github.com/user-attachments/assets/dfea6281-2407-4f47-b4a4-e0c9c7725d49" alt="1" width="40%" height="40%"/>    
+<img src="https://i.ibb.co/5Y39xp1/392226698-dfea6281-2407-4f47-b4a4-e0c9c7725d49.webp" alt="1" width="40%" height="40%"/>    
 
 1. PDE 모델을 풀고, 주요 상태에 따라 2D 공간 채색: Liaw 모델에서 멜라닌 합성을 결정하는 주요 상태를 상태 u라고 가정한다면, 임계값보다 큰 상태의 u가 있는 위치에 멜라닌을 나타내는 검은색을 할당한다.  
 2. 패턴 이미지에서 미리 정의된 영역을 잘라내어 날개 색상 패턴 추출  
@@ -52,7 +52,7 @@ img_output.save("morphs.png", dpi=(600, 600))
 - ```models``` directory: contains model JSON files that include metadata, parameter, values, initializing positions
 - ```model_*``` directory: contains the ladybird images of each model generated during the numerical simulation
 
-<img src="https://i.ibb.co/xmbm2T8/392237143-a6104125-9ea4-4ed4-b8cf-0020cbb48524.png" alt="2" width="60%" height="60%"/>   
+<img src="https://i.ibb.co/xmbm2T8/392237143-a6104125-9ea4-4ed4-b8cf-0020cbb48524.webp" alt="2" width="60%" height="60%"/>   
 
 - ```merge multiple timeseries```: concatenates multiple morph images into a frame and performs the concatenation over time. ```model_*``` directory에 있는 동일한 파일 이름을 가진 여러 이미지 파일을 단일 이미지로 병합.
 - ```create video```: 프레임 병합, MP4 비디오 생성.
