@@ -20,7 +20,7 @@ tags: [paper]
 ### 3.1 Visualizing a single morph  
 - 무당벌레의 날개 색상 패턴은 대칭적이라 가정(생물학적 시스템의 대칭성과 모듈성)   
 
-<img src="https://private-user-images.githubusercontent.com/81906078/397180310-c3a01e99-66f2-4148-a201-7b5214813b1a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzE0MjQsIm5iZiI6MTczNDU3MTEyNCwicGF0aCI6Ii84MTkwNjA3OC8zOTcxODAzMTAtYzNhMDFlOTktNjZmMi00MTQ4LWEyMDEtN2I1MjE0ODEzYjFhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMTg0NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA2YzMwOWU0NDE5Yzg1ZmUzMDE1ZTQ0YmI1NDRmODEzNjk5YjA4MGJiNWFkMDFiNWUzYmMxY2U4N2YwZmMwZjkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.P063TUJZmhQYJ-uSEbz7CblOsOK-Awh1PnxnG8HHVmw" alt="1" width="40%" height="40%"/>    
+<img src="https://github.com/user-attachments/assets/dfea6281-2407-4f47-b4a4-e0c9c7725d49" alt="1" width="40%" height="40%"/>    
 
 1. PDE 모델을 풀고, 주요 상태에 따라 2D 공간 채색: Liaw 모델에서 멜라닌 합성을 결정하는 주요 상태를 상태 u라고 가정한다면, 임계값보다 큰 상태의 u가 있는 위치에 멜라닌을 나타내는 검은색을 할당한다.  
 2. 패턴 이미지에서 미리 정의된 영역을 잘라내어 날개 색상 패턴 추출  
@@ -52,7 +52,7 @@ img_output.save("morphs.png", dpi=(600, 600))
 - ```models``` directory: contains model JSON files that include metadata, parameter, values, initializing positions
 - ```model_*``` directory: contains the ladybird images of each model generated during the numerical simulation
 
-<img src="https://private-user-images.githubusercontent.com/81906078/397180373-4447a9fe-ce5f-4782-bca5-b148a349142d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzE0NTIsIm5iZiI6MTczNDU3MTE1MiwicGF0aCI6Ii84MTkwNjA3OC8zOTcxODAzNzMtNDQ0N2E5ZmUtY2U1Zi00NzgyLWJjYTUtYjE0OGEzNDkxNDJkLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMTkxMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTgxYjYyMWI1NjcwYzI1OWMxZTEyMjAzOTkwNjQ5YjVjNjViZWVlMmM2ODU0YjI5NTUwMTcwNjhkOGRjOGQxNzEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.5Ra5P8yBmejejEao6HbPkWwYL21LfY1LvjpUN5L3t7A" alt="2" width="60%" height="60%"/>   
+<img src="https://i.ibb.co/xmbm2T8/392237143-a6104125-9ea4-4ed4-b8cf-0020cbb48524.png" alt="2" width="60%" height="60%"/>   
 
 - ```merge multiple timeseries```: concatenates multiple morph images into a frame and performs the concatenation over time. ```model_*``` directory에 있는 동일한 파일 이름을 가진 여러 이미지 파일을 단일 이미지로 병합.
 - ```create video```: 프레임 병합, MP4 비디오 생성.
@@ -62,7 +62,7 @@ img_output.save("morphs.png", dpi=(600, 600))
 - PyGMO에 기반한 진화 탐색 알고리즘 제공  
 - A workflow of searching mathematical models for *H. axyridis*  
 
-<img src="https://private-user-images.githubusercontent.com/81906078/397180429-fa676d47-0133-48bb-84ef-4cdd298556c6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzE0NzUsIm5iZiI6MTczNDU3MTE3NSwicGF0aCI6Ii84MTkwNjA3OC8zOTcxODA0MjktZmE2NzZkNDctMDEzMy00OGJiLTg0ZWYtNGNkZDI5ODU1NmM2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMTkzNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNhZDc4Mjc5MGMxMzU2ZmE5MzhiN2M1ZjAzMWI5MzFjNTI4OGZiNDVjMWUyYTM3YWRlZDk1MTAyM2FjNDRlOGQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0._F8Q_3BYCIUXrPwInwVqx_pN3e6u1P8GArxIfE-bbmI" alt="3" width="60%" height="60%"/>   
+<img src="https://github.com/user-attachments/assets/aaf1c378-8744-4a63-9c07-5f9b85454adb" alt="3" width="60%" height="60%"/>   
 
 ### 4.1 Parameter optimization  
 
@@ -174,7 +174,7 @@ $$
 - Fitness score를 결정하는 방정식에서 계수를 설정하여 지표(유사도 점수에 대한)의 크기와 중요도 조정.   
 - schematic images 제작  
 
-<img src="https://private-user-images.githubusercontent.com/81906078/397180668-73f6ece4-d001-434e-972d-a8fb8a3bbf58.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzE1NTQsIm5iZiI6MTczNDU3MTI1NCwicGF0aCI6Ii84MTkwNjA3OC8zOTcxODA2NjgtNzNmNmVjZTQtZDAwMS00MzRlLTk3MmQtYThmYjhhM2JiZjU4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMjA1NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTcxNTE2NzAwZDhiMmI3ZDQ5ZTI0MDg3MjgyZDMzODllYjM4ZTA2M2M4Yjc3ZDliMzM4ZDU4ZGExNjM2ZjVkYWMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.7C-Hmikub1ZxFgErBS9357sfGWn5iY2FA7U-eMnfxEA" alt="4" width="40%" height="40%"/>   
+<img src="https://github.com/user-attachments/assets/d63d46c1-6184-400f-90c2-b5416ff9779a" alt="4" width="40%" height="40%"/>   
 
 - axyridis, succinea 형에 대한 진화 탐색: 개체군 최대 크기인 16에 도달했을 때 세대를 거치며 전체가 검은색인 형태는 사라져감. axyridis의 200번째 세대와 succinea의 500번째 세대에서 타겟 이미지와 유사한 형태가 나왔으나 패턴이 완벽하게 일치하지 않음.  
 - conspicua, spectabilis 형에 대한 진화 탐색: 초기 개체군의 매개변수 집합을 이전에 평가된 것으로 사용. 비교적 더 단순한 패턴이므로 800번째 세대에서 타겟과 유사한 형태로 채워짐. 이는 LPF에서 딥러닝 모델이 평가한 fitness score를 기반으로 진화 탐색을 수행했을 때, 타겟 이미지와 유사한 무당벌레의 날개 색상 패턴을 생성할 수 있는 수학적 모델의 매개변수 집합을 찾을 수 있음을 시사함.  
@@ -182,7 +182,7 @@ $$
 ### 4.4 Results of a case study: reproducting real images  
 - *H. axyridis*의 spectabilis subtype 진화 탐색 수행. 타겟은 연구실에서 촬영한 비대칭 패턴의 노이즈가 있는 spectabilis 사진.  
 
-<img src="https://private-user-images.githubusercontent.com/81906078/397180770-a448e5b9-9530-4d1c-8c14-b4080bfd9b37.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzE1ODQsIm5iZiI6MTczNDU3MTI4NCwicGF0aCI6Ii84MTkwNjA3OC8zOTcxODA3NzAtYTQ0OGU1YjktOTUzMC00ZDFjLThjMTQtYjQwODBiZmQ5YjM3LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMjEyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI1MGZhODkxYzY3ZGJiYTQ0NDRhZDJlMDgzODNiNDQ4OGYwMGYyZDcxYmMzNzBlZGY1OTY3Mjk2ZjJhOWRhODImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.3kHJjguTT7QJQYPuhdBSypxjqIXi16jnUFDHUEo5Syo" alt="5" width="40%" height="40%"/>   
+<img src="https://github.com/user-attachments/assets/425c7381-9a2b-426f-85ce-e92d53ce334d" alt="5" width="40%" height="40%"/>   
 
 - 300번째 세대에서 유사한 형태 관찰. 이는 LPF를 통해 실제 이미지를 재현할 수 있는 수학적 모델을 발견할 수 있음을 시사. 다만 노이즈가 많고 비대칭 패턴은 수치적 오류를 일으킬 수 있음.
 
@@ -193,7 +193,7 @@ $$
 - *H. axyridis*의 색상 패턴 다형성의 근원은 repeated inversion within a *pannier* intron.   
 - Diploid models of *H. axyridis* in LPF   
 
-<img src="https://private-user-images.githubusercontent.com/81906078/397180843-f5bbbf21-1330-47fc-8725-5bbcc0022602.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzE2MDcsIm5iZiI6MTczNDU3MTMwNywicGF0aCI6Ii84MTkwNjA3OC8zOTcxODA4NDMtZjViYmJmMjEtMTMzMC00N2ZjLTg3MjUtNWJiY2MwMDIyNjAyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMjE0N1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI5ZDRiNjdjN2VlYjljYzc4YTU2MzBkYmY3YTFhZjNmNmY4OWQxOGIxZTE0OTBiYzk2NGM1Yzk0ZWRjMTEzODImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.cU4HaDNl3NmFy3ZzEThCMf711poaniAqDo6pZAClLow" alt="6" width="40%" height="40%"/>       
+<img src="https://github.com/user-attachments/assets/541a998f-4b89-44eb-b6fb-e725c52fed78" alt="6" width="40%" height="40%"/>       
 
 - 유전적 특징을 반영하기 위해 diploid models 개발. *pannier*의 발현이 부계와 모계 대립유전자에서 발현되는 가상의 형태발생인자에 의해 조절된다 가정. 또한 $u$와 $v$ 사이의 crosstalks 고려.  
 - two-component system에서 PDE 모델 정의  
@@ -242,20 +242,20 @@ $$
 
 - *H. axyridis*의 succinea와 conspicua 모델을 교차시킨 시뮬레이션 실험 수행. crosstalks가 없는 diploid model은 mosaic dominance phenomena가 나타남. 반면 crosstalks가 있는 모델의 색상 패턴은 그렇지 않음. *pannier*를 더 잘 이해하기 위해 LPF의 diploid model은 무당벌레 다형성의 기본 메커니즘에 대한 다양한 가설을 테스트하는데 유용할 것으로 기대.  
 
-<img src="https://private-user-images.githubusercontent.com/81906078/397181205-578a31bb-5642-4ea4-a7c8-c365c0b7fed4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzE3NDcsIm5iZiI6MTczNDU3MTQ0NywicGF0aCI6Ii84MTkwNjA3OC8zOTcxODEyMDUtNTc4YTMxYmItNTY0Mi00ZWE0LWE3YzgtYzM2NWMwYjdmZWQ0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMjQwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI4NDk5MzNjNGJlY2YxNzEzMzRiNTk4MGFmZDBkOGYyYjFiNTE4OWVhM2Q2NGY1YzUzNWUyMzlhZjY2NGM2NmYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.hifeXME0hXAMHBvY5cV0bghcM0LaY-qKWUESsh6Ecy4" alt="7" width="40%" height="40%"/>     
+<img src="https://github.com/user-attachments/assets/5b73fcb1-2904-460a-8391-0ab4a71c12b6" alt="7" width="40%" height="40%"/>     
 
 ### 5.2 Population evolution
 
 - 단순화를 위해 단일 매개변수, 초기 상태 및 diploid model의 반수체 모델 간의 초기화 위치에서 무작위로 발생할 수 있는 *in silico* crossover 구현.  
 
-<img src="https://private-user-images.githubusercontent.com/81906078/397181292-d54ba883-7545-4668-b869-93008a484750.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzE3ODIsIm5iZiI6MTczNDU3MTQ4MiwicGF0aCI6Ii84MTkwNjA3OC8zOTcxODEyOTItZDU0YmE4ODMtNzU0NS00NjY4LWI4NjktOTMwMDhhNDg0NzUwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMjQ0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQxMmJlYWE3MTNmYmI4OTQ0MDkwOWU3MDUxMzY4ZjBkMjZjZGExYzM0YzEyOTkzNTQwZWI3NzBkMWVkMDhjNDAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Z0LO_tPbgdh4tY2cZxN4LUU19jUXV84mqU5nRBd5e3M" alt="8" width="60%" height="60%"/>     
+<img src="https://github.com/user-attachments/assets/973eb106-98e3-4ae1-9ce6-1ef1976a3cc2" alt="8" width="60%" height="60%"/>     
 
 - An example of evolving a diploid population by crossing.  
 [evopop_liawmodel](https://github.com/cxinsys/lpf/blob/main/search/evopop_liawmodel.py)   
 
-<img src="https://private-user-images.githubusercontent.com/81906078/397181397-425cd0fd-5314-47e5-b3f1-577a7c224931.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzE4MjIsIm5iZiI6MTczNDU3MTUyMiwicGF0aCI6Ii84MTkwNjA3OC8zOTcxODEzOTctNDI1Y2QwZmQtNTMxNC00N2U1LWIzZjEtNTc3YTdjMjI0OTMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMjUyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRkNmNhZjE0ZDU2MWJmZTMyY2RhNjBiZDM3MDcxZWRkNGJiMzc1Y2RkZjIyZjNlYTAxY2ZiODY0ZTY2MjdmOWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.JBflsS6zKcc-Px9t7oyEW4jQ4J4cJ_0k9EuOS5Ktc8I" alt="10" width="50%" height="50%"/>   
+<img src="https://github.com/user-attachments/assets/9913f2b4-55fd-4808-9b8e-ee19fb3b9db6" alt="10" width="50%" height="50%"/>   
 
-<img src="https://private-user-images.githubusercontent.com/81906078/397181506-4ae35430-e99c-4be0-9ac2-cd3931374c34.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzE4NjQsIm5iZiI6MTczNDU3MTU2NCwicGF0aCI6Ii84MTkwNjA3OC8zOTcxODE1MDYtNGFlMzU0MzAtZTk5Yy00YmUwLTlhYzItY2QzOTMxMzc0YzM0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMjYwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMwYjk3MzE2NmNiNGRjOGRiNGVmNWI0NDEzZTk0YTk2ZDYxOTY2ZjU5MWMyMDcwMDA5NDhiMjQzOTI4NmMyYTgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Lxr-AFdoMlhqaDMJY-1uuw3nhAQOfd2O-m5yM_ZoVUY" alt="11" width="50%" height="50%"/>   
+<img src="https://github.com/user-attachments/assets/eeba9d2f-75a6-45cd-8832-357e2f11ecd8" alt="11" width="50%" height="50%"/>   
 
 - 초기 세대에서는 모두 mosaic dominance를 볼 수 있다. 두 개의 같은 실험에서 나온 개체군 진화의 결과라 하더라도 최종 개체군은 무작위 선택과 교차로 인해 완전히 달라진다. 또 몇 가지 형태가 세대를 거쳐 개체군을 지배하기도 하는데 이는  일종의 genetic drift를 시사한다.   
 
