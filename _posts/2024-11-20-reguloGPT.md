@@ -142,7 +142,7 @@ description: 논문 리뷰 reguloGPT
 - 평가 위해 REACH, EIDOS 알고리즘 선택  
   (두 알고리즘 모두 컨텍스트를 추출하도록 설계된 것은 아님)
   
-  ![Table 1.](https://www.biorxiv.org/content/biorxiv/early/2024/01/30/2024.01.27.577521/T1.medium.jpg)   
+  ![Table 1.](https://i.ibb.co/y0hg63J/image.webp)   
 
   각 프롬프트의 성능을 알고리즘과 비교하여 평가 (컨텍스트 평가는 제외) / CoT 프롬프트가 가장 효과적
 
@@ -167,7 +167,7 @@ description: 논문 리뷰 reguloGPT
 
 - G-Eval 평가의 score 범위는 1~5. 사람 주석 평가와의 유사성.
   
-  ![Table 2.](https://www.biorxiv.org/content/biorxiv/early/2024/01/30/2024.01.27.577521/T2.medium.gif)  
+  ![Table 2.](https://i.ibb.co/tBJQ5SJ/image.webp)  
 
   CoT 프롬프트가 가장 우수.
 
