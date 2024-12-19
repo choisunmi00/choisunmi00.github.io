@@ -126,7 +126,7 @@ tags: [paper]
   수동 주석 작업을 자동화하기 위해 LLM 사용.  
   프레임워크 GPT-4-evaluation 제안.  
   
-    ![Figure 4](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0004.jpg){: w="70%" h="70%" }
+    ![Figure 4](https://www.ncbi.nlm.nih.gov/pmc/articles/instance/10836076/bin/nihpp-2024.01.27.577521v1-f0004.jpg){: w=70% h=70% }
 
     평가를 위한 G-Eval 프롬프트 / A: 컨텍스트 평가, B: 그래프 평가  
 

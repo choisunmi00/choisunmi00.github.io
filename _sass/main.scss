@@ -16,23 +16,3 @@ body {
     background-color: #2d464e; /* 호버 시 색상 */
     // border-color: #545b62;
   }
-
-  .gslide-inner-content {
-    display: flex;
-    justify-content: center; /* 중앙 정렬 */
-    align-items: center; /* 수직 중앙 정렬 */
-    max-width: 90vw; /* 화면 너비의 90% */
-    max-height: 90vh; /* 화면 높이의 90% */
-    overflow: hidden; /* 넘치는 내용 숨기기 */
-  }
-  
-  // .gslide-image img {
-  //   width: auto; /* 가로 비율 유지 */
-  //   height: auto; /* 세로 비율 유지 */
-  //   max-width: 100%; /* 부모 요소에 맞춤 */
-  //   max-height: 100%; /* 화면 비율에 맞춤 */
-  //   object-fit: contain; /* 비율 유지하며 크기 조정 */
-  //   display: block;
-  //   margin: auto; /* 중앙 정렬 */
-  // }
-  
