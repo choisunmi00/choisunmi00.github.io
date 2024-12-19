@@ -1,7 +1,7 @@
 ---
 title: reguloGPT
 author: csm
-date: 2024-11-20 14:10:00 +0800
+date: 2024-11-20 14:10:00 +0900
 categories: [LLM]
 tags: [paper]
 description: 논문 리뷰 reguloGPT
