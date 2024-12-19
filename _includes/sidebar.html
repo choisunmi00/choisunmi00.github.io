@@ -30,6 +30,12 @@
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
       <!-- home -->
+      <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
+        <a href="{{ '/' | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-home"></i>
+          <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
+        </a>
+      </li>
       <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
         <header class="profile-wrapper">
           <a href="/assets/img/avatar/winter.png" id="avatar" class="rounded-circle glightbox" data-gallery="avatar-gallery">
@@ -40,12 +46,17 @@
               <img src="/assets/img/avatar/winter.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
             {%- endif -%}
           </a>
-      <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
-        <a href="{{ '/' | relative_url }}" class="nav-link">
-          <i class="fa-fw fas fa-home"></i>
-          <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
-        </a>
-      </li>
+
+          <script src="https://cdn.jsdelivr.net/npm/glightbox@3.0.5/dist/js/glightbox.min.js"></script>
+
+          <script>
+            const lightbox = GLightbox({
+              selector: '.glightbox',
+              touchNavigation: true,
+              loop: true,
+              closeButton: true
+            });
+          </script>
       <!-- the real tabs -->
       {% for tab in site.tabs %}
         <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
