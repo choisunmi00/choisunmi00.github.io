@@ -11,8 +11,9 @@ tags: [paper]
 [LPF: a framework for exploring the wing color pattern formation of ladybird beetles in Python](https://doi.org/10.1093/bioinformatics/btad430)  
 [Supplementary Data](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/7/10.1093_bioinformatics_btad430/2/btad430_supplementary_data.pdf?Expires=1736057160&Signature=ynQSiSKNANknwTVvSYi5cTxcCp9gHsKwCX1ply7Ys0QzNZ0TQilTTt0xPhjEJXNwXfgbw3M-Rk7jPuxqt9JicwdLO-RS1wej0LarlSNwLrT3~I8iV8b6YrDm-UhelBilpi5P4lgoq-s9mn8M-89FfFf0LIn7ZiE6cPwYsdqRvdMP3CQNw0wocNRet~9qnUMM25qWD7wD68GOKpbxIEBE9eOiGfDq33m6tzWM3fUMTuMXqL8YAm53YsL54Dw8ZPb0T7UZ62vRyCSCmn-vGKRjrcD65lM-C1fJ1krF9hUAAFRdFHgmHiDG~YRJjy9Jn-AaroBOVcLBPGZDkBGki3nocg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)
 
----
+
 ## 1. Introduction
+---
 - Main features of LPF
 1. Reaction-diffusion PDE models and numerical methods.
 2. GPU acceleration of the PDE solvers for a batch of parameter sets.
@@ -21,6 +22,7 @@ tags: [paper]
 5. Diploid models for analyzing population evolution in crossing experiments.
              
 ## 2. Numerical sumulation
+---
 ### 2.1 Basic workflow
 1. 모델 파일들로부터 Conditions, Initial states, Parameters로 Mini batch 구성
 2. Initializer 생성 -> Initial states
@@ -31,7 +33,7 @@ tags: [paper]
 
 - [tutorial01_solve_single_parameset](https://github.com/cxinsys/lpf/blob/main/tutorials/tutorial01_solve_single_paramset.ipynb)  
 
-**2.1.1**  Configuring a simulation experiment  
+#### 2.1.1  Configuring a simulation experiment  
 - ``dt``: the time setp size
 - ``n_iters``: the number of iterations in the numerical solution
 - 2D 공간에서의 RD 시스템
