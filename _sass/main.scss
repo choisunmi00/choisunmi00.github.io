@@ -5,14 +5,14 @@
    
 html {
   transform: scale(0.9); /* 90% 크기로 축소 */
-  transform-origin: top left; /* 기준점을 왼쪽 위로 설정 */
+  //transform-origin: top left; /* 기준점을 왼쪽 위로 설정 */
 }
 
 body {
   letter-spacing: 0.01em;
   width: 100vw; /* 화면 크기 유지 */
   height: 100vh; /* 화면 높이 유지 */
-  overflow-x: hidden; /* 가로 스크롤 제거 */
+  //overflow-x: hidden; /* 가로 스크롤 제거 */
 }
 
 //footer btn
