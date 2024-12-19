@@ -3,10 +3,6 @@
 @use '../abstracts/mixins' as mx;
 @use '../abstracts/placeholders';
 
-html {
-  transform: scale(0.9); /* 90% 크기로 축소 */
-}
-
 %-btn-post-nav {
   width: 50%;
   position: relative;
