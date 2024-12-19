@@ -132,7 +132,7 @@ print("최적의 변수:", pop.champion_x)
 - 최적화 문제를 푸는 전략을 정의  
   
 **1. User Defined Algorithms(UDAs) 정의**   
--  `pg.algorithm`을 통해 생성  
+- `pg.algorithm`을 통해 생성  
 
 ```python
 # Differential Evolution 알고리즘 생성
@@ -192,45 +192,45 @@ Extra info:
         Force bounds: false
         Seed: 1467419779
 ```
-1) 진화 알고리즘 (Evolutionary Algorithms)
-- Differential Evolution (DE): 차분 진화를 사용하여 최적화를 수행
-- Self-Adaptive Differential Evolution (sade): DE의 파라미터를 자동 조정
-- Genetic Algorithm (GA): 유전자 알고리즘을 사용하여 최적화를 수행
-2) 다목적 최적화 알고리즘
-- NSGA-II: 빠르고 비지배적인 다목적 최적화 알고리즘
-- MOEA/D: 분해 기반 다목적 최적화 알고리즘
-3) 전역 최적화 알고리즘
-- Simulated Annealing (SA): 모의 담금질 알고리즘
-- Particle Swarm Optimization (PSO): 입자 군집 최적화 알고리즘
-- CMA-ES: 공분산 행렬 진화 전략
-4) 지역 탐색 알고리즘
-- Nelder-Mead: 단순체 방법을 사용한 지역 탐색
-- Compass Search: 탐색 기반 지역 최적화
+1. 진화 알고리즘 (Evolutionary Algorithms)
+    - Differential Evolution (DE): 차분 진화를 사용하여 최적화를 수행
+    - Self-Adaptive Differential Evolution (sade): DE의 파라미터를 자동 조정
+    - Genetic Algorithm (GA): 유전자 알고리즘을 사용하여 최적화를 수행
+2. 다목적 최적화 알고리즘
+    - NSGA-II: 빠르고 비지배적인 다목적 최적화 알고리즘
+    - MOEA/D: 분해 기반 다목적 최적화 알고리즘
+3. 전역 최적화 알고리즘
+    - Simulated Annealing (SA): 모의 담금질 알고리즘
+    - Particle Swarm Optimization (PSO): 입자 군집 최적화 알고리즘
+    - CMA-ES: 공분산 행렬 진화 전략
+4. 지역 탐색 알고리즘
+    - Nelder-Mead: 단순체 방법을 사용한 지역 탐색
+    - Compass Search: 탐색 기반 지역 최적화
 
 **3. 클래스 `algorithm` 주요 메서드**  
-1) `evolve(population)`
-- 알고리즘이 입력된 인구(population)를 사용하여 최적화를 수행
-- 입력: `population` 객체
-- 반환: 진화된 `population` 객체
-2) `set_verbosity(level)`
-- 알고리즘의 동작 중 출력되는 로그의 상세 수준을 설정
-- `level`이 높을수록 자세한 정보를 출력
-```python
-algo.set_verbosity(2)
-```
-3) `extract()`
-- 알고리즘 객체의 내부 정보를 추출
-- 주로 알고리즘의 동작 세부 사항을 확인할 때 사용
-```python
-sade_algo = pg.algorithm(pg.sade(gen=100))
-sade_details = sade_algo.extract(pg.sade)
-print(sade_details.get_variant())
-```
-4) `get_name()`
-- 알고리즘의 이름을 반환합니다.
-```python
-print(algo.get_name())
-```
+1. `evolve(population)`
+    - 알고리즘이 입력된 인구(population)를 사용하여 최적화를 수행
+    - 입력: `population` 객체
+    - 반환: 진화된 `population` 객체
+2. `set_verbosity(level)`
+    - 알고리즘의 동작 중 출력되는 로그의 상세 수준을 설정
+    - `level`이 높을수록 자세한 정보를 출력
+    ```python
+    algo.set_verbosity(2)
+    ```
+3. `extract()`
+    - 알고리즘 객체의 내부 정보를 추출
+    - 주로 알고리즘의 동작 세부 사항을 확인할 때 사용
+    ```python
+    sade_algo = pg.algorithm(pg.sade(gen=100))
+    sade_details = sade_algo.extract(pg.sade)
+    print(sade_details.get_variant())
+    ```
+4. `get_name()`
+    - 알고리즘의 이름을 반환합니다.
+    ```python
+    print(algo.get_name())
+    ```
 
 ## population  
 ---
@@ -315,71 +315,71 @@ Champion fitness: [2691.53]
 ```
 **2. 클래스 `population` 주요 메서드**  
 1) 생성자
-- ``__init__(self, prob, size=1)``:
-  - `prob`: 최적화 문제 객체 (`pg.problem`)
-  - `size`: 개체군의 초기 크기 (기본값은 1)
+    - ``__init__(self, prob, size=1)``:
+        - `prob`: 최적화 문제 객체 (`pg.problem`)
+        - `size`: 개체군의 초기 크기 (기본값은 1)
 
-```python
-pop = pg.population(prob=problem, size=10)  # 문제와 크기 설정
-```
+    ```python
+    pop = pg.population(prob=problem, size=10)  # 문제와 크기 설정
+    ```
 2) 개체군 크기 관련 메서드
-- `size`: 현재 개체군의 크기를 반환
+    - `size`: 현재 개체군의 크기를 반환
 
-```python
-print(pop.size)  # 출력: 개체 수
-```
-- `push_back(x)`: 개체군에 새로운 개체를 추가
-  - `x`: 설계 변수 값 리스트
+    ```python
+    print(pop.size)  # 출력: 개체 수
+    ```
+    - `push_back(x)`: 개체군에 새로운 개체를 추가
+        - `x`: 설계 변수 값 리스트
 
-```python
-pop.push_back([0.5, 0.5, 0.5, 0.5, 0.5])  # 새로운 개체 추가
-```
+    ```python
+    pop.push_back([0.5, 0.5, 0.5, 0.5, 0.5])  # 새로운 개체 추가
+    ```
 3) 최적 해 관련 메서드
-- `champion_x`: 개체군에서 가장 좋은 해의 설계 변수 값을 반환
-- `champion_f`: 개체군에서 가장 좋은 해의 목적 함수 값을 반환
+    - `champion_x`: 개체군에서 가장 좋은 해의 설계 변수 값을 반환
+    - `champion_f`: 개체군에서 가장 좋은 해의 목적 함수 값을 반환
 
-```python
-print(pop.champion_x)  # 최적의 설계 변수 값
-print(pop.champion_f)  # 최적의 목적 함수 값
-```
+    ```python
+    print(pop.champion_x)  # 최적의 설계 변수 값
+    print(pop.champion_f)  # 최적의 목적 함수 값
+    ```
 4) 개체 정보 조회
-- `get_x(i)`: 인덱스 `i`에 해당하는 개체의 설계 변수 값을 반환
-- `get_f(i)`: 인덱스 `i`에 해당하는 개체의 목적 함수 값을 반환
+    - `get_x(i)`: 인덱스 `i`에 해당하는 개체의 설계 변수 값을 반환
+    - `get_f(i)`: 인덱스 `i`에 해당하는 개체의 목적 함수 값을 반환
 
-```python
-print(pop.get_x(0))  # 첫 번째 개체의 설계 변수 값
-print(pop.get_f(0))  # 첫 번째 개체의 목적 함수 값
-```
+    ```python
+    print(pop.get_x(0))  # 첫 번째 개체의 설계 변수 값
+    print(pop.get_f(0))  # 첫 번째 개체의 목적 함수 값
+    ```
 5) 개체군 초기화
-- `problem`: 개체군이 해결하고 있는 문제를 반환
+    - `problem`: 개체군이 해결하고 있는 문제를 반환
 
 
-```python
-print(pop.problem.get_name())  # 문제 이름 출력
-```
+    ```python
+    print(pop.problem.get_name())  # 문제 이름 출력
+    ```
 6) 병합 및 진화
-- `crossover(p1, p2)`: 두 개체 간 교차 연산을 수행합니다.
-- `mutate(i)`: 특정 개체의 돌연변이를 수행합니다.
+    - `crossover(p1, p2)`: 두 개체 간 교차 연산을 수행합니다.
+    - `mutate(i)`: 특정 개체의 돌연변이를 수행합니다.
 
-```python
-import pygmo as pg
+    ```python
+    import pygmo as pg
 
-# 문제 정의
-problem = pg.problem(pg.sphere(dim=5))  # 5차원 Sphere 문제
+    # 문제 정의
+    problem = pg.problem(pg.sphere(dim=5))  # 5차원 Sphere 문제
 
-# 개체군 생성
-pop = pg.population(prob=problem, size=20)
+    # 개체군 생성
+    pop = pg.population(prob=problem, size=20)
 
-# 알고리즘 정의
-algo = pg.algorithm(pg.de(gen=100))
+    # 알고리즘 정의
+    algo = pg.algorithm(pg.de(gen=100))
 
-# 개체군 진화
-pop = algo.evolve(pop)
+    # 개체군 진화
+    pop = algo.evolve(pop)
 
-# 최적화 결과 출력
-print("최적의 목적 함수 값:", pop.champion_f)
-print("최적의 설계 변수 값:", pop.champion_x)
-```
+    # 최적화 결과 출력
+    print("최적의 목적 함수 값:", pop.champion_f)
+    print("최적의 설계 변수 값:", pop.champion_x)
+    ```
 
 ## island  
 ---
@@ -419,38 +419,38 @@ print("최적의 설계 변수 값:", island.get_population().champion_x)
 
 **2. 클래스 `island` 주요 메서드**     
 1) 생성자
-- `__init__(self, algo, prob, size)`
-  - `algo`: 알고리즘 객체 (`pg.algorithm`).
-  - `prob`: 문제 객체 (`pg.problem`).
-  - `size`: 개체군 크기.
+    - `__init__(self, algo, prob, size)`
+        - `algo`: 알고리즘 객체 (`pg.algorithm`).
+        - `prob`: 문제 객체 (`pg.problem`).
+        - `size`: 개체군 크기.
 
-```python
-island = pg.island(algo=pg.algorithm(pg.de(gen=100)), prob=problem, size=30)
-```
+    ```python
+    island = pg.island(algo=pg.algorithm(pg.de(gen=100)), prob=problem, size=30)
+    ```
 2) 진화
-- `evolve()`: 섬 내의 개체군을 알고리즘을 사용해 진화
-- `wait_check()`: 진화가 끝났는지 확인
+    - `evolve()`: 섬 내의 개체군을 알고리즘을 사용해 진화
+    - `wait_check()`: 진화가 끝났는지 확인
 
-```python
-island.evolve()
-island.wait_check()
-```
+    ```python
+    island.evolve()
+    island.wait_check()
+    ```
 3) 개체군 정보
-- `get_population()`: 섬 내의 개체군 객체를 반환
-- `set_population(population)`: 특정 개체군으로 섬의 개체군을 설정
+    - `get_population()`: 섬 내의 개체군 객체를 반환
+    - `set_population(population)`: 특정 개체군으로 섬의 개체군을 설정
 
-```python
-population = island.get_population()
-print(population.champion_f)  # 최적의 목적 함수 값
-```
+    ```python
+    population = island.get_population()
+    print(population.champion_f)  # 최적의 목적 함수 값
+    ```
 4) 이주
-- `migrate(other_island)`: 현재 섬에서 다른 섬으로 개체를 이주
-- `status()`: 섬의 상태를 확인
+    - `migrate(other_island)`: 현재 섬에서 다른 섬으로 개체를 이주
+    - `status()`: 섬의 상태를 확인
 
-```python
-island1.migrate(island2)
-print(island1.status())
-```
+    ```python
+    island1.migrate(island2)
+    print(island1.status())
+    ```
 
 
 
@@ -595,29 +595,29 @@ Islands summaries:
 ```
 **2. 클래스 `archipelago` 주요 메서드**     
 1) 생성자 및 초기화
-- `__init__(n, algo, prob, pop_size)`:
-  - `n`: 섬의 개수.
-  - `algo`: 섬에서 사용할 알고리즘 객체
-  - `prob`: 섬에서 풀고자 하는 최적화 문제
-  - `pop_size`: 각 섬의 개체군 크기
+    - `__init__(n, algo, prob, pop_size)`:
+        - `n`: 섬의 개수.
+        - `algo`: 섬에서 사용할 알고리즘 객체
+        - `prob`: 섬에서 풀고자 하는 최적화 문제
+        - `pop_size`: 각 섬의 개체군 크기
 2) 진화 및 이주
-- `evolve()`: 각 섬에서 병렬로 진화를 수행
-- `wait_check()`: 진화가 완료되었는지 확인
-- `migrate()`: 섬들 간의 개체를 교환
+    - `evolve()`: 각 섬에서 병렬로 진화를 수행
+    - `wait_check()`: 진화가 완료되었는지 확인
+    - `migrate()`: 섬들 간의 개체를 교환
 3) 섬 관리
-- `get_islands()`: 모든 섬 객체를 반환
-- `push_back(island)`: 새로운 섬을 추가
+    - `get_islands()`: 모든 섬 객체를 반환
+    - `push_back(island)`: 새로운 섬을 추가
 
-```python
-archi.push_back(pg.island(algo=pg.algorithm(pg.pso(gen=100)), prob=problem, size=20))
-```
+    ```python
+    archi.push_back(pg.island(algo=pg.algorithm(pg.pso(gen=100)), prob=problem, size=20))
+    ```
 4) 결과 확인
-- 각 섬의 개체군(population)에 접근하여 최적 해를 확인
+    - 각 섬의 개체군(population)에 접근하여 최적 해를 확인
 
-```python
-for isl in archi:
-    print(isl.get_population().champion_f)  # 최적의 목적 함수 값
-```
+    ```python
+    for isl in archi:
+        print(isl.get_population().champion_f)  # 최적의 목적 함수 값
+    ```
 
 
 
