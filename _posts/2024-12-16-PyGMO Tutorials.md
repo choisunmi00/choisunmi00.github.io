@@ -74,22 +74,22 @@ Problem name: Multidimensional Rosenbrock Function
         Thread safety: constant  
 ```
 **3. 클래스 `problem` 주요 메서드**  
-1) `fitness(x)`
-- 입력 변수 x에 대해 목적 함수 값을 계산  
-- 반환값은 리스트 형태로 여러 목표 값을 가질 수 있다  
-2) `get_bounds()`  
-- 설계 변수의 상한과 하한을 정의  
-- 반환값: 튜플 `(lower_bounds, upper_bounds)`  
-3) `get_name()`  
-- 문제의 이름을 반환  
-4) `get_nobj()`  
-- 목적 함수의 개수를 반환  
-5) `get_nec()`  
-- 등식 제약 조건의 수를 반환  
-6) `get_nic()`  
-- 부등식 제약 조건의 수를 반환  
-7) `gradient(x)`
-- 입력 변수 `x`에서의 목적 함수의 그래디언트를 반환  
+1. `fitness(x)`
+    - 입력 변수 x에 대해 목적 함수 값을 계산  
+    - 반환값은 리스트 형태로 여러 목표 값을 가질 수 있다  
+2. `get_bounds()`  
+    - 설계 변수의 상한과 하한을 정의  
+    - 반환값: 튜플 `(lower_bounds, upper_bounds)`  
+3. `get_name()`  
+    - 문제의 이름을 반환  
+4. `get_nobj()`  
+    - 목적 함수의 개수를 반환  
+5. `get_nec()`  
+    - 등식 제약 조건의 수를 반환  
+6. `get_nic()`  
+    - 부등식 제약 조건의 수를 반환  
+7. `gradient(x)`
+    - 입력 변수 `x`에서의 목적 함수의 그래디언트를 반환  
 
 
 ```python
