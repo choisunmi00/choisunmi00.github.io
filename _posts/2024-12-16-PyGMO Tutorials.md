@@ -1,14 +1,14 @@
 ---
 title: PyGMO Tutorials
 author: csm
-date: 2024-12-16 14:10:00 +0800
+date: 2024-12-16 14:10:00 +0900
 categories: [Network science]
-tags: [PG]
+tags: [study]
+description: Class - problem, algorithm, population, island, archipelago
 ---
 
-# class
-## `problem`
-
+## problem
+---
 **0. class `problem`**
 - 최적화 문제의 틀(blueprint)을 제공 
 - 구성 요소  
@@ -74,21 +74,21 @@ Problem name: Multidimensional Rosenbrock Function
         Thread safety: constant  
 ```
 **3. 클래스 `problem` 주요 메서드**  
-1. `fitness(x)`
+1__ `fitness(x)`
 - 입력 변수 x에 대해 목적 함수 값을 계산  
 - 반환값은 리스트 형태로 여러 목표 값을 가질 수 있다
-2. `get_bounds()`  
+2__ `get_bounds()`  
 - 설계 변수의 상한과 하한을 정의  
 - 반환값: 튜플 `(lower_bounds, upper_bounds)`  
-3. `get_name()`  
+3__ `get_name()`  
 - 문제의 이름을 반환  
-4. `get_nobj()`  
+4__ `get_nobj()`  
 - 목적 함수의 개수를 반환  
-5. `get_nec()`  
+5__ `get_nec()`  
 - 등식 제약 조건의 수를 반환  
-6. `get_nic()`  
+6__ `get_nic()`  
 - 부등식 제약 조건의 수를 반환  
-7. `gradient(x)`
+7__ `gradient(x)`
 - 입력 변수 `x`에서의 목적 함수의 그래디언트를 반환  
 
 
@@ -126,8 +126,8 @@ print("최적의 변수:", pop.champion_x)
 
 ```
 
-## `algorithm`
-
+## algorithm
+---
 **0. class `algorithm`**  
 - 최적화 문제를 푸는 전략을 정의  
   
@@ -192,33 +192,33 @@ Extra info:
         Force bounds: false
         Seed: 1467419779
 ```
-1. 진화 알고리즘 (Evolutionary Algorithms)
+1__ 진화 알고리즘 (Evolutionary Algorithms)
 - Differential Evolution (DE): 차분 진화를 사용하여 최적화를 수행
 - Self-Adaptive Differential Evolution (sade): DE의 파라미터를 자동 조정
 - Genetic Algorithm (GA): 유전자 알고리즘을 사용하여 최적화를 수행
-2. 다목적 최적화 알고리즘
+2__ 다목적 최적화 알고리즘
 - NSGA-II: 빠르고 비지배적인 다목적 최적화 알고리즘
 - MOEA/D: 분해 기반 다목적 최적화 알고리즘
-3. 전역 최적화 알고리즘
+3__ 전역 최적화 알고리즘
 - Simulated Annealing (SA): 모의 담금질 알고리즘
 - Particle Swarm Optimization (PSO): 입자 군집 최적화 알고리즘
 - CMA-ES: 공분산 행렬 진화 전략
-4. 지역 탐색 알고리즘
+4__ 지역 탐색 알고리즘
 - Nelder-Mead: 단순체 방법을 사용한 지역 탐색
 - Compass Search: 탐색 기반 지역 최적화
 
 **3. 클래스 `algorithm` 주요 메서드**  
-1. `evolve(population)`
+1__ `evolve(population)`
 - 알고리즘이 입력된 인구(population)를 사용하여 최적화를 수행
 - 입력: `population` 객체
 - 반환: 진화된 `population` 객체
-2. `set_verbosity(level)`
+2__ `set_verbosity(level)`
 - 알고리즘의 동작 중 출력되는 로그의 상세 수준을 설정
 - `level`이 높을수록 자세한 정보를 출력
-```
+```python
 algo.set_verbosity(2)
 ```
-3. `extract()`
+3__ `extract()`
 - 알고리즘 객체의 내부 정보를 추출
 - 주로 알고리즘의 동작 세부 사항을 확인할 때 사용
 ```python
@@ -226,20 +226,20 @@ sade_algo = pg.algorithm(pg.sade(gen=100))
 sade_details = sade_algo.extract(pg.sade)
 print(sade_details.get_variant())
 ```
-4. `get_name()`
+4__ `get_name()`
 - 알고리즘의 이름을 반환합니다.
 ```python
 print(algo.get_name())
 ```
 
-## `population`  
-
+## population  
+---
 **0. class `population`**  
 - 개체군(population)은 최적화 문제(problem)의 후보 해(solution)의 저장소: 결정 벡터 및 적합도 벡터 포함.
-- 구성 요소
-  1__개체(individual): 개체군의 각 요소는 하나의 후보 해. 설계 변수와 이에 따른 목적 함수 값을 포함
-  2__크기(size): 개체군 내 개체의 수
-  3__문제(problem): 개체군이 해결하려는 최적화 문제
+- 구성 요소  
+  1__개체(individual): 개체군의 각 요소는 하나의 후보 해. 설계 변수와 이에 따른 목적 함수 값을 포함  
+  2__크기(size): 개체군 내 개체의 수  
+  3__문제(problem): 개체군이 해결하려는 최적화 문제  
 
 **1. `population` 객체 생성**   
 
@@ -314,7 +314,7 @@ Champion decision vector: [-1.17683, 1.16786, -0.291054, 4.99031]
 Champion fitness: [2691.53]
 ```
 **2. 클래스 `population` 주요 메서드**  
-1. 생성자
+1__ 생성자
 - ``__init__(self, prob, size=1)``:
   - `prob`: 최적화 문제 객체 (`pg.problem`)
   - `size`: 개체군의 초기 크기 (기본값은 1)
@@ -322,7 +322,7 @@ Champion fitness: [2691.53]
 ```python
 pop = pg.population(prob=problem, size=10)  # 문제와 크기 설정
 ```
-2. 개체군 크기 관련 메서드
+2__ 개체군 크기 관련 메서드
 - `size`: 현재 개체군의 크기를 반환
 
 ```python
@@ -334,7 +334,7 @@ print(pop.size)  # 출력: 개체 수
 ```python
 pop.push_back([0.5, 0.5, 0.5, 0.5, 0.5])  # 새로운 개체 추가
 ```
-3. 최적 해 관련 메서드
+3__ 최적 해 관련 메서드
 - `champion_x`: 개체군에서 가장 좋은 해의 설계 변수 값을 반환
 - `champion_f`: 개체군에서 가장 좋은 해의 목적 함수 값을 반환
 
@@ -342,7 +342,7 @@ pop.push_back([0.5, 0.5, 0.5, 0.5, 0.5])  # 새로운 개체 추가
 print(pop.champion_x)  # 최적의 설계 변수 값
 print(pop.champion_f)  # 최적의 목적 함수 값
 ```
-4. 개체 정보 조회
+4__ 개체 정보 조회
 - `get_x(i)`: 인덱스 `i`에 해당하는 개체의 설계 변수 값을 반환
 - `get_f(i)`: 인덱스 `i`에 해당하는 개체의 목적 함수 값을 반환
 
@@ -350,14 +350,14 @@ print(pop.champion_f)  # 최적의 목적 함수 값
 print(pop.get_x(0))  # 첫 번째 개체의 설계 변수 값
 print(pop.get_f(0))  # 첫 번째 개체의 목적 함수 값
 ```
-5. 개체군 초기화
+5__ 개체군 초기화
 - `problem`: 개체군이 해결하고 있는 문제를 반환
 
 
 ```python
 print(pop.problem.get_name())  # 문제 이름 출력
 ```
-6. 병합 및 진화
+6__ 병합 및 진화
 - `crossover(p1, p2)`: 두 개체 간 교차 연산을 수행합니다.
 - `mutate(i)`: 특정 개체의 돌연변이를 수행합니다.
 
@@ -381,8 +381,8 @@ print("최적의 목적 함수 값:", pop.champion_f)
 print("최적의 설계 변수 값:", pop.champion_x)
 ```
 
-## `island`  
-
+## island  
+---
 **0. class `island`**   
 - 단위 병렬화 블록. 최적화 문제와 알고리즘을 통합하여 진화를 수행하는 단위
 - 하나의 문제(problem)과 하나의 알고리즘(algorithm)을 연결하여 개체군(population)을 진화시키는 환경 제공
@@ -418,7 +418,7 @@ print("최적의 설계 변수 값:", island.get_population().champion_x)
 ```
 
 **2. 클래스 `island` 주요 메서드**     
-1. 생성자
+1__ 생성자
 - `__init__(self, algo, prob, size)`
   - `algo`: 알고리즘 객체 (`pg.algorithm`).
   - `prob`: 문제 객체 (`pg.problem`).
@@ -427,7 +427,7 @@ print("최적의 설계 변수 값:", island.get_population().champion_x)
 ```python
 island = pg.island(algo=pg.algorithm(pg.de(gen=100)), prob=problem, size=30)
 ```
-2. 진화
+2__ 진화
 - `evolve()`: 섬 내의 개체군을 알고리즘을 사용해 진화
 - `wait_check()`: 진화가 끝났는지 확인
 
@@ -435,7 +435,7 @@ island = pg.island(algo=pg.algorithm(pg.de(gen=100)), prob=problem, size=30)
 island.evolve()
 island.wait_check()
 ```
-3. 개체군 정보
+3__ 개체군 정보
 - `get_population()`: 섬 내의 개체군 객체를 반환
 - `set_population(population)`: 특정 개체군으로 섬의 개체군을 설정
 
@@ -443,7 +443,7 @@ island.wait_check()
 population = island.get_population()
 print(population.champion_f)  # 최적의 목적 함수 값
 ```
-4. 이주
+4__ 이주
 - `migrate(other_island)`: 현재 섬에서 다른 섬으로 개체를 이주
 - `status()`: 섬의 상태를 확인
 
@@ -480,14 +480,14 @@ print("섬 1 최적의 목적 함수 값:", island1.get_population().champion_f)
 print("섬 2 최적의 목적 함수 값:", island2.get_population().champion_f)
 ```
 
-## `archipelago`
-
+## archipelago
+---
 **0. class `archipelago`**  
 - 다중 섬 모델(multi-island model)을 관리.
-- 구성 요소
-  1__여러 섬 (`islands`): 최적화 문제와 알고리즘을 결합한 `island` 객체들의 집합.
-  2__이주 정책 (`migration policy`): 섬 간 개체 교환 방식을 정의.
-  3__병렬 실행: 여러 섬에서 최적화를 병렬로 실행 가능.
+- 구성 요소  
+  1__여러 섬 (`islands`): 최적화 문제와 알고리즘을 결합한 `island` 객체들의 집합  
+  2__이주 정책 (`migration policy`): 섬 간 개체 교환 방식을 정의  
+  3__병렬 실행: 여러 섬에서 최적화를 병렬로 실행 가능  
 
 **1. `archipelago` 객체 생성**    
 
@@ -594,24 +594,24 @@ Islands summaries:
         20  Multiprocessing island  sa-CNSTR: Self-adaptive constraints handling  A toy problem  70    idle
 ```
 **2. 클래스 `archipelago` 주요 메서드**     
-1. 생성자 및 초기화
-- __init__(n, algo, prob, pop_size):
+1__ 생성자 및 초기화
+- `__init__(n, algo, prob, pop_size)`:
   - `n`: 섬의 개수.
   - `algo`: 섬에서 사용할 알고리즘 객체
   - `prob`: 섬에서 풀고자 하는 최적화 문제
   - `pop_size`: 각 섬의 개체군 크기
-2. 진화 및 이주
+2__ 진화 및 이주
 - `evolve()`: 각 섬에서 병렬로 진화를 수행
 - `wait_check()`: 진화가 완료되었는지 확인
 - `migrate()`: 섬들 간의 개체를 교환
-3. 섬 관리
+3__ 섬 관리
 - `get_islands()`: 모든 섬 객체를 반환
 - `push_back(island)`: 새로운 섬을 추가
 
 ```python
 archi.push_back(pg.island(algo=pg.algorithm(pg.pso(gen=100)), prob=problem, size=20))
 ```
-4. 결과 확인
+4__ 결과 확인
 - 각 섬의 개체군(population)에 접근하여 최적 해를 확인
 
 ```python
