@@ -52,7 +52,7 @@ img_output.save("morphs.png", dpi=(600, 600))
 - ```models``` directory: contains model JSON files that include metadata, parameter, values, initializing positions
 - ```model_*``` directory: contains the ladybird images of each model generated during the numerical simulation
 
-<img src="https://github.com/user-attachments/assets/a6104125-9ea4-4ed4-b8cf-0020cbb48524" alt="2" width="60%" height="60%"/>   
+<img src="https://github.com/user-attachments/assets/a6104125-9ea4-4ed4-b8cf-0020cbb48524" alt="2" style="max-width: 90%; height: auto; display: block; margin: auto;" />
 
 - ```merge multiple timeseries```: concatenates multiple morph images into a frame and performs the concatenation over time. ```model_*``` directory에 있는 동일한 파일 이름을 가진 여러 이미지 파일을 단일 이미지로 병합.
 - ```create video```: 프레임 병합, MP4 비디오 생성.
