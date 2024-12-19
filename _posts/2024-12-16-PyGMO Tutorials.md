@@ -10,9 +10,9 @@ description: class - problem, algorithm, population, island, archipelago
 ## problem
 ---
 **0. class `problem`**
-- 최적화 문제의 틀(blueprint)을 제공 
+- 최적화 문제의 틀을 제공 
 - 구성 요소  
-  1) 목표 함수 (Objective Function): 최적화에서 최소화/최대화할 값을 정의. 다중 목적 문제의 경우 여러 목표 함수도 지원    
+  1) 목표 함수 (Objective Function): 최적화에서 최소화/최대화할 값을 정의. 다중 목적 문제의 경우 여러 개의의 목표 함수 지원    
   2) 설계 변수 (Decision Variables): 최적화에서 조작할 변수들. 각 변수는 상한과 하한으로 제약 조건을 가짐  
   3) 제약 조건 (Constraints): 설계 변수나 결과 값이 만족해야 할 부등식 또는 등식 조건   
   4) 문제 차원 (Dimensionality): 설계 변수와 목표 함수의 개수를 정의
@@ -129,7 +129,7 @@ print("최적의 변수:", pop.champion_x)
 ## algorithm
 ---
 **0. class `algorithm`**  
-- 최적화 문제를 푸는 전략을 정의  
+- 최적화 문제를 푸는 algorithm을 정의  
   
 **1. User Defined Algorithms(UDAs) 정의**   
 - `pg.algorithm`을 통해 생성  
