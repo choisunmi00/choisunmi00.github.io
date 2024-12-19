@@ -37,11 +37,11 @@ tags: [paper]
 - 2D 공간에서의 RD 시스템
 - ``width``, ``height``: detirmined the size of 2D space
 
-![Figure 1](https://github.com/user-attachments/assets/47faa67a-4249-485a-a40e-19c3f86a420a){: w="40%" h="40%" } 
+![Figure 1](https://private-user-images.githubusercontent.com/81906078/397180037-e916f2a3-7cdf-4349-b993-707b2dcb794e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzEzMTUsIm5iZiI6MTczNDU3MTAxNSwicGF0aCI6Ii84MTkwNjA3OC8zOTcxODAwMzctZTkxNmYyYTMtN2NkZi00MzQ5LWI5OTMtNzA3YjJkY2I3OTRlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMTY1NVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTI0MWU3NmFjZjViN2YwODE3ZTY3OGZlZGFlZjgwNWE5MWY1ODc4ZjUzZTllMDQ4ZmQ4ZmQ0MzRmMmVlOGVjZTQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.whN1ducBvWeaW_tlCk1NNRAnhtXnVdNsK7s7g-WqNSM){: w="40%" h="40%" } 
 
 - ``dx``: determines both sapce step sizes of the SD cartesian space (∆x = ∆y)   
  
-![Figure 2](https://github.com/user-attachments/assets/ddd9ae3b-c612-443a-b163-93067ec55bd7){: w="60%" h="60%" }
+![Figure 2](https://private-user-images.githubusercontent.com/81906078/397180120-820ac2ed-57e5-463e-8389-759a7801cbfa.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzEzNDQsIm5iZiI6MTczNDU3MTA0NCwicGF0aCI6Ii84MTkwNjA3OC8zOTcxODAxMjAtODIwYWMyZWQtNTdlNS00NjNlLTgzODktNzU5YTc4MDFjYmZhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMTcyNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU3NzJlZTI0NDFkNjM0ZmY4ZWE3NWJhZDFmMTk2YWNmMDA0NWIzMGZiNzRhOTZiN2VhOTNlZGMyMTY4YzRhZjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.P-vHTXb9kUPLGB-7cmt8CaTEsl3ejBCX11g_OwXX5LE){: w="70%" h="70%" }
 
 - ```os.makedirs```: output directory 경로 정의. timestamp 기반 생성
 
@@ -268,7 +268,7 @@ img_ladybirds.save(pjoin(dpath_output, "output_ladybird.png"))
 - CPU 단일 코어에서 100개의 매개변수 집합 결과를 얻는 데 약 3-5시간  
 - CuPy를 사용하여 GPU 컴퓨팅  
 
-![Figure 3](https://github.com/user-attachments/assets/b4facf60-e777-487b-805b-8f50631cd932){: w="60%" h="60%" }
+![Figure 3](https://private-user-images.githubusercontent.com/81906078/397180219-5e80374a-4966-4a36-b234-f0d69e1aed7a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzEzODYsIm5iZiI6MTczNDU3MTA4NiwicGF0aCI6Ii84MTkwNjA3OC8zOTcxODAyMTktNWU4MDM3NGEtNDk2Ni00YTM2LWIyMzQtZjBkNjllMWFlZDdhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMTgwNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThhNjYzNjQ5NTI0M2RiZjEyN2Q1ZmQ5NjZiM2EyNjllZWQ0YzRiNjM0MDE3OGU4NDBhZGFmYTIyMDI5ODUwZmQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.RnheYyQ-4Frg-1qF6QsrK5e0yWmf3_3FPA8uRlVJ1iw){: w="60%" h="60%" }
 
 - Euler-GPU 성능이 대체로 가장 좋으며, File I/O이 없어야 GPU 컴퓨팅의 의미가 있다.  
 
