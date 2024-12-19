@@ -144,7 +144,7 @@ algo = pg.algorithm(pg.sade(gen=200, variant=2, ftol=1e-5))
 # Particle Swarm Optimization 알고리즘
 algo = pg.algorithm(pg.pso(gen=100, omega=0.5, eta1=2.0, eta2=2.0))
 ```
-```pytnon3
+```python
 import pygmo as pg
 
 # 문제 정의
