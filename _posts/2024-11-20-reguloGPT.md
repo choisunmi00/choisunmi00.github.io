@@ -4,7 +4,7 @@ author: csm
 date: 2024-11-20 14:10:00 +0900
 categories: [LLM]
 tags: [paper]
-description: 논문 리뷰 reguloGPT
+description: reguloGPT Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways
 ---
 
 # 논문 리뷰: reguloGPT
