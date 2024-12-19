@@ -10,18 +10,6 @@ script_includes:
   - comment
 ---
 
-<head>
-  <style>
-    img {
-      max-width: 90vw;
-      max-height: 90vh;
-      object-fit: contain;
-      display: block;
-      margin: auto;
-    }
-  </style>
-</head>
-
 {% include lang.html %}
 
 {% include toc-status.html %}
@@ -189,3 +177,13 @@ script_includes:
   </div>
   <!-- div.post-tail-wrapper -->
 </article>
+
+<script>
+  document.querySelectorAll("img").forEach((img) => {
+    img.style.maxWidth = "90vw";
+    img.style.maxHeight = "90vh";
+    img.style.objectFit = "contain";
+    img.style.margin = "auto";
+    img.style.display = "block";
+  });
+</script>
