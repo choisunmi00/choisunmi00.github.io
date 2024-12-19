@@ -134,23 +134,23 @@ $$
 F = c_1 \cdot S_{\text{MSE}} + c_2 \cdot S_{\text{CP}} + c_3 \cdot S_{\text{VGG16}} + c_4 \cdot S_{\text{LPIPS:VGG16}} + c_5 \cdot S_{\text{LPIPS:ALEX}}
 $$  
 
--$$S$$: 유사도 점수, $$c$$: 계수  
--$$S_{\text{MSE}}$$: $$MSE$$에 기반한 유사도 점수. 여러 대상 이미지에 대한 $$MSE$$의 평균  
+- $$S$$: 유사도 점수, $$c$$: 계수  
+- $$S_{\text{MSE}}$$: $$MSE$$에 기반한 유사도 점수. 여러 대상 이미지에 대한 $$MSE$$의 평균  
 
 $$
 S_{\text{MSE}} = \frac{1}{m} \sum_{i=1}^{m} \text{MSE}(X, T(i))
 $$  
 
--$$m$$: 타겟의 수  
+- $$m$$: 타겟의 수  
 - 형태, 타겟 이미지 사이의 $$MSE$$  
 
 $$
 \text{MSE}(X, T) = \frac{1}{n} \sum_{j=1}^{n} (X_j - T_j)^2
 $$
 
--$$X$$: 형태 이미지, $$T$$: 타겟 이미지, $$n$$: 이미지의 픽셀 수  
+- $$X$$: 형태 이미지, $$T$$: 타겟 이미지, $$n$$: 이미지의 픽셀 수  
 
--$$S_{\text{CP}}$$: 색상 비율에 기반한 유사도 점수. OpenCV의 ```inRange```를 사용해 비율 계산.  
+- $$S_{\text{CP}}$$: 색상 비율에 기반한 유사도 점수. OpenCV의 ```inRange```를 사용해 비율 계산.  
 
 $$
 pdf(x, \mu, \sigma) = \frac{1}{\sigma \sqrt{2 \pi}} e^{-\frac{1}{2} \left(\frac{x - \mu}{\sigma}\right)^2}
@@ -162,7 +162,7 @@ $$
 
 - *pdf*: probability density function of normal distribution, $$CP$$: color proportion  
 
--$$S_{\text{VGG16}}$$: VGG16 perceptual loss에 기반한 유사도 점수. $$VGG16$$ perceptual loss를 형태, 타겟 이미지 feature maps 사이의 $$LAE$$ 혹은 $$L1$$ loss로 정의  
+-$$S_{\text{VGG16}}$$: $$VGG16$$ perceptual loss에 기반한 유사도 점수. $$VGG16$$ perceptual loss를 형태, 타겟 이미지 feature maps 사이의 $$LAE$$ 혹은 $$L1$$ loss로 정의  
 
 $$
 S_{\text{VGG16}} = \frac{1}{m} \sum_{i=1}^{m} \sum_{j=1}^{4} \text{L1-loss} \left( \phi_j(X) - \phi_j(T(i)) \right)
@@ -198,7 +198,7 @@ $$
 
 <img src="https://i.ibb.co/kHZDk6H/541a998f-4b89-44eb-b6fb-e725c52fed78.png" alt="6" width="40%" height="40%"/>       
 
-- 유전적 특징을 반영하기 위해 diploid models 개발. *pannier*의 발현이 부계와 모계 대립유전자에서 발현되는 가상의 형태발생인자에 의해 조절된다 가정. 또한 $$u$와 $$v$$ 사이의 crosstalks 고려.  
+- 유전적 특징을 반영하기 위해 diploid models 개발. *pannier*의 발현이 부계와 모계 대립유전자에서 발현되는 가상의 형태발생인자에 의해 조절된다 가정. 또한 $$u$$와 $$v$$사이의 crosstalks 고려.  
 - two-component system에서 PDE 모델 정의  
 
 $$
