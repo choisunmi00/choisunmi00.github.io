@@ -30,6 +30,16 @@
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
       <!-- home -->
+      <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
+        <header class="profile-wrapper">
+          <a href="/assets/img/avatar/winter.png" id="avatar" class="rounded-circle glightbox" data-gallery="avatar-gallery">
+            {%- if site.avatar != empty and site.avatar -%}
+              {%- capture avatar_url -%}
+                {% include media-url.html src=site.avatar %}
+              {%- endcapture -%}
+              <img src="/assets/img/avatar/winter.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+            {%- endif -%}
+          </a>
       <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
         <a href="{{ '/' | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
