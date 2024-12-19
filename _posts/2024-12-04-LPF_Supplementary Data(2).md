@@ -242,20 +242,20 @@ $$
 
 - *H. axyridis*의 succinea와 conspicua 모델을 교차시킨 시뮬레이션 실험 수행. crosstalks가 없는 diploid model은 mosaic dominance phenomena가 나타남. 반면 crosstalks가 있는 모델의 색상 패턴은 그렇지 않음. *pannier*를 더 잘 이해하기 위해 LPF의 diploid model은 무당벌레 다형성의 기본 메커니즘에 대한 다양한 가설을 테스트하는데 유용할 것으로 기대.  
 
-<img src="https://github.com/user-attachments/assets/5b73fcb1-2904-460a-8391-0ab4a71c12b6" alt="7" width="40%" height="40%"/>     
+<img src="https://private-user-images.githubusercontent.com/81906078/397181205-578a31bb-5642-4ea4-a7c8-c365c0b7fed4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzE3NDcsIm5iZiI6MTczNDU3MTQ0NywicGF0aCI6Ii84MTkwNjA3OC8zOTcxODEyMDUtNTc4YTMxYmItNTY0Mi00ZWE0LWE3YzgtYzM2NWMwYjdmZWQ0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMjQwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWI4NDk5MzNjNGJlY2YxNzEzMzRiNTk4MGFmZDBkOGYyYjFiNTE4OWVhM2Q2NGY1YzUzNWUyMzlhZjY2NGM2NmYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.hifeXME0hXAMHBvY5cV0bghcM0LaY-qKWUESsh6Ecy4" alt="7" width="40%" height="40%"/>     
 
 ### 5.2 Population evolution
 
 - 단순화를 위해 단일 매개변수, 초기 상태 및 diploid model의 반수체 모델 간의 초기화 위치에서 무작위로 발생할 수 있는 *in silico* crossover 구현.  
 
-<img src="https://github.com/user-attachments/assets/973eb106-98e3-4ae1-9ce6-1ef1976a3cc2" alt="8" width="60%" height="60%"/>     
+<img src="https://private-user-images.githubusercontent.com/81906078/397181292-d54ba883-7545-4668-b869-93008a484750.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzE3ODIsIm5iZiI6MTczNDU3MTQ4MiwicGF0aCI6Ii84MTkwNjA3OC8zOTcxODEyOTItZDU0YmE4ODMtNzU0NS00NjY4LWI4NjktOTMwMDhhNDg0NzUwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMjQ0MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQxMmJlYWE3MTNmYmI4OTQ0MDkwOWU3MDUxMzY4ZjBkMjZjZGExYzM0YzEyOTkzNTQwZWI3NzBkMWVkMDhjNDAmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Z0LO_tPbgdh4tY2cZxN4LUU19jUXV84mqU5nRBd5e3M" alt="8" width="60%" height="60%"/>     
 
 - An example of evolving a diploid population by crossing.  
 [evopop_liawmodel](https://github.com/cxinsys/lpf/blob/main/search/evopop_liawmodel.py)   
 
-<img src="https://github.com/user-attachments/assets/9913f2b4-55fd-4808-9b8e-ee19fb3b9db6" alt="10" width="50%" height="50%"/>   
+<img src="https://private-user-images.githubusercontent.com/81906078/397181397-425cd0fd-5314-47e5-b3f1-577a7c224931.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzE4MjIsIm5iZiI6MTczNDU3MTUyMiwicGF0aCI6Ii84MTkwNjA3OC8zOTcxODEzOTctNDI1Y2QwZmQtNTMxNC00N2U1LWIzZjEtNTc3YTdjMjI0OTMxLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMjUyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRkNmNhZjE0ZDU2MWJmZTMyY2RhNjBiZDM3MDcxZWRkNGJiMzc1Y2RkZjIyZjNlYTAxY2ZiODY0ZTY2MjdmOWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.JBflsS6zKcc-Px9t7oyEW4jQ4J4cJ_0k9EuOS5Ktc8I" alt="10" width="50%" height="50%"/>   
 
-<img src="https://github.com/user-attachments/assets/eeba9d2f-75a6-45cd-8832-357e2f11ecd8" alt="11" width="50%" height="50%"/>   
+<img src="https://private-user-images.githubusercontent.com/81906078/397181506-4ae35430-e99c-4be0-9ac2-cd3931374c34.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzQ1NzE4NjQsIm5iZiI6MTczNDU3MTU2NCwicGF0aCI6Ii84MTkwNjA3OC8zOTcxODE1MDYtNGFlMzU0MzAtZTk5Yy00YmUwLTlhYzItY2QzOTMxMzc0YzM0LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEyMTklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMjE5VDAxMjYwNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWMwYjk3MzE2NmNiNGRjOGRiNGVmNWI0NDEzZTk0YTk2ZDYxOTY2ZjU5MWMyMDcwMDA5NDhiMjQzOTI4NmMyYTgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Lxr-AFdoMlhqaDMJY-1uuw3nhAQOfd2O-m5yM_ZoVUY" alt="11" width="50%" height="50%"/>   
 
 - 초기 세대에서는 모두 mosaic dominance를 볼 수 있다. 두 개의 같은 실험에서 나온 개체군 진화의 결과라 하더라도 최종 개체군은 무작위 선택과 교차로 인해 완전히 달라진다. 또 몇 가지 형태가 세대를 거쳐 개체군을 지배하기도 하는데 이는  일종의 genetic drift를 시사한다.   
 
