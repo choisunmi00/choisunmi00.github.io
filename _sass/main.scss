@@ -2,12 +2,6 @@
 @forward 'components';
 @forward 'layout';
 @forward 'pages';
-
-body {
-//     // font-size: 80%; 
-    letter-spacing: 0.01em;
-//     line-height: 1.6; 
-   }
    
 html {
   transform: scale(0.9); /* 90% 크기로 축소 */
@@ -15,6 +9,7 @@ html {
 }
 
 body {
+  letter-spacing: 0.01em;
   width: 100vw; /* 화면 크기 유지 */
   height: 100vh; /* 화면 높이 유지 */
   overflow-x: hidden; /* 가로 스크롤 제거 */
