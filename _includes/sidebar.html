@@ -2,8 +2,8 @@
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
   <header class="profile-wrapper">
-    <a href="{{ site.avatar | default: '/assets/img/avatar/winter.png' }}" id="avatar" class="rounded-circle glightbox" data-gallery="avatar-gallery">
-      <img src="{{ site.avatar | default: '/assets/img/avatar/winter.png' }}" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+    <a href="/assets/img/avatar/winter.png" id="avatar" class="rounded-circle glightbox" data-gallery="avatar-gallery">
+      <img src="/assets/img/avatar/winter.png" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
     </a>
 
     <script src="https://cdn.jsdelivr.net/npm/glightbox@3.0.5/dist/js/glightbox.min.js"></script>
@@ -18,12 +18,6 @@
         });
       });
     </script>
-    
-    <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-    <p class="site-subtitle mb-0">{{ site.tagline }}</p>
-  </header>
-</aside>
-
     
     <a class="site-title d-block" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <p class="site-subtitle mb-0">{{ site.tagline }}</p>
