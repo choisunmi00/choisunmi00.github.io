@@ -11,7 +11,8 @@ math: true
 ## Complex numbers
 ---
 - 허수(imaginary number): 제곱하여 음수가 되는 수, 2차 이상의 방정식의 근을 설명
-  - $$z = x + jy$$ or $$z = (x, y)$$, $$j^{2} = -1$$     
+  - $$ z = x + jy$$ or $$z = (x, y) $$ 
+    - $$j^{2} = -1$$     
   - $$j$$ : imaginary number, $$x$$ : real part, $$y$$ : imaginary part
     - $$x = \mathbf{Re}(z)$$, $$y = \textbf{Im}(z)$$
   - if $$x = 0$$, then $$z = jy$$ is called pure imaginary
@@ -36,7 +37,7 @@ math: true
       
   - Division
     - 아래의 식을 만족하는 $$A$$, $$B$$ 찾기
-      - 
+      - $$$$
         $$z = \frac{z_1}{z_2} = \frac{x_1 + jy_1}{x_2 + jy_2} \rightarrow A + jB$$  
       
     - 분모의 실수화
