@@ -3,8 +3,8 @@ title: System dydamics
 author: csm
 date: 2024-12-21 02:33:00 +0900
 categories: [Biology, System dydamics]
-tags: [lecture]
-description: 
+tags: [study]
+description: Reaction-Diffusion system, Turing pattern
 math: true
 ---
 
