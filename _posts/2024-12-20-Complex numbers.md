@@ -11,8 +11,7 @@ math: true
 ## Complex numbers
 ---
 - 허수(imaginary number): 제곱하여 음수가 되는 수, 2차 이상의 방정식의 근을 설명
-  - $$ z = x + jy$$ or $$z = (x, y) $$ 
-    - $$j^{2} = -1$$     
+  - $$ z = x + jy$$ or $$z = (x, y) $$, $$j^{2} = -1$$     
   - $$j$$ : imaginary number, $$x$$ : real part, $$y$$ : imaginary part
     - $$x = \mathbf{Re}(z)$$, $$y = \textbf{Im}(z)$$
   - if $$x = 0$$, then $$z = jy$$ is called pure imaginary
