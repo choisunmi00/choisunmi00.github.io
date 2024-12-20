@@ -35,9 +35,8 @@ math: true
       $$                   = x_{1}x_{2} + (-y_{1}y_{2}) + j(x_{1}y_{2} + y_{1}x_{2})$$  
       
   - Division
-    - 아래의 식을 만족하는 $$A, B$$ 찾기
-      
-      - $$z = \frac{z_1}{z_2} = \frac{x_1 + jy_1}{x_2 + jy_2} \rightarrow A + jB$$
+    - 아래의 식을 만족하는 $$A$$, $$B$$ 찾기
+      - $z = \frac{z_1}{z_2} = \frac{x_1 + jy_1}{x_2 + jy_2} \rightarrow A + jB$
       
     - 분모의 실수화
       
