@@ -2,7 +2,7 @@
 title: Network Science
 author: csm
 date: 2024-12-05 14:10:00 +0900
-categories: [Network science]
+categories: [Biology, Network science]
 tags: [study]
 description: Network science, Graph theory, GNN, Boolean network
 ---

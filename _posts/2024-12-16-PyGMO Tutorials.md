@@ -2,7 +2,7 @@
 title: PyGMO Tutorials
 author: csm
 date: 2024-12-16 14:10:00 +0900
-categories: [Network science]
+categories: [Biology, Network science]
 tags: [study]
 description: class - problem, algorithm, population, island, archipelago
 ---
