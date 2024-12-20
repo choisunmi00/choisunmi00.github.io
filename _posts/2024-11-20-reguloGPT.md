@@ -2,7 +2,7 @@
 title: reguloGPT
 author: csm
 date: 2024-11-20 14:10:00 +0900
-categories: [Biology]
+categories: [Biology, KG]
 tags: [paper]
 description: reguloGPT Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways
 ---
