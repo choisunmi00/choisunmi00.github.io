@@ -51,18 +51,115 @@ math: true
   - Cartesian coordinate system
     - Horizontal $$x$$-axis -> real axis
     - Vertical $$y$$-axis -> imaginary axis
+  <img src="https://i.ibb.co/CKywB2g/image.webp" alt="1" width="30%" height="30%"/>
+ 
 - Visualization for addition and subtraction: 벡터의 덧셈, 뺄셈과 일치
-  - Addition: $$z_{1} + z_{2}$$ -> $$(x_{1} + x_{2}, y_{1} + y_{2})$$
-  - Subtraction: $$z_{1} - z_{2}$$ -> $$(x_{1} - x_{2}, y_{1} - y_{2})$$
+  - Addition: $$z_{1} + z_{2} \rightarrow (x_{1} + x_{2}, y_{1} + y_{2})$$
+  - Subtraction: $$z_{1} - z_{2} \rightarrow (x_{1} - x_{2}, y_{1} - y_{2})$$
 
 ## Complex conjugate numbers
 ---
 - 켤레(conjugate) 복소수
-
-
-
+  - 더했을 때와 곱했을 때 실수가 되게 하는 복소수 $$\bar{z}$$
+  - $$z + \bar{z}$$: 실수, $$z \times \bar{z}$$: 실수
+  - $$\bar{z} = x - jy$$
+  - $$z$$* 로도 표기
+  <img src="https://i.ibb.co/gmwsvZX/image.webp" alt="2" width="30%" height="30%"/>    
 
 ## Polar form of complex numbers
+---
+- $$xy$$-coordinate ↔ Polar coordinate $$r$$, $$\theta$$
+  - $$x = r cos\ \theta$$, $$y = r sin\ \theta$$
+  <img src="https://i.ibb.co/mNwMr0M/image.webp" alt="3" width="60%" height="60%"/>     
+
+- 벡터 관점에서 $$r$$의 의미: 벡터 $$(x, y)$$의 길이
+- 복소 평면에서의 $$r$$
+  - 원점에서 복소수 $$z$$ 까지의 거리
+  - 복소수 $$z$$의 절댓값 또는 크기
+    - $$\left|z\right| = r = \sqrt{x^{2} + y^{2}} = \sqrt{z\bar{z}}$$
+  - $$\left|z_{1} - z_{2}\right| \rightarrow$$ $$z_{1}$$과 $$z_{2}$$ 사이의 거리
+ 
+- 벡터 관점에서의 $$\theta$$의 의미: 벡터 $$(x, y)$$의 각도
+- 복소 평면에서의 $$\theta$$
+  - 양의 실수 측과 복소수 $$z$$ 사이의 각도
+    - Argument of $$z \rightarrow arg\ z = \theta = tan^{-1}(\frac{y}{x})$$
+    - 만족하는 각도가 무수히 많음 ($$\theta = \theta + 2n\pi$$)
+    - Principal value $$Arg\ z$$ (특정 범위로 한정한 고유한 값)
+      - $$-\pi < Arg\ z \leq \pi $$
+      - $$arg\ z = Arg\ z + 2n\pi$$ ($$n$$은 모든 정수)
+
 ### Triangle inequality
-### Multiplication and division in polar form\
+
+- 수의 대소 관계
+  - 복소수의 대소 관계를 구분할 수 없으나, 복소수의 절댓값은 크기를 구분할 수 있다. -> 삼각 부등식
+- Triangle inequality (삼각 부등식)
+  - $$\left|z_{1} + z_{2}\right| \leq \left|z_{1}\right| + \left|z_{2}\right|$$
+  - Generalized triangle inequality: $$\left|z_{1} + z_{2} + \cdots + z_{n}\right| \leq \left|z_{1}\right| + \left|z_{2}\right| + \cdots + \left|z_{n}\right|$$
+ 
+### Euler's formula
+- Euler's formula
+  - Relationship between the **trigonometric functions** ahd the **complex exponetial function**
+  - **$$e^{j\theta} = cos\ \theta + j\ sin\ \theta$$**
+    - **$$e^{-j\pi} = -1$$**
+    <img src="https://i.ibb.co/PF6p3VJ/image.webp" alt="4" width="30%" height="30%"/>  
+    
+- 오일러 공식을 이용한 복소수 표현
+  - $$z = x + jy$$   
+    $$\rightarrow r\ cos\ \theta + jr\ sin\ \theta$$  
+    $$\rightarrow r \times (cos\ \theta + j\ sin\ \theta) = r \times e^{j\theta} = \left|z\right| \times e^{j(arg\ z)}$$
+
+### Multiplication and division in polar form
+- Multiplication in polar form
+  - $$z_{1} = r_{1}(cos\ \theta_{1} + j\ sin\ \theta_{1})$$ and $$z_{2} = r_{2}(cos\ \theta_{2} + j\ sin\ \theta_{2})$$
+  - $$z_{1}z_{2}$$  
+    $$= r_{1}r_{2}(cos\ \theta_{1} + j\ sin\ \theta_{1})(cos\ \theta_{2} + j\ sin\ \theta_{2})$$  
+    $$= r_{1}r_{2}(cos\ \theta_{1}cos\ \theta_{2} - sin\ \theta_{1}sin\ \theta_{2} + j(cos\ \theta_{1}sin\ \theta_{2} + sin\ \theta_{1}cos\ \theta_{2}))$$  
+    $$= r_{1}r_{2}(cos(\theta_{1} + \theta_{2}) + j\ sin(\theta_{1} + \theta_{2}))$$
+  - $$\left|z_{1}z_{2}\right| = r_{1}r_{2} = \left|z_{1}\right|\left|z_{2}\right|$$  
+    $$arg(z_{1}z_{2}) = \theta_{1} + \theta_{2} = arg\ z_{1} + arg\ z_{2}$$
+    
+- Division in polar form
+  - $$\left|\frac{z_{1}}{z_{2}}\right| = \frac{r_{1}}{r_{2}} = \frac{\left|z_{1}\right|}{\left|z_{2}\right|}$$  
+    $$arg(\frac{z_{1}}{z_{2}}) = \theta_{1} - \theta_{2} = arg\ z_{1} - arg\ z_{2}$$
+
+- Multiplication and division in polar form(with Euler's formula)
+  - Multiplication
+    - Polar: $$z_{1}z_{2} = r_{1}r_{2}(cos(\theta_{1} + \theta_{2}) + j\ sin(\theta_{1} + \theta_{2})) = r_{1}r_{2}e^{j(\theta_{1}+\theta_{2})}$$
+    - Euler: $$z_{1}z_{2} = r_{1}e^{j\theta_{1}}r_{2}e^{j\theta_{2}} = r_{1}r_{2}e^{j\theta_{1}}e^{j\theta_{2}}$$
+  - Dovision
+    - Polar: $$\frac{z_{1}}{z_{2}} = \frac{r_{1}}{r_{2}}(cos(\theta_{1} - \theta_{2}) + j\ sin(\theta_{1} - \theta_{2})) = \frac{r_{1}}{r_{2}}e^{j(\theta_{1}-\theta_{2})}$$  
+    - Euler: $$\frac{z_{1}}{z_{2}} = \frac{r_{1}e^{j\theta_{1}}}{r_{2}e^{j\theta_{2}}} = \frac{r_{1}}{r_{2}} \cdot \frac{e^{j\theta_{1}}}{e^{j\theta_{2}}}$$
+  
 ## Roots
+---
+- 3차 방정식 $$x^{3} = 1$$의 해
+  - 인수분해 및 근의 공식 활용
+    - $$x^{3} - 1 = (x-1)(x^{2}+x+1) = 0\ \rightarrow\ x = 1, \frac{-1 + \sqrt{3}j}{2}, \frac{-1 - \sqrt{3}j}{2}$$
+  - 복소수의 polar form 활용
+    - $$x^{3} = e^{j(0+2k\pi)}$$ ($$r$$ = 1)  
+      $$\rightarrow (x^{3})^{\frac{1}{3}} = (e^{j(0+2k\pi)})^{\frac{1}{3}}$$   
+      $$\rightarrow x = e^{j(0+\frac{2k\pi}{3})}$$  
+      $$\rightarrow k = 0, 1, 2$$ 일 때, $$0~2\pi$$의 범위  
+    - $$k = 0$$, $$e^{j0}$$ = 1  
+      $$k = 1$$, $$e^{j\frac{2\pi}{3}} = cos\frac{2\pi}{3} + j\ sin{2\pi}{3} = \frac{-1 + \sqrt{3}j}{2}$$  
+      $$k = 2$$, $$e^{j\frac{4\pi}{3}} = cos\frac{4\pi}{3} + j\ sin{4\pi}{3} = \frac{-1 - \sqrt{3}j}{2}$$
+      
+- 미지수 $$w$$와 복소수 $$z$$에 대한 방정식의 해
+  $$w^{n} = z$$
+  1. 미지수 $$w$$와 복소수 $$z$$를 polar form으로 표현   
+       $$w = R(cos\ \phi + j\ sin\ \phi) = Re^{j\phi}$$   
+       $$z = r(cos\ \theta + j\ sin\ \theta) = re^{j\theta}$$    
+  2. 방정식의 양변에 $$1/n$$ 제곱  
+       $$w = z^{1/n}$$  
+       $$Re^{j\phi} = (re^{j\theta})^{1/n} = \sqrt[n]{r} \cdot e^{\frac{j(\theta+2k\pi)}{n}}$$  
+  3. $$R$$과 $$\phi$$ 정리  
+       $$R = \sqrt[n]{r}$$  
+       $$\phi = \frac{\theta+2k\pi}{n}$$, ($$k$$는 정수)  
+
+- $$\sqrt[n]{1}$$: $$n^{th}$$ root of unity
+  - $$n$$제곱하여 1이 되는 $$n$$개의 복소수
+    - $$\sqrt[n]{1} = e^{j\frac{2k\pi}{n}} = cos\frac{2k\pi}{n} + j\ sin\frac{2k\pi}{n}$$
+  - $$n$$이 $$360^{\circ}$$의 약수일 경우, 원을 $$n$$등분 하는 복소수들로 구성
+  - $$k = 1$$일 때의 해를 $$\omega$$라 하면, $$\sqrt[n]{1} = 1, \omega, \omega^{2}, \cdots ,\omega^{n-1}$$
+  <img src="https://i.ibb.co/qBcFzNg/image.webp" alt="5" width="60%" height="60%"/>
+  
