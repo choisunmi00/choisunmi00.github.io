@@ -18,5 +18,5 @@ math: true
 ---
 - 확산제: $$U_{t}  = D_{u} \Delta U + a-U- \rho R(U,V)$$
 - 억제제: $$V_{t}  = D_{v} \Delta V + a-U- \rho R(U,V)$$
-- $$R(U,V) = {dUV} over {e + fU + gU^{2}}$$
+- $$R(U,V) = \frac{dUV}{e + fU + gU^{2}}$$
 - 확산제와 억제제에 의해 농도와 분포가 시간에 따라 경쟁 -> 무늬(패턴) 형성
