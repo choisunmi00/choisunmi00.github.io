@@ -79,7 +79,8 @@ math: true
   - 복소수 $$z$$의 절댓값 또는 크기
     - $$$$
       $$\left|z\right| = r = \sqrt{x^{2} + y^{2}} = \sqrt{z\bar{z}}$$
-  - $$ \left|z_{1} - z_{2}\right| \rightarrow $$ $$z_{1}$$과 $$z_{2}$$ 사이의 거리
+  - $$ \left|z_{1} - z_{2}\right| \rightarrow $$
+    $$z_{1}$$과 $$z_{2}$$ 사이의 거리
  
 - 벡터 관점에서의 $$\theta$$의 의미: 벡터 $$(x, y)$$의 각도
 - 복소 평면에서의 $$\theta$$
@@ -168,5 +169,5 @@ math: true
       $$\sqrt[n]{1} = e^{j\frac{2k\pi}{n}} = cos\frac{2k\pi}{n} + j\ sin\frac{2k\pi}{n}$$
   - $$n$$이 $$360^{\circ}$$의 약수일 경우, 원을 $$n$$등분 하는 복소수들로 구성
   - $$k = 1$$일 때의 해를 $$\omega$$라 하면, $$\sqrt[n]{1} = 1, \omega, \omega^{2}, \cdots ,\omega^{n-1}$$
-  <img src="https://i.ibb.co/qBcFzNg/image.webp" alt="5" width="80%" height="80%"/>
+  <img src="https://i.ibb.co/qBcFzNg/image.webp" alt="5" width="100%" height="100%"/>
   
