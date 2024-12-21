@@ -7,7 +7,7 @@ tags: [paper]
 description: reguloGPT Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways
 ---
 
-# 논문 리뷰: reguloGPT
+# 논문 요약: reguloGPT
 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10836076/">reguloGPT: Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways</a>
 
 
