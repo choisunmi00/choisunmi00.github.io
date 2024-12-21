@@ -169,5 +169,5 @@ math: true
       $$\sqrt[n]{1} = e^{j\frac{2k\pi}{n}} = cos\frac{2k\pi}{n} + j\ sin\frac{2k\pi}{n}$$
   - $$n$$이 $$360^{\circ}$$의 약수일 경우, 원을 $$n$$등분 하는 복소수들로 구성
   - $$k = 1$$일 때의 해를 $$\omega$$라 하면, $$\sqrt[n]{1} = 1, \omega, \omega^{2}, \cdots ,\omega^{n-1}$$
-  <img src="https://i.ibb.co/qBcFzNg/image.webp" alt="5" width="100%" height="100%"/>
+  <img src="https://i.ibb.co/qBcFzNg/image.webp" alt="5" width="120%" height="120%"/>
   
