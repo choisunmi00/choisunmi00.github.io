@@ -2,7 +2,7 @@
 title: System dynamics
 author: csm
 date: 2024-12-21 14:10:00 +0900
-categories: [Biology]
+categories: [Biology, System dynamics]
 tags: [study]
 description: Reaction-Diffusion system, Turing pattern
 math: true
