@@ -51,7 +51,7 @@ math: true
   - Cartesian coordinate system
     - Horizontal $$x$$-axis -> real axis
     - Vertical $$y$$-axis -> imaginary axis
-  <img src="https://i.ibb.co/CKywB2g/image.webp" alt="1" width="30%" height="30%"/>
+  <img src="https://i.ibb.co/CKywB2g/image.webp" alt="1" width="50%" height="50%"/>
  
 - Visualization for addition and subtraction: 벡터의 덧셈, 뺄셈과 일치
   - Addition: $$z_{1} + z_{2} \rightarrow (x_{1} + x_{2}, y_{1} + y_{2})$$
@@ -62,22 +62,24 @@ math: true
 - 켤레(conjugate) 복소수
   - 더했을 때와 곱했을 때 실수가 되게 하는 복소수 $$\bar{z}$$
   - $$z + \bar{z}$$: 실수, $$z \times \bar{z}$$: 실수
-  - $$\bar{z} = x - jy$$
-  - $$z$$* 로도 표기
-  <img src="https://i.ibb.co/gmwsvZX/image.webp" alt="2" width="30%" height="30%"/>    
+  - $$$$
+    $$\bar{z} = x - jy$$
+  - $$z$$* 로도 표기  
+  <img src="https://i.ibb.co/gmwsvZX/image.webp" alt="2" width="50%" height="50%"/>    
 
 ## Polar form of complex numbers
 ---
 - $$xy$$-coordinate ↔ Polar coordinate $$r$$, $$\theta$$
   - $$x = r cos\ \theta$$, $$y = r sin\ \theta$$
-  <img src="https://i.ibb.co/mNwMr0M/image.webp" alt="3" width="60%" height="60%"/>     
+  <img src="https://i.ibb.co/mNwMr0M/image.webp" alt="3" width="80%" height="80%"/>     
 
 - 벡터 관점에서 $$r$$의 의미: 벡터 $$(x, y)$$의 길이
 - 복소 평면에서의 $$r$$
   - 원점에서 복소수 $$z$$ 까지의 거리
   - 복소수 $$z$$의 절댓값 또는 크기
-    - $$\left|z\right| = r = \sqrt{x^{2} + y^{2}} = \sqrt{z\bar{z}}$$
-  - $$\left|z_{1} - z_{2}\right| \rightarrow$$ $$z_{1}$$과 $$z_{2}$$ 사이의 거리
+    - $$$$
+      $$\left|z\right| = r = \sqrt{x^{2} + y^{2}} = \sqrt{z\bar{z}}$$
+  - $$ \left|z_{1} - z_{2}\right| \rightarrow $$ $$z_{1}$$과 $$z_{2}$$ 사이의 거리
  
 - 벡터 관점에서의 $$\theta$$의 의미: 벡터 $$(x, y)$$의 각도
 - 복소 평면에서의 $$\theta$$
@@ -85,7 +87,8 @@ math: true
     - Argument of $$z \rightarrow arg\ z = \theta = tan^{-1}(\frac{y}{x})$$
     - 만족하는 각도가 무수히 많음 ($$\theta = \theta + 2n\pi$$)
     - Principal value $$Arg\ z$$ (특정 범위로 한정한 고유한 값)
-      - $$-\pi < Arg\ z \leq \pi $$
+      - $$$$
+        $$-\pi < Arg\ z \leq \pi $$
       - $$arg\ z = Arg\ z + 2n\pi$$ ($$n$$은 모든 정수)
 
 ### Triangle inequality
@@ -93,15 +96,17 @@ math: true
 - 수의 대소 관계
   - 복소수의 대소 관계를 구분할 수 없으나, 복소수의 절댓값은 크기를 구분할 수 있다. -> 삼각 부등식
 - Triangle inequality (삼각 부등식)
-  - $$\left|z_{1} + z_{2}\right| \leq \left|z_{1}\right| + \left|z_{2}\right|$$
-  - Generalized triangle inequality: $$\left|z_{1} + z_{2} + \cdots + z_{n}\right| \leq \left|z_{1}\right| + \left|z_{2}\right| + \cdots + \left|z_{n}\right|$$
+  - $$$$
+    $$\left|z_{1} + z_{2}\right| \leq \left|z_{1}\right| + \left|z_{2}\right|$$
+  - Generalized triangle inequality:
+    $$\left|z_{1} + z_{2} + \cdots + z_{n}\right| \leq \left|z_{1}\right| + \left|z_{2}\right| + \cdots + \left|z_{n}\right|$$
  
 ### Euler's formula
 - Euler's formula
   - Relationship between the **trigonometric functions** ahd the **complex exponetial function**
   - **$$e^{j\theta} = cos\ \theta + j\ sin\ \theta$$**
     - **$$e^{-j\pi} = -1$$**
-    <img src="https://i.ibb.co/PF6p3VJ/image.webp" alt="4" width="30%" height="30%"/>  
+    <img src="https://i.ibb.co/PF6p3VJ/image.webp" alt="4" width="50%" height="50%"/>  
     
 - 오일러 공식을 이용한 복소수 표현
   - $$z = x + jy$$   
@@ -134,7 +139,8 @@ math: true
 ---
 - 3차 방정식 $$x^{3} = 1$$의 해
   - 인수분해 및 근의 공식 활용
-    - $$x^{3} - 1 = (x-1)(x^{2}+x+1) = 0\ \rightarrow\ x = 1, \frac{-1 + \sqrt{3}j}{2}, \frac{-1 - \sqrt{3}j}{2}$$
+    - $$$$
+      $$x^{3} - 1 = (x-1)(x^{2}+x+1) = 0\ \rightarrow\ x = 1, \frac{-1 + \sqrt{3}j}{2}, \frac{-1 - \sqrt{3}j}{2}$$
   - 복소수의 polar form 활용
     - $$x^{3} = e^{j(0+2k\pi)}$$ ($$r$$ = 1)  
       $$\rightarrow (x^{3})^{\frac{1}{3}} = (e^{j(0+2k\pi)})^{\frac{1}{3}}$$   
@@ -158,8 +164,9 @@ math: true
 
 - $$\sqrt[n]{1}$$: $$n^{th}$$ root of unity
   - $$n$$제곱하여 1이 되는 $$n$$개의 복소수
-    - $$\sqrt[n]{1} = e^{j\frac{2k\pi}{n}} = cos\frac{2k\pi}{n} + j\ sin\frac{2k\pi}{n}$$
+    - $$$$
+      $$\sqrt[n]{1} = e^{j\frac{2k\pi}{n}} = cos\frac{2k\pi}{n} + j\ sin\frac{2k\pi}{n}$$
   - $$n$$이 $$360^{\circ}$$의 약수일 경우, 원을 $$n$$등분 하는 복소수들로 구성
   - $$k = 1$$일 때의 해를 $$\omega$$라 하면, $$\sqrt[n]{1} = 1, \omega, \omega^{2}, \cdots ,\omega^{n-1}$$
-  <img src="https://i.ibb.co/qBcFzNg/image.webp" alt="5" width="60%" height="60%"/>
+  <img src="https://i.ibb.co/qBcFzNg/image.webp" alt="5" width="80%" height="80%"/>
   
