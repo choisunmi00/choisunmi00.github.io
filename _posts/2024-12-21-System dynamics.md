@@ -42,7 +42,7 @@ math: true
 ### 경쟁 모델
 
 
-## <국가R&D연구보고서> 생물학적 확산 및 성장의 수학적 접근
+## [국가R&D연구보고서] 생물학적 확산 및 성장의 수학적 접근
 ---
 - [Mathematical modeling for biological diffusion and population dynamics](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202200016297#;)
 ### 1.1.b
@@ -67,4 +67,4 @@ math: true
 ### 
 - [Why Does Biological Evolution Work? A Minimal Model for Biological Evolution and Other Adaptive Processes](https://writings.stephenwolfram.com/2024/05/why-does-biological-evolution-work-a-minimal-model-for-biological-evolution-and-other-adaptive-processes/)
 ### 
-- [Foundations of Biological Evolution: More Results & More Surprises]()
+- [Foundations of Biological Evolution: More Results & More Surprises](https://writings.stephenwolfram.com/2024/12/foundations-of-biological-evolution-more-results-more-surprises/?fbclid=IwY2xjawG_roFleHRuA2FlbQIxMQABHU7Yx639xzdS2-Hcblny6ajSpWGbHvZ_14bSy4FSQQqPSzTVGCm00brS_A_aem_0DuxGy7XqrpPR7Wlw4kH4g&sfnsn=mo)
