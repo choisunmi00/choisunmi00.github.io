@@ -39,7 +39,7 @@ math: true
   $$\Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$  
 
 ### 포식자 피식자 모델
-<img src="https://i.ibb.co/MgQqCJ4/image.webp" alt="1" width="80%" height="80%"/>   
+<img src="https://i.ibb.co/MgQqCJ4/image.webp" alt="1" width="50%" height="50%"/>   
 
 - $$$$
   $$\frac{dx}{dt} = rx - axy$$, $$\frac{dy}{dt} = -my + bxy$$   
@@ -50,16 +50,23 @@ math: true
   - 피식자: $$\frac{dz}{dt} = 2z - z^{2} - yz$$
 
 ### 경쟁 모델
-<img src="https://i.ibb.co/jyDkgcv/image.webp" alt="2" width="100%" height="100%"/>   
+
+- $$\frac{dx}{dt} = r_1 x \left( \frac{K_1 - x}{K_1} \right) / \frac{dy}{dt} = r_2 y \left( \frac{K_2 - y}{K_2} \right)$$   
+  $$\Rightarrow \frac{dx}{dt} = r_1 x \left( \frac{K_1 - x - \alpha y}{K_1} \right) / \frac{dy}{dt} = r_2 y \left( \frac{K_2 - y - \beta x}{K_2} \right)$$  
+- 개체수 증가율이 0이 되는 등경선(isocline)   
+  $$K_1 - x - \alpha y = 0, x = K_1 - \alpha y / K_2 - y - \beta y = 0, y = K_2 - \beta x$$  
+
+<img src="https://i.ibb.co/jyDkgcv/image.webp" alt="2" width="60%" height="60%"/>   
 
 ## [국가R&D연구보고서] 생물학적 확산 및 성장의 수학적 접근
 ---
-- [Mathematical modeling for biological diffusion and population dynamics](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202200016297#;)
+- [Mathematical modeling for biological diffusion and population dynamics](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202200016297#;)  
+
 ### 1.1.b
 - chemotaxis 이론
 - Starvation Driven Diffusion(SDD)
   - $$$$
-    $$u_{t} =  \bigtriangleup(\gamma(s)u) = \nabla \cdot (r(s))$$    
+    $$u_{t} =  \triangle(\gamma(s)u) = \nabla \cdot (r(s))$$    
   - $$\gamma$$: 먹이를 찾아 떠나는 rate 또는 departing probobility
   - $$\gamma$$는 $$r$$의 증가 함수
   - $$r$$: departing probobility
@@ -68,14 +75,15 @@ math: true
 ## Bifurcation diagram
 ---
 - [이 방정식을 알게 되면, 세상이 다르게 보일 겁니다!](https://youtu.be/LYyTLMyivUk?si=xRptSb_3-ojkg0Tn)
-- $$x_{n+1} = rx_{n}(1-x_{n})$$, $$r$$: 성장률
-- $$r$$에 따른 상태 및 주기 변화 
-- 시각화 ⟶ 망델브로(Mandelbrot)집합의 수직
-- 파이겐바움 상수(Feigenbaum constant): 보편성
+  - $$x_{n+1} = rx_{n}(1-x_{n})$$, $$r$$: 성장률
+  - $$r$$에 따른 상태 및 주기 변화 
+  - 시각화 ⟶ 망델브로(Mandelbrot)집합의 수직
+  - 파이겐바움 상수(Feigenbaum constant): 보편성
 
 ## Cellular automata
 ---
 ### 1
 - [Why Does Biological Evolution Work? A Minimal Model for Biological Evolution and Other Adaptive Processes](https://writings.stephenwolfram.com/2024/05/why-does-biological-evolution-work-a-minimal-model-for-biological-evolution-and-other-adaptive-processes/)  
+
 ### 2
 - [Foundations of Biological Evolution: More Results & More Surprises](https://writings.stephenwolfram.com/2024/12/foundations-of-biological-evolution-more-results-more-surprises/?fbclid=IwY2xjawG_roFleHRuA2FlbQIxMQABHU7Yx639xzdS2-Hcblny6ajSpWGbHvZ_14bSy4FSQQqPSzTVGCm00brS_A_aem_0DuxGy7XqrpPR7Wlw4kH4g&sfnsn=mo)  
