@@ -36,7 +36,7 @@ math: true
   $$\frac{dN}{dt}$$   
   $$= (B - D)N = (B_0 - D_0 N)N$$  
   $$= B_0 \left( 1 - \frac{D_0 N}{B_0} \right) N = r \left( 1 - \frac{N}{C} \right) N$$  
-  $$\Rightarrow N = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$  
+  $$\Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$  
 
 ### 포식자 피식자 모델
 
