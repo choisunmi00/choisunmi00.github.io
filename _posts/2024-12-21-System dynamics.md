@@ -29,7 +29,8 @@ math: true
 ### 단순 개체군 성장 모델
 #### 지수적 모형: 이상적 모델
 - $$$$
-  $$\frac{dN}{dt} = kN \Rightarrow N(t) = N_0 e^{kt}$$
+  $$\frac{dN}{dt} = kN \Rightarrow N(t) = N_0 e^{kt}$$   
+
 #### 로지스트형 모델: 환경수용적 고려 모델
 - $$$$
   $$\frac{dN}{dt}$$   
@@ -49,13 +50,13 @@ math: true
 - chemotaxis 이론
 - Starvation Driven Diffusion(SDD)
   - $$$$
-    $$u_{t} =  \bigtriangleup(\gamma(s)u) = \nabla \cdot (r(s))  
+    $$u_{t} =  \bigtriangleup(\gamma(s)u) = \nabla \cdot (r(s))$$    
   - $$\gamma$$: 먹이를 찾아 떠나는 rate 또는 departing probobility
   - $$\gamma$$는 $$r$$의 증가 함수
   - $$r$$: departing probobility
   - $$s$$: starvation measure, $$s = \frac{u}{m}$$ ($$u$$: 인구 밀도, $$m$$: 먹이의 양)  
 
-## Bifurcation diagram(분기 다이어그램)
+## Bifurcation diagram
 ---
 - [이 방정식을 알게 되면, 세상이 다르게 보일 겁니다!](https://youtu.be/LYyTLMyivUk?si=xRptSb_3-ojkg0Tn)
 - $$x_{n+1} = rx_{n}(1-x_{n})$$, $$r$$: 성장률
@@ -64,7 +65,7 @@ math: true
 
 ## Cellular automata
 ---
-### 
-- [Why Does Biological Evolution Work? A Minimal Model for Biological Evolution and Other Adaptive Processes](https://writings.stephenwolfram.com/2024/05/why-does-biological-evolution-work-a-minimal-model-for-biological-evolution-and-other-adaptive-processes/)
-### 
-- [Foundations of Biological Evolution: More Results & More Surprises](https://writings.stephenwolfram.com/2024/12/foundations-of-biological-evolution-more-results-more-surprises/?fbclid=IwY2xjawG_roFleHRuA2FlbQIxMQABHU7Yx639xzdS2-Hcblny6ajSpWGbHvZ_14bSy4FSQQqPSzTVGCm00brS_A_aem_0DuxGy7XqrpPR7Wlw4kH4g&sfnsn=mo)
+### 1
+- [Why Does Biological Evolution Work? A Minimal Model for Biological Evolution and Other Adaptive Processes](https://writings.stephenwolfram.com/2024/05/why-does-biological-evolution-work-a-minimal-model-for-biological-evolution-and-other-adaptive-processes/)  
+### 2
+- [Foundations of Biological Evolution: More Results & More Surprises](https://writings.stephenwolfram.com/2024/12/foundations-of-biological-evolution-more-results-more-surprises/?fbclid=IwY2xjawG_roFleHRuA2FlbQIxMQABHU7Yx639xzdS2-Hcblny6ajSpWGbHvZ_14bSy4FSQQqPSzTVGCm00brS_A_aem_0DuxGy7XqrpPR7Wlw4kH4g&sfnsn=mo)  
