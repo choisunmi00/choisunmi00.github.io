@@ -39,6 +39,15 @@ math: true
   $$\Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$  
 
 ### 포식자 피식자 모델
+<img src="https://i.ibb.co/MgQqCJ4/image.webp" alt="1" width="80%" height="80%"/>   
+
+- $$$$
+  $$\frac{dx}{dt} = rx - axy$$, $$\frac{dy}{dt} = -my + bxy$$   
+  $$\frac{dy}{dx} = \frac{-my + bxy}{rx - axy}$$
+- 응용
+  - 포식자 2: $$\frac{dx}{dt} = -x + xy$$
+  - 포식자 1: $$\frac{dy}{dt} = -y + 2yz - xy$$
+  - 피식자: $$\frac{dz}{dt} = 2z - z^{2} - yz$$
 
 ### 경쟁 모델
 
@@ -60,7 +69,8 @@ math: true
 ---
 - [이 방정식을 알게 되면, 세상이 다르게 보일 겁니다!](https://youtu.be/LYyTLMyivUk?si=xRptSb_3-ojkg0Tn)
 - $$x_{n+1} = rx_{n}(1-x_{n})$$, $$r$$: 성장률
-- 시각화 -> 망델브로(Mandelbrot)집합의 수직
+- $$r$$에 따른 상태 및 주기 변화 
+- 시각화 ⟶ 망델브로(Mandelbrot)집합의 수직
 - 파이겐바움 상수(Feigenbaum constant): 보편성
 
 ## Cellular automata
