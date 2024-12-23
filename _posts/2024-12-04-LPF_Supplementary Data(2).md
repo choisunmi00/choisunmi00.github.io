@@ -202,40 +202,40 @@ $$
 - two-component system에서 PDE 모델 정의  
 
 $$
-\frac{\partial u_p}{\partial t} = D_{u_p} \nabla^2 u_p + f_p(u_p, v_p),
+\frac{\partial u_p}{\partial t} = D_{u_p} \nabla^2 u_p + f_p(u_p, v_p)
 $$  
 
 $$
-\frac{\partial v_p}{\partial t} = D_{v_p} \nabla^2 v_p + g_p(u_p, v_p),
+\frac{\partial v_p}{\partial t} = D_{v_p} \nabla^2 v_p + g_p(u_p, v_p)
 $$  
 
 $$
-\frac{\partial u_m}{\partial t} = D_{u_m} \nabla^2 u_m + f_m(u_m, v_m),
+\frac{\partial u_m}{\partial t} = D_{u_m} \nabla^2 u_m + f_m(u_m, v_m)
 $$  
 
 $$
-\frac{\partial v_m}{\partial t} = D_{v_m} \nabla^2 v_m + g_m(u_m, v_m),
+\frac{\partial v_m}{\partial t} = D_{v_m} \nabla^2 v_m + g_m(u_m, v_m)
 $$  
 
--$$m$$, $$p$$는 부계와 모계의 origins.  
+- $$m$$, $$p$$는 부계와 모계의 origins.  
 - 자손 모델의 total $$u$$, $$v$$는 부계와 모계 상태의 선형 조합으로 정의.  
 
 $$
-u = \alpha u_p + \beta u_m,
+u = \alpha u_p + \beta u_m
 $$  
 
 $$
-v = \alpha v_p + \beta v_m,
+v = \alpha v_p + \beta v_m
 $$  
 
 - crosstalk model of a two-component system  
 
 $$
-\frac{\partial u}{\partial t} = D_u \nabla^2 u + \alpha f_p(u, v) + \beta f_m(u, v),
+\frac{\partial u}{\partial t} = D_u \nabla^2 u + \alpha f_p(u, v) + \beta f_m(u, v)
 $$  
 
 $$
-\frac{\partial v}{\partial t} = D_v \nabla^2 v + \alpha g_p(u, v) + \beta g_m(u, v),
+\frac{\partial v}{\partial t} = D_v \nabla^2 v + \alpha g_p(u, v) + \beta g_m(u, v)
 $$  
 
 - 반응은 부계 및 모계 반응의 선형 조합으로 모델링.  
