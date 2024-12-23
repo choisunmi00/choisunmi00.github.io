@@ -50,7 +50,7 @@ math: true
   - 피식자: $$\frac{dz}{dt} = 2z - z^{2} - yz$$
 
 ### 경쟁 모델
-
+<img src="https://i.ibb.co/jyDkgcv/image.webp" alt="2" width="100%" height="100%"/>   
 
 ## [국가R&D연구보고서] 생물학적 확산 및 성장의 수학적 접근
 ---
