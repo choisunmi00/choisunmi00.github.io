@@ -42,7 +42,7 @@ math: true
 ### 경쟁 모델
 
 
-## [국가R&D연구보고서] 생물학적 확산 및 성장의 수학적 접근
+## <국가R&D연구보고서> 생물학적 확산 및 성장의 수학적 접근
 ---
 - [Mathematical modeling for biological diffusion and population dynamics](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202200016297#;)
 ### 1.1.b
