@@ -39,7 +39,7 @@ math: true
   $$\Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$  
 
 ### 포식자 피식자 모델
-<img src="https://i.ibb.co/MgQqCJ4/image.webp" alt="1" width="50%" height="50%"/>   
+  <img src="https://i.ibb.co/MgQqCJ4/image.webp" alt="1" width="30%" height="30%"/>   
 
 - $$$$
   $$\frac{dx}{dt} = rx - axy$$, $$\frac{dy}{dt} = -my + bxy$$   
@@ -56,7 +56,7 @@ math: true
 - 개체수 증가율이 0이 되는 등경선(isocline)   
   $$K_1 - x - \alpha y = 0, x = K_1 - \alpha y / K_2 - y - \beta y = 0, y = K_2 - \beta x$$  
 
-<img src="https://i.ibb.co/jyDkgcv/image.webp" alt="2" width="60%" height="60%"/>   
+  <img src="https://i.ibb.co/jyDkgcv/image.webp" alt="2" width="60%" height="60%"/>   
 
 ## [국가R&D연구보고서] 생물학적 확산 및 성장의 수학적 접근
 ---
