@@ -29,8 +29,8 @@ math: true
 ### 단순 개체군 성장 모델
 #### 지수적 모형: 이상적 모델
 - $$$$
-  $$\frac{dN}{dt} = kN \Rightarrow N(t) = N_0 e^{kt}$$
-  <img src="https://i.ibb.co/4fSnWW3/1.webp" alt="3" width="100%" height="100%"/>     
+  $$\frac{dN}{dt} = kN \Rightarrow N(t) = N_0 e^{kt}$$  
+  <img src="https://i.ibb.co/J30S2Rz/3.webp" alt="3" width="100%" height="100%"/>     
   
 
 #### 로지스트형 모델: 환경수용적 고려 모델
@@ -39,7 +39,7 @@ math: true
   $$= (B - D)N = (B_0 - D_0 N)N$$  
   $$= B_0 \left( 1 - \frac{D_0 N}{B_0} \right) N = r \left( 1 - \frac{N}{C} \right) N$$  
   $$\Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$  
-  <img src="https://i.ibb.co/ZGw6BSW/2.webp" alt="4" width="100%" height="100%"/>  
+  <img src="https://i.ibb.co/XL3yKPJ/4.webp" alt="4" width="100%" height="100%"/>  
 
 - 한계
   1. 개체수의 증가가 연속적 (곤충의 경우 세대가 겹치지 않는 등 본래 특정 시기에만 증가)
@@ -62,7 +62,8 @@ math: true
 - $$\frac{dx}{dt} = r_1 x \left( \frac{K_1 - x}{K_1} \right) \ /\  \frac{dy}{dt} = r_2 y \left( \frac{K_2 - y}{K_2} \right)$$   
   $$\Rightarrow \frac{dx}{dt} = r_1 x \left( \frac{K_1 - x - \alpha y}{K_1} \right)\  /\  \frac{dy}{dt} = r_2 y \left( \frac{K_2 - y - \beta x}{K_2} \right)$$  
 - 개체수 증가율이 0이 되는 등경선(isocline)   
-  $$K_1 - x - \alpha y = 0, x = K_1 - \alpha y \ /\  K_2 - y - \beta y = 0, y = K_2 - \beta x$$   
+  $$K_1 - x - \alpha y = 0,\  x = K_1 - \alpha y$$  
+  $$K_2 - y - \beta y = 0,\  y = K_2 - \beta x$$   
   <img src="https://i.ibb.co/jyDkgcv/image.webp" alt="2" width="80%" height="80%"/>   
 
 ## [국가R&D연구보고서] 생물학적 확산 및 성장의 수학적 접근
@@ -74,10 +75,10 @@ math: true
 - Starvation Driven Diffusion(SDD)
   - $$$$
     $$u_{t} =  \triangle(\gamma(s)u) = \nabla \cdot (r(s))$$    
-  - $$\gamma$$: 먹이를 찾아 떠나는 rate 또는 departing probobility
-  - $$\gamma$$는 $$r$$의 증가 함수
-  - $$r$$: departing probobility
-  - $$s$$: starvation measure, $$s = \frac{u}{m}$$ ($$u$$: 인구 밀도, $$m$$: 먹이의 양)  
+    - $$\gamma$$: 먹이를 찾아 떠나는 rate 또는 departing probobility
+    - $$\gamma$$는 $$r$$의 증가 함수
+    - $$r$$: departing probobility
+    - $$s$$: starvation measure, $$s = \frac{u}{m}$$ ($$u$$: 인구 밀도, $$m$$: 먹이의 양)  
   - 관련 성과 논문
     - 확산 방정식 해로 수렴 - [Diffusion of biological organisms: Fickian and Fokker-Planck type diffusions](https://doi.org/10.1137/18M1163944)
     - 종의 확산 방식 선택 - [Asymmetric dispersal and evolutional selection in two-patch system](https://www.aimsciences.org/article/doi/10.3934/dcds.2020043)
@@ -96,6 +97,7 @@ math: true
 - Lipschitz 연속성을 제거한 성장 모델  
   Lotka-Volterra predator-prey 모델의 reaction 함수를 불연속으로 만든 모델 
   - 관련 성과 논문: 모델 - [Predator-prey equations with constant harvesting and planting](https://pubmed.ncbi.nlm.nih.gov/30194968/)  
+
   - $$u_t &= d_u \Delta u + u(1 - \nu) + c_u \chi_{\{u > 0\}}$$  
     $$v_t &= d_v \Delta v + \nu(u - 1) + c_v \chi_{\{v > 0\}}$$  
     $$u(0, x) &\geq 0, \quad v(0, x) \geq 0$$  
@@ -112,6 +114,7 @@ math: true
 - logistic reaction term이 있는 chemotaxis 모델: population dynamics가 아닌 dispersal에 의한 패턴 형성
   - 행의 존재와 패턴 연구
   - 관련 성과 논문: reaction term - [Global dynamics and pattern formation under density-suppressed motility](https://doi.org/10.1137/17M1144647)  
+
   - $$u_t &= \Delta (\gamma(v) u) + u(1 - u)$$  
     $$v_t &= \epsilon \Delta v + u - v$$  
 
@@ -125,8 +128,8 @@ math: true
 
 ## Cellular automata
 ---
-### 1
+### model
 - [Why Does Biological Evolution Work? A Minimal Model for Biological Evolution and Other Adaptive Processes](https://writings.stephenwolfram.com/2024/05/why-does-biological-evolution-work-a-minimal-model-for-biological-evolution-and-other-adaptive-processes/)  
 
-### 2
+### even more
 - [Foundations of Biological Evolution: More Results & More Surprises](https://writings.stephenwolfram.com/2024/12/foundations-of-biological-evolution-more-results-more-surprises/?fbclid=IwY2xjawG_roFleHRuA2FlbQIxMQABHU7Yx639xzdS2-Hcblny6ajSpWGbHvZ_14bSy4FSQQqPSzTVGCm00brS_A_aem_0DuxGy7XqrpPR7Wlw4kH4g&sfnsn=mo)  
