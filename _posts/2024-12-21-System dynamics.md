@@ -79,22 +79,23 @@ math: true
   - $$r$$: departing probobility
   - $$s$$: starvation measure, $$s = \frac{u}{m}$$ ($$u$$: 인구 밀도, $$m$$: 먹이의 양)  
   - 관련 성과 논문
-    - 확산 방정식 해로 수렴: [Diffusion of biological organisms: Fickian and Fokker-Planck type diffusions](https://doi.org/10.1137/18M1163944)
-    - 종의 확산 방식 선택: [Asymmetric dispersal and evolutional selection in two-patch system](https://www.aimsciences.org/article/doi/10.3934/dcds.2020043)
-    - 확산 법칙에 따른 계수 영역: [Biological advection and cross-diffusion with parameter regimes](https://www.aimspress.com/article/id/4552) 
+    - 확산 방정식 해로 수렴 - [Diffusion of biological organisms: Fickian and Fokker-Planck type diffusions](https://doi.org/10.1137/18M1163944)
+    - 종의 확산 방식 선택 - [Asymmetric dispersal and evolutional selection in two-patch system](https://www.aimsciences.org/article/doi/10.3934/dcds.2020043)
+    - 확산 법칙에 따른 계수 영역 - [Biological advection and cross-diffusion with parameter regimes](https://www.aimspress.com/article/id/4552) 
 - 생물학적 이동은 먹이에 대한 이동  
   food metric에 의한 거리 사용, 생물학적 의미의 확산
   - Beltrami - Laplace 연산자
-  - $$u_{t} = \nabla \cdot (\frac{1}{m}\nabla(\frac{1}{m}u))$$
+  - $$$$
+    $$u_{t} = \nabla \cdot (\frac{1}{m}\nabla(\frac{1}{m}u))$$
   - 관련 성과 논문
-    - discrete kinetic 통해 유도: [A discrete velocity kinetic model with food metric: chemotaxis traveling waves](https://pubmed.ncbi.nlm.nih.gov/27995380/)
-    - 수렴성, 특성 만족 등: [Dispersal toward food: a study of a singular limit of an Allen-Cahn equation](https://pubmed.ncbi.nlm.nih.gov/28631042/)
+    - discrete kinetic 통해 유도 - [A discrete velocity kinetic model with food metric: chemotaxis traveling waves](https://pubmed.ncbi.nlm.nih.gov/27995380/)  
+    - 수렴성, 특성 만족 등 - [Dispersal toward food: a study of a singular limit of an Allen-Cahn equation](https://pubmed.ncbi.nlm.nih.gov/28631042/)  
 
 ### 1.2.a 유한시간 extinction이 가능한 성장 모델 개발 및 분석
-- 무한시간의 extiction ODE 모델: $$\frac{\partial}{\partial t}u = f(t, u), u(0) = u_{0} $$
+- 무한시간의 extinction ODE 모델: $$\frac{\partial}{\partial t}u = f(t, u), u(0) = u_{0} $$
 - Lipschitz 연속성을 제거한 성장 모델  
   Lotka-Volterra predator-prey 모델의 reaction 함수를 불연속으로 만든 모델 
-  - 관련 성과 논문: [Predator-prey equations with constant harvesting and planting](https://pubmed.ncbi.nlm.nih.gov/30194968/)
+  - 관련 성과 논문: 모델 - [Predator-prey equations with constant harvesting and planting](https://pubmed.ncbi.nlm.nih.gov/30194968/)  
   - $$u_t &= d_u \Delta u + u(1 - \nu) + c_u \chi_{\{u > 0\}}$$  
     $$v_t &= d_v \Delta v + \nu(u - 1) + c_v \chi_{\{v > 0\}}$$  
     $$u(0, x) &\geq 0, \quad v(0, x) \geq 0$$  
@@ -102,21 +103,21 @@ math: true
     - $$c_u \chi_{\{u > 0\}} \ /\  c_v \chi_{\{v > 0\}}$$: reaction function이 $$u = 0 \ /\  v = 0$$에서 불연속
   - 모델에 대한 stability analysis ⟶ Turing pattern
   - nonlinearity가 아닌 finite time extinction 통해 다양한 패턴 형성 
-    - 관련 성과 논문: [Discontinuous nonlinearity and finite time extinction](https://doi.org/10.1137/17M1136067)
+    - 관련 성과 논문: 반응-확산 방정식 고려 - [Discontinuous nonlinearity and finite time extinction](https://doi.org/10.1137/17M1136067)  
 
 ### 1.2.b 생물학적 상황에 맞는 성장 모델의 개발 및 분석
 - 종의 population dynamics는 확산과 관련지어 이해
 - cross diffusion의 모델과 생물학적인 Lotka-Volterra competition system에 대한 개발
-  - 관련 성과 논문: [Evolution of dietary diversity and a starvation driven cross-diffusion system as its singular limit](https://arxiv.org/abs/2011.10304)
+  - 관련 성과 논문: 두 가지 개발 진행 - [Evolution of dietary diversity and a starvation driven cross-diffusion system as its singular limit](https://arxiv.org/abs/2011.10304)  
 - logistic reaction term이 있는 chemotaxis 모델: population dynamics가 아닌 dispersal에 의한 패턴 형성
   - 행의 존재와 패턴 연구
-  - 관련 성과 논문: [Global dynamics and pattern formation under density-suppressed motility](https://doi.org/10.1137/17M1144647)
+  - 관련 성과 논문: reaction term - [Global dynamics and pattern formation under density-suppressed motility](https://doi.org/10.1137/17M1144647)  
   - $$u_t &= \Delta (\gamma(v) u) + u(1 - u)$$  
     $$v_t &= \epsilon \Delta v + u - v$$  
 
 ## Bifurcation diagram
 ---
-- [이 방정식을 알게 되면, 세상이 다르게 보일 겁니다!](https://youtu.be/LYyTLMyivUk?si=xRptSb_3-ojkg0Tn)
+- [이 방정식을 알게 되면, 세상이 다르게 보일 겁니다!](https://youtu.be/LYyTLMyivUk?si=xRptSb_3-ojkg0Tn)  
   - $$x_{n+1} = rx_{n}(1-x_{n})$$, $$r$$: 성장률
   - $$r$$에 따른 상태 및 주기 변화 
   - 시각화 ⟶ 망델브로(Mandelbrot)집합의 수직
