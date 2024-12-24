@@ -30,7 +30,7 @@ math: true
 #### 지수적 모형: 이상적 모델
 - $$$$
   $$\frac{dN}{dt} = kN \Rightarrow N(t) = N_0 e^{kt}$$  
-  <img src="https://i.ibb.co/J30S2Rz/3.png" alt="3" width="100%" height="100%"/>     
+  <img src="https://i.ibb.co/n6bBLyw/image.png" alt="3" width="100%" height="100%"/>     
   
 
 #### 로지스트형 모델: 환경수용적 고려 모델
@@ -98,10 +98,10 @@ math: true
   Lotka-Volterra predator-prey 모델의 reaction 함수를 불연속으로 만든 모델 
   - 관련 성과 논문: 모델 - [Predator-prey equations with constant harvesting and planting](https://pubmed.ncbi.nlm.nih.gov/30194968/)  
   - $$$$
-    $$ u_t &= d_u \Delta u + u(1 - \nu) + c_u \chi_{\{u > 0\}}$$  
-    $$ v_t &= d_v \Delta v + \nu(u - 1) + c_v \chi_{\{v > 0\}}$$  
+    $$ u_t = d_u \Delta u + u(1 - \nu) + c_u \chi_{\{u > 0\}}$$  
+    $$ v_t = d_v \Delta v + \nu(u - 1) + c_v \chi_{\{v > 0\}}$$  
     $$ u(0, x) &\geq 0, \quad v(0, x) \geq 0$$  
-    $$ t &> 0, \quad x \in \Omega$$  
+    $$ t > 0, \quad x \in \Omega$$  
     - $$c_u \chi_{\{u > 0\}} \ /\  c_v \chi_{\{v > 0\}}$$: reaction function이 $$u = 0 \ /\  v = 0$$에서 불연속
   - 모델에 대한 stability analysis ⟶ Turing pattern
   - nonlinearity가 아닌 finite time extinction 통해 다양한 패턴 형성 
@@ -115,8 +115,8 @@ math: true
   - 행의 존재와 패턴 연구
   - 관련 성과 논문: reaction term - [Global dynamics and pattern formation under density-suppressed motility](https://doi.org/10.1137/17M1144647)  
   - $$$$
-    $$ u_t &= \Delta (\gamma(v) u) + u(1 - u)$$  
-    $$ v_t &= \epsilon \Delta v + u - v$$  
+    $$ u_t = \Delta (\gamma(v) u) + u(1 - u)$$  
+    $$ v_t = \epsilon \Delta v + u - v$$  
 
 ## Bifurcation diagram
 ---
