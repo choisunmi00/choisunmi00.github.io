@@ -29,7 +29,9 @@ math: true
 ### 단순 개체군 성장 모델
 #### 지수적 모형: 이상적 모델
 - $$$$
-  $$\frac{dN}{dt} = kN \Rightarrow N(t) = N_0 e^{kt}$$   
+  $$\frac{dN}{dt} = kN \Rightarrow N(t) = N_0 e^{kt}$$
+  <img src="https://i.ibb.co/4fSnWW3/1.webp" alt="3" width="100%" height="100%"/>     
+  
 
 #### 로지스트형 모델: 환경수용적 고려 모델
 - $$$$
@@ -37,6 +39,12 @@ math: true
   $$= (B - D)N = (B_0 - D_0 N)N$$  
   $$= B_0 \left( 1 - \frac{D_0 N}{B_0} \right) N = r \left( 1 - \frac{N}{C} \right) N$$  
   $$\Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$  
+  <img src="https://i.ibb.co/ZGw6BSW/2.webp" alt="4" width="100%" height="100%"/>  
+
+- 한계
+  1. 개체수의 증가가 연속적 (곤충의 경우 세대가 겹치지 않는 등 본래 특정 시기에만 증가)
+  2. 개체수의 증가가 증가율 억제. 다만 부모와 아이가 같은 비율로 억제에 관련. (본래 부모가 더 많이 억제에 관련된다.)
+  3. 개체수의 증가는 증가한 순간부터 증가율에 영향을 준다. (본래 상당한 시간 소요요)
 
 ### 포식자 피식자 모델
 
