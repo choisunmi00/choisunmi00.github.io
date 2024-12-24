@@ -39,11 +39,12 @@ math: true
   $$\Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$  
 
 ### 포식자 피식자 모델
-  <img src="https://i.ibb.co/MgQqCJ4/image.webp" alt="1" width="30%" height="30%"/>   
+
 
 - $$$$
   $$\frac{dx}{dt} = rx - axy$$, $$\frac{dy}{dt} = -my + bxy$$   
   $$\frac{dy}{dx} = \frac{-my + bxy}{rx - axy}$$
+  <img src="https://i.ibb.co/MgQqCJ4/image.webp" alt="1" width="30%" height="30%"/>    
 - 응용
   - 포식자 2: $$\frac{dx}{dt} = -x + xy$$
   - 포식자 1: $$\frac{dy}{dt} = -y + 2yz - xy$$
@@ -54,8 +55,7 @@ math: true
 - $$\frac{dx}{dt} = r_1 x \left( \frac{K_1 - x}{K_1} \right) / \frac{dy}{dt} = r_2 y \left( \frac{K_2 - y}{K_2} \right)$$   
   $$\Rightarrow \frac{dx}{dt} = r_1 x \left( \frac{K_1 - x - \alpha y}{K_1} \right) / \frac{dy}{dt} = r_2 y \left( \frac{K_2 - y - \beta x}{K_2} \right)$$  
 - 개체수 증가율이 0이 되는 등경선(isocline)   
-  $$K_1 - x - \alpha y = 0, x = K_1 - \alpha y / K_2 - y - \beta y = 0, y = K_2 - \beta x$$  
-
+  $$K_1 - x - \alpha y = 0, x = K_1 - \alpha y / K_2 - y - \beta y = 0, y = K_2 - \beta x$$   
   <img src="https://i.ibb.co/jyDkgcv/image.webp" alt="2" width="60%" height="60%"/>   
 
 ## [국가R&D연구보고서] 생물학적 확산 및 성장의 수학적 접근
