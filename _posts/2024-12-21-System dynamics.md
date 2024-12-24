@@ -30,7 +30,7 @@ math: true
 #### 지수적 모형: 이상적 모델
 - $$$$
   $$\frac{dN}{dt} = kN \Rightarrow N(t) = N_0 e^{kt}$$  
-  <img src="https://i.ibb.co/GMSzY2J/1.png" alt="3" width="100%" height="100%"/>     
+  <img src="https://i.ibb.co/XL3yKPJ/4.png" alt="3" width="100%" height="100%"/>     
   
 
 #### 로지스트형 모델: 환경수용적 고려 모델
@@ -40,6 +40,7 @@ math: true
   $$= B_0 \left( 1 - \frac{D_0 N}{B_0} \right) N = r \left( 1 - \frac{N}{C} \right) N$$  
   $$\Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$  
   <img src="https://i.ibb.co/6NcPmLC/image.png" alt="4" width="100%" height="100%"/>  
+  <img src="https://i.ibb.co/zZYRB4t/image.png" alt="4" width="100%" height="100%"/>  
 
 - 한계
   1. 개체수의 증가가 연속적 (곤충의 경우 세대가 겹치지 않는 등 본래 특정 시기에만 증가)
