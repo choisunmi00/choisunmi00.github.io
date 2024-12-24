@@ -39,7 +39,7 @@ math: true
   $$= (B - D)N = (B_0 - D_0 N)N$$  
   $$= B_0 \left( 1 - \frac{D_0 N}{B_0} \right) N = r \left( 1 - \frac{N}{C} \right) N$$  
   $$\Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$  
-  <img src="https://i.ibb.co/WBvfkFJ/3.webp" alt="4" width="100%" height="100%"/>  
+  <img src="https://i.ibb.co/WBvfkFJ/3.webp" alt="4" width="90%" height="90%"/>  
 
 - 한계
   1. 개체수의 증가가 연속적 (곤충의 경우 세대가 겹치지 않는 등 본래 특정 시기에만 증가)
@@ -67,7 +67,6 @@ math: true
   <img src="https://i.ibb.co/jyDkgcv/image.webp" alt="2" width="80%" height="80%"/>   
 
 ## [국가R&D연구보고서] 생물학적 확산 및 성장의 수학적 접근
----
 [Mathematical modeling for biological diffusion and population dynamics](https://scienceon.kisti.re.kr/srch/selectPORSrchReport.do?cn=TRKO202200016297#;)  
 
 ### 1.1.b 생물학적 종의 이질성 확산모델 개발 및 분석
@@ -129,7 +128,7 @@ math: true
 ## Cellular automata
 ---
 ### model
-- [Why Does Biological Evolution Work? A Minimal Model for Biological Evolution and Other Adaptive Processes](https://writings.stephenwolfram.com/2024/05/why-does-biological-evolution-work-a-minimal-model-for-biological-evolution-and-other-adaptive-processes/)  
+[Why Does Biological Evolution Work? A Minimal Model for Biological Evolution and Other Adaptive Processes](https://writings.stephenwolfram.com/2024/05/why-does-biological-evolution-work-a-minimal-model-for-biological-evolution-and-other-adaptive-processes/)  
 
 ### even more
-- [Foundations of Biological Evolution: More Results & More Surprises](https://writings.stephenwolfram.com/2024/12/foundations-of-biological-evolution-more-results-more-surprises/?fbclid=IwY2xjawG_roFleHRuA2FlbQIxMQABHU7Yx639xzdS2-Hcblny6ajSpWGbHvZ_14bSy4FSQQqPSzTVGCm00brS_A_aem_0DuxGy7XqrpPR7Wlw4kH4g&sfnsn=mo)  
+[Foundations of Biological Evolution: More Results & More Surprises](https://writings.stephenwolfram.com/2024/12/foundations-of-biological-evolution-more-results-more-surprises/?fbclid=IwY2xjawG_roFleHRuA2FlbQIxMQABHU7Yx639xzdS2-Hcblny6ajSpWGbHvZ_14bSy4FSQQqPSzTVGCm00brS_A_aem_0DuxGy7XqrpPR7Wlw4kH4g&sfnsn=mo)  
