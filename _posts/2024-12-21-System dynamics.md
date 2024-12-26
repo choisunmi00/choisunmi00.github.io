@@ -22,7 +22,7 @@ math: true
 - 억제제: $$V_{t}  = D_{v} \Delta V + a-U- \rho R(U,V)$$
 - $$$$
   $$R(U,V) = \frac{dUV}{e + fU + gU^{2}}$$
-- 확산제와 억제제에 의해 농도와 분포가 시간에 따라 경쟁 -> 무늬(패턴) 형성
+- 확산제와 억제제에 의해 농도와 분포가 시간에 따라 경쟁 ⟶ 무늬(패턴) 형성
 
 ## Lotka-Volterra equation
 ---
@@ -40,7 +40,7 @@ math: true
 - $$$$
   $$\frac{dN}{dt}$$   
   $$= (B - D)N = (B_0 - D_0 N)N$$  
-  $$= B_0 \left( 1 - \frac{D_0 N}{B_0} \right) N = r \left( 1 - \frac{N}{C} \right) N\$$ 
+  $$= B_0 \left( 1 - \frac{D_0 N}{B_0} \right) N = r \left( 1 - \frac{N}{C} \right) N$$ 
   $$\Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$
   <img src="https://i.ibb.co/xfDBbHD/image.webp" alt="1" width="90%" height="90%"/>    
   <!-- ![Light mode only](https://i.ibb.co/xfDBbHD/image.webp){: .light }
