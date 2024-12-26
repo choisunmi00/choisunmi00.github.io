@@ -30,8 +30,9 @@ math: true
 #### 지수적 모형: 이상적 모델
 - $$$$
   $$\frac{dN}{dt} = kN \Rightarrow N(t) = N_0 e^{kt}$$  
-  ![Light mode only](https://i.ibb.co/0Q04w6h/image.webp){: .light }
-  ![Dark mode only](https://i.ibb.co/crz8sWs/image.webp){: .dark }
+  <!-- ![Light mode only](https://i.ibb.co/0Q04w6h/image.webp){: .light }
+  ![Dark mode only](https://i.ibb.co/crz8sWs/image.webp){: .dark } -->
+  <img src="https://i.ibb.co/0Q04w6h/image.webp" alt="1" width="40%" height="40%"/>    
      
   
 
@@ -41,8 +42,9 @@ math: true
   $$= (B - D)N = (B_0 - D_0 N)N$$  
   $$= B_0 \left( 1 - \frac{D_0 N}{B_0} \right) N = r \left( 1 - \frac{N}{C} \right) N$$  
   $$\Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$
-  ![Light mode only](https://i.ibb.co/xfDBbHD/image.webp){: .light }
-  ![Dark mode only](https://i.ibb.co/x3hpRwz/image.png){: .dark }
+  <img src="https://i.ibb.co/xfDBbHD/image.webp" alt="1" width="40%" height="40%"/>    
+  <!-- ![Light mode only](https://i.ibb.co/xfDBbHD/image.webp){: .light }
+  ![Dark mode only](https://i.ibb.co/x3hpRwz/image.png){: .dark } -->
   
 
 - 한계
