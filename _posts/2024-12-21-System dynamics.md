@@ -39,12 +39,12 @@ math: true
   $$= (B - D)N = (B_0 - D_0 N)N$$  
   $$= B_0 \left( 1 - \frac{D_0 N}{B_0} \right) N = r \left( 1 - \frac{N}{C} \right) N$$  
   $$\Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$  
-  <img src="https://i.ibb.co/WBvfkFJ/3.webp" alt="4" width="90%" height="90%"/>  
+  <img src="https://i.ibb.co/WBvfkFJ/3.webp" alt="4" width="90%" height="90%"/>    
 
 - 한계
   1. 개체수의 증가가 연속적 (곤충의 경우 세대가 겹치지 않는 등 본래 특정 시기에만 증가)
   2. 개체수의 증가가 증가율 억제. 다만 부모와 아이가 같은 비율로 억제에 관련. (본래 부모가 더 많이 억제에 관련된다.)
-  3. 개체수의 증가는 증가한 순간부터 증가율에 영향을 준다. (본래 상당한 시간 소요요)
+  3. 개체수의 증가는 증가한 순간부터 증가율에 영향을 준다. (본래 상당한 시간 소요)
 
 ### 포식자 피식자 모델
 
@@ -73,11 +73,11 @@ math: true
 - chemotaxis 이론
 - Starvation Driven Diffusion(SDD)
   - $$$$
-    $$u_{t} =  \triangle(\gamma(s)u) = \nabla \cdot (r(s))$$    
+    $$u_{t} = \Delta(\gamma(s)u) = \nabla \cdot (r(s))$$    
     - $$\gamma$$: 먹이를 찾아 떠나는 rate 또는 departing probobility
     - $$\gamma$$는 $$r$$의 증가 함수
     - $$r$$: departing probobility
-    - $$s$$: starvation measure, $$s = \frac{u}{m}$$ ($$u$$: 인구 밀도, $$m$$: 먹이의 양)  
+    - $$s$$: starvation measure, $$\ s = \frac{u}{m}$$ ($$u$$: 인구 밀도, $$m$$: 먹이의 양)  
   - 관련 성과 논문
     - 확산 방정식 해로 수렴 - [Diffusion of biological organisms: Fickian and Fokker-Planck type diffusions](https://doi.org/10.1137/18M1163944)
     - 종의 확산 방식 선택 - [Asymmetric dispersal and evolutional selection in two-patch system](https://www.aimsciences.org/article/doi/10.3934/dcds.2020043)
@@ -96,8 +96,7 @@ math: true
 - Lipschitz 연속성을 제거한 성장 모델  
   Lotka-Volterra predator-prey 모델의 reaction 함수를 불연속으로 만든 모델 
   - 관련 성과 논문: 모델 - [Predator-prey equations with constant harvesting and planting](https://pubmed.ncbi.nlm.nih.gov/30194968/)  
-  - $$$$
-    $$ u_t = d_u \Delta u + u(1 - \nu) + c_u \chi_{\{u > 0\}}$$  
+  - $$ u_t = d_u \Delta u + u(1 - \nu) + c_u \chi_{\{u > 0\}}$$  
     $$ v_t = d_v \Delta v + \nu(u - 1) + c_v \chi_{\{v > 0\}}$$  
     $$ u(0, x) \geq 0, \quad v(0, x) \geq 0$$  
     $$ t > 0, \quad x \in \Omega$$  
@@ -120,7 +119,7 @@ math: true
 ## Bifurcation diagram
 ---
 - [이 방정식을 알게 되면, 세상이 다르게 보일 겁니다!](https://youtu.be/LYyTLMyivUk?si=xRptSb_3-ojkg0Tn)  
-  - $$x_{n+1} = rx_{n}(1-x_{n})$$, $$r$$: 성장률
+  - $$x_{n+1} = rx_{n}(1-x_{n})$$,\  $$r$$: 성장률
   - $$r$$에 따른 상태 및 주기 변화 
   - 시각화 ⟶ 망델브로(Mandelbrot)집합의 수직
   - 파이겐바움 상수(Feigenbaum constant): 보편성
