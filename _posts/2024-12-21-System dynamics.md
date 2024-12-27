@@ -120,12 +120,11 @@ math: true
     $$ v_t = \epsilon \Delta v + u - v$$  
 
 ## Bifurcation diagram
----
-- [이 방정식을 알게 되면, 세상이 다르게 보일 겁니다!](https://youtu.be/LYyTLMyivUk?si=xRptSb_3-ojkg0Tn)  
-  - $$x_{n+1} = rx_{n}(1-x_{n})$$,  $$r$$: 성장률
-  - $$r$$에 따른 상태 및 주기 변화 
-  - 시각화 ⟶ 망델브로(Mandelbrot)집합의 수직
-  - 파이겐바움 상수(Feigenbaum constant): 보편성
+[이 방정식을 알게 되면, 세상이 다르게 보일 겁니다!](https://youtu.be/LYyTLMyivUk?si=xRptSb_3-ojkg0Tn)  
+- $$x_{n+1} = rx_{n}(1-x_{n})$$,  $$r$$: 성장률
+- $$r$$에 따른 상태 및 주기 변화 
+- 시각화 ⟶ 망델브로(Mandelbrot)집합의 수직
+- 파이겐바움 상수(Feigenbaum constant): 보편성
 
 ## Cellular automata
 ---
