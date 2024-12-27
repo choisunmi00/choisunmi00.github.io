@@ -40,11 +40,8 @@ math: true
 - $$$$
   $$\frac{dN}{dt}$$   
   $$= (B - D)N = (B_0 - D_0 N)N$$  
-  $$= B_0 \left( 1 - \frac{D_0 N}{B_0} \right) N = r \left( 1 - \frac{N}{C} \right) N$$   
-  $$\Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$  
+  $$= B_0 \left( 1 - \frac{D_0 N}{B_0} \right) N = r \left( 1 - \frac{N}{C} \right) N \Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$  
   <img src="https://i.ibb.co/xfDBbHD/image.webp" alt="1" width="90%" height="90%"/>    
-  <!-- ![Light mode only](https://i.ibb.co/xfDBbHD/image.webp){: .light }
-  ![Dark mode only](https://i.ibb.co/x3hpRwz/image.png){: .dark } -->
   
 
 - 한계
@@ -125,7 +122,7 @@ math: true
 ## Bifurcation diagram
 ---
 - [이 방정식을 알게 되면, 세상이 다르게 보일 겁니다!](https://youtu.be/LYyTLMyivUk?si=xRptSb_3-ojkg0Tn)  
-  - $$x_{n+1} = rx_{n}(1-x_{n})$$,\  $$r$$: 성장률
+  - $$x_{n+1} = rx_{n}(1-x_{n})$$,  $$r$$: 성장률
   - $$r$$에 따른 상태 및 주기 변화 
   - 시각화 ⟶ 망델브로(Mandelbrot)집합의 수직
   - 파이겐바움 상수(Feigenbaum constant): 보편성
@@ -139,31 +136,31 @@ math: true
 - "Point mutations" ⟶ Routinely reach rules that give long-lived patterns with elaborate morphological structure
 - "Fitness" of cellular automaton rules: Assuming that if the patterns don't terminate at all they should be considered to have fitness zero.
 - Multiway graph
- - "fitness-neutral sets": Rules that have the same fitness and that can be transformed into each other by mutations
+  - "fitness-neutral sets": Rules that have the same fitness and that can be transformed into each other by mutations
 - "Fitness landscape": Fitness shown as height
- - Evolution is proceeding along paths that never go to nodes with lower heights on the fitness landscape.
+  - Evolution is proceeding along paths that never go to nodes with lower heights on the fitness landscape.
 - Deterministic systems: Given a particular cellular automaton rule and a particular initial condition, every aspect of the generated behavior is completely determined.
 - Sexual Reproduction: To understand the big picture of adaptive evolution, it seems sufficient to consider only mutation.
 - Computational irreducibility: Computational irreducibility implies that around every point in rule space, there'll be a certain "effective randomness" to fitnesses one sees. If there are many dimensions to rule space, that means it's overwhelmingly likely that there'll be "paths to success" in some directions from that point.
- - Complexity in biology: It's essentially a reflection of computational irreducibility. / Adaptive evolution manages to "solve a problem". 
- - Rules found by adaptive evolution ⟶ "apparent mechanism", "overall orchestration"
- - "High fitness" rules that we find through adaptive evolution: Manifest computational reducibility.
+  - Complexity in biology: It's essentially a reflection of computational irreducibility. / Adaptive evolution manages to "solve a problem". 
+  - Rules found by adaptive evolution ⟶ "apparent mechanism", "overall orchestration"
+  - "High fitness" rules that we find through adaptive evolution: Manifest computational reducibility.
 
 ### even more
 [Foundations of Biological Evolution: More Results & More Surprises](https://writings.stephenwolfram.com/2024/12/foundations-of-biological-evolution-more-results-more-surprises/?fbclid=IwY2xjawG_roFleHRuA2FlbQIxMQABHU7Yx639xzdS2-Hcblny6ajSpWGbHvZ_14bSy4FSQQqPSzTVGCm00brS_A_aem_0DuxGy7XqrpPR7Wlw4kH4g&sfnsn=mo)  
 
 - Model: Cellular automaton rules - genotype, then run to produce - phenotype
- - Adaptively evolve the genotype rules: Making single "point mutations" to the list of outcomes from the rules
+  - Adaptively evolve the genotype rules: Making single "point mutations" to the list of outcomes from the rules
 - Fitness functions considering : Features of phenotype - pattern height, width and aspect ratio
- - Exact-match fitness functions ⟶ too intricate a fitness function, then our rule spaces won’t contain rules that successfully maximize it, and our adaptive evolution process will end up with a variety of not-very-good approximations.
+  - Exact-match fitness functions ⟶ too intricate a fitness function, then our rule spaces won't contain rules that successfully maximize it, and our adaptive evolution process will end up with a variety of not-very-good approximations.
 - "Blade": Uses repetitive patterns that can persist
 - Fitness function that changes with time 
- - Aspect ratio fitness function whose target value increases linearly with time: Fitness function defines the overall "goals" of the system; however, the system does not achieve the goals well.
+  - Aspect ratio fitness function whose target value increases linearly with time: Fitness function defines the overall "goals" of the system; however, the system does not achieve the goals well.
 - Reverse: "lifetime minimization" multiway graph
- - forward ↔ reverse graphs
+  - forward ↔ reverse graphs
 - When modifying initial conditions in a fixed region: to be more about "extending existing mechanisms" than introducing new ones
 - 2D Cellular automata
 - Turing machine: Principle of Computational Equivalence - same core phenomena of adaptive evolution
- - Multiway turing machines
+  - Multiway turing machines
 - Biological evolution ⟶ doing is to “recruit” lumps of irreducible computation, and set them up so as to achieve “fitness objectives”
 - Ruliad
