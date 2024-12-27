@@ -40,8 +40,8 @@ math: true
 - $$$$
   $$\frac{dN}{dt}$$   
   $$= (B - D)N = (B_0 - D_0 N)N$$  
-  $$= B_0 \left( 1 - \frac{D_0 N}{B_0} \right) N = r \left( 1 - \frac{N}{C} \right) N \Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$  
-  <img src="https://i.ibb.co/xfDBbHD/image.webp" alt="1" width="90%" height="90%"/>    
+  $$= B_0 \left( 1 - \frac{D_0 N}{B_0} \right) N = r \left( 1 - \frac{N}{C} \right) N \Rightarrow N(t) = \frac{C N_0}{N_0 + (C - N_0)e^{-rt}}$$   
+  <img src="https://i.ibb.co/xfDBbHD/image.webp" alt="2" width="100%" height="100%"/>    
   
 
 - 한계
@@ -129,7 +129,7 @@ math: true
 
 ## Cellular automata
 ---
-### model
+### Model
 [Why Does Biological Evolution Work? A Minimal Model for Biological Evolution and Other Adaptive Processes](https://writings.stephenwolfram.com/2024/05/why-does-biological-evolution-work-a-minimal-model-for-biological-evolution-and-other-adaptive-processes/)  
 
 - Biological organisms are computational systems that develop by following simple underlying rules.
@@ -146,7 +146,7 @@ math: true
   - Rules found by adaptive evolution ⟶ "apparent mechanism", "overall orchestration"
   - "High fitness" rules that we find through adaptive evolution: Manifest computational reducibility.
 
-### even more
+### Even more
 [Foundations of Biological Evolution: More Results & More Surprises](https://writings.stephenwolfram.com/2024/12/foundations-of-biological-evolution-more-results-more-surprises/?fbclid=IwY2xjawG_roFleHRuA2FlbQIxMQABHU7Yx639xzdS2-Hcblny6ajSpWGbHvZ_14bSy4FSQQqPSzTVGCm00brS_A_aem_0DuxGy7XqrpPR7Wlw4kH4g&sfnsn=mo)  
 
 - Model: Cellular automaton rules - genotype, then run to produce - phenotype
