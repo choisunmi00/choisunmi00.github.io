@@ -1,5 +1,6 @@
 ---
-title: reguloGPT
+title: >-
+  [논문 요약] reguloGPT
 author: csm
 date: 2024-11-20 14:10:00 +0900
 categories: [Biology, Network science]
@@ -7,7 +8,6 @@ tags: [paper]
 description: reguloGPT Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways
 ---
 
-# 논문 요약: reguloGPT
 <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10836076/">reguloGPT: Harnessing GPT for Knowledge Graph Construction of Molecular Regulatory Pathways</a>
 
 

@@ -4,11 +4,10 @@ author: csm
 date: 2024-12-04 14:10:00 +0900
 categories: [Biology, LPF]
 tags: [paper]
-description: LPF a framework for exploring the wing color pattern formation of ladybird beetles in Python
+description: >-
+    LPF: a framework for exploring the wing color pattern formation of ladybird beetles in Python
 math: true
 ---
-
-# 논문 요약: LPF - Supplementary Data
 
 [LPF: a framework for exploring the wing color pattern formation of ladybird beetles in Python](https://doi.org/10.1093/bioinformatics/btad430)  
 [Supplementary Data](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/39/7/10.1093_bioinformatics_btad430/2/btad430_supplementary_data.pdf?Expires=1736057160&Signature=ynQSiSKNANknwTVvSYi5cTxcCp9gHsKwCX1ply7Ys0QzNZ0TQilTTt0xPhjEJXNwXfgbw3M-Rk7jPuxqt9JicwdLO-RS1wej0LarlSNwLrT3~I8iV8b6YrDm-UhelBilpi5P4lgoq-s9mn8M-89FfFf0LIn7ZiE6cPwYsdqRvdMP3CQNw0wocNRet~9qnUMM25qWD7wD68GOKpbxIEBE9eOiGfDq33m6tzWM3fUMTuMXqL8YAm53YsL54Dw8ZPb0T7UZ62vRyCSCmn-vGKRjrcD65lM-C1fJ1krF9hUAAFRdFHgmHiDG~YRJjy9Jn-AaroBOVcLBPGZDkBGki3nocg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)
