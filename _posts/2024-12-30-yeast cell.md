@@ -6,6 +6,7 @@ date: 2024-12-30 14:10:00 +0900
 categories: [Biology, System dynamics]
 tags: [paper]
 description: The yeast cell-cycle network is robustly designed
+math: true
 ---
 
 <a href="https://doi.org/10.1073/pnas.0305937101">The yeast cell-cycle network is robustly designed</a>
@@ -31,7 +32,7 @@ description: The yeast cell-cycle network is robustly designed
 
 <img src="https://www.pnas.org/cms/10.1073/pnas.0305937101/asset/de539b0e-5b37-4872-9536-5b51c9c543ea/assets/graphic/zpq0140443910001.jpeg" alt="1" width="50%" height="50%"/>   
 
-- 조절 네트워크 인자의 4가지 종류: cyclin, cyclin/Cdc28 복합체의 억제제와 분해자 및 경쟁자, 전사 인자, 체크포인트트
+- 조절 네트워크 인자의 4가지 종류: cyclin, cyclin/Cdc28 복합체의 억제제와 분해자 및 경쟁자, 전사 인자, 체크포인트
 
 ## The Model and Dynamic Properties
 ---
@@ -87,11 +88,11 @@ $$
 
 ### Other Dynamical Rules
 
-- 동적 속성은 매개변수(방정식의 가중치 &&a_{g}&& 및 &&a_{r}&&과 단백질의 수명 &&t_{d}&&)에 크게 민감하지 않다
+- 결과로 나타나지는 동적 속성은 매개변수(방정식의 가중치 &&a_{g}&& 및 &&a_{r}&&과 단백질의 수명 &&t_{d}&&)에 크게 민감하지 않다
 
 ### Other Checkpoints
 
-- 체크포인트트 중 하나가 세포크기가 아닌 정지-진행 신호로 작용하는 경우 큰 고정점 존재, 생물학적 경로는 수렴
+- 체크포인트 중 하나가 세포크기가 아닌 정지-진행 신호로 작용하는 경우 큰 고정점 존재, 생물학적 경로는 수렴
 
 ## Discussion
 ---
