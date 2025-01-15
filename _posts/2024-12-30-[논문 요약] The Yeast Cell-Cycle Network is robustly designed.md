@@ -84,7 +84,7 @@ $$
 - A: 라인 삭제 교란, B: 라인 추가 교란, C: 적색-녹색 전환 교란, D: A - C의 평균
 - 교란된 세포 주기 네트워크의 궤적에서 상당 부분이 G1 정상 상태에 도달하고 세포주기 순서가 가장 가능성 있는 궤적임을 확인
 
-<img src="https://www.pnas.org/cms/10.1073/pnas.0305937101/asset/d15a2e01-75b3-4c41-a5f5-c0a6ede68290/assets/graphic/zpq0140443910005.jpeg" alt="5" width="50%" height="50%"/>   
+<img src="https://www.pnas.org/cms/10.1073/pnas.0305937101/asset/feaed4f8-0379-400c-b7ca-4e91003a3b55/assets/graphic/zpq0140443910005.jpeg" alt="5" width="50%" height="50%"/>   
 
 ### Other Dynamical Rules
 
