@@ -1,6 +1,6 @@
 ---
 title: >-
-    [논문 요약] The Yeast Cell-Cycle Network is robustly designed
+    [논문 요약] The yeast cell-cycle network is robustly designed
 author: csm
 date: 2024-12-30 14:10:00 +0900
 categories: [Biology, System dynamics]
