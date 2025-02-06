@@ -15,7 +15,7 @@ math: true
 - LLM 기반 프레임워크 Agent Laboratory
 	- 과학적 발견 과정을 가속화하고 연구 비용을 절감하여 연구의 질 향상을 목적으로 함
 	- 자율적으로 전체 연구 과정을 수행
-		- 연구자가 제공한 연구 아이디어를 바탕으로 (1) 문헌 조사, 실험, 연구 보고서 작성의 세 가지 단계를 거쳐 연구결과 도출 -> 코드 저장소 및 연구보고서를 포함한 종합적인 연구 산출물 생성
+		- 연구자가 제공한 연구 아이디어를 바탕으로 (1) 문헌 조사, 실험, 연구 보고서 작성의 세 가지 단계를 거쳐 연구결과 도출 ⟶ 코드 저장소 및 연구보고서를 포함한 종합적인 연구 산출물 생성
 		- 각 단계에서 연구자가 피드백과 지침 제공 가능
 - Agent Laboratory의 배포와 연구자들의 평가로 도출된 결과
 	1. o1-preview 기반의 Agent Laboratory가 가장 우수한 연구 결과 생성
@@ -25,7 +25,7 @@ math: true
 - 과학적 발견을 가속화하는데 기여할 것으로 기대
 
 ## 1. Introduction
-
+---
 - 연구 아이디어를 탐색하는 과정의 제한을 줄여 여러 개의 개념을 동시에 탐구, 결과적으로 과학적 발견의 가능성을 높이는 것이 목표
 - LLM을 활용한 연구 아이디어 생성 및 자동 논문 작성
 	- [ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models](https://arxiv.org/abs/2404.07738)
@@ -38,9 +38,9 @@ math: true
 	- [Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers](https://arxiv.org/abs/2409.04109)
 		- LLM이 생성한 아이디어가 전문가보다 더 참신한 것으로 평가되었다는 연구 결과
 		- 실형 가능성과 구현 세부사항에서 보이는 한계
-- -> LLM은 연구에서 보완적인 역할을 수행하는 것이 적절 -> 이에 연구자가 자신의 연구 아이디어를 실현하는 데 도움을 줄 수 있는 자율적 에이전트 파이프라인 설계를 목적으로 둔다 -> Agent Laboratory는 기존 접근법과 달리 연구 아이디어를 생성하기 보단 보조 역할을 수행하도록 설계
+- ⟶ LLM은 연구에서 보완적인 역할을 수행하는 것이 적절 ⟶ 이에 연구자가 자신의 연구 아이디어를 실현하는 데 도움을 줄 수 있는 자율적 에이전트 파이프라인 설계를 목적으로 둔다 ⟶ Agent Laboratory는 기존 접근법과 달리 연구 아이디어를 생성하기 보단 보조 역할을 수행하도록 설계
 - 본 연구의 주요 기여 내용
-	1. Agent Laboratory: 머신러닝 연구 수행을 가속화하는 오픈 소스 LLM agent 프레임워크 -> 연구자의 컴퓨팅 자원(CPU, GPU, 메모리) 및 모델 추론 비용에 따라 다양한 수준의 연산량을 설정할 수 있는 유연한 구조 제공
+	1. Agent Laboratory: 머신러닝 연구 수행을 가속화하는 오픈 소스 LLM agent 프레임워크 ⟶ 연구자의 컴퓨팅 자원(CPU, GPU, 메모리) 및 모델 추론 비용에 따라 다양한 수준의 연산량을 설정할 수 있는 유연한 구조 제공
 	2. Agent Laboratory가 생성한 논문을 실험적 품질, 보고서 품질, 유용성 측면에서 평가한 결과
 		- o1-preview 백엔드가 가장 유용한 것으로 평가
 		- o1-mini가 가장 높은 실험적 품질 점수 기록
@@ -54,7 +54,7 @@ math: true
 	7. MLE-Bench challenge에서 제안된 mle-solver가 state-of-art를 기록
 
 ## 2. Background & Related Work
-
+---
 ### Large language models
 - 본 연구의 agent는 autoregressive LLM을 기반으로 구축됨
 - LLM은 Transfomer 아키텍처를 활용
@@ -112,7 +112,7 @@ math: true
 		- [Project Sid: Many-agent simulations toward AI civilization](https://arxiv.org/abs/2411.00114)
 		- [ChessGPT: Bridging Policy Learning and Language Modeling](https://arxiv.org/abs/2306.09200)
 		- [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)
-- LLM agent의 더 폭넓은 개요 -> [A Survey on Large Language Model based Autonomous Agents](https://arxiv.org/abs/2308.11432)
+- LLM agent의 더 폭넓은 개요 ⟶ [A Survey on Large Language Model based Autonomous Agents](https://arxiv.org/abs/2308.11432)
 
 ### Automated machine learning
 - ML agent의 성능 평가를 위해 Kaggle 플랫폼을 벤치마크로 활용
@@ -126,7 +126,7 @@ math: true
 ### LLMs for autonomous research
 
 ## 3. Agent Laboratory
-
+---
 
 
 
