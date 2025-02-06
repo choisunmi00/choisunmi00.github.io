@@ -118,9 +118,9 @@ math: true
 ### Automated machine learning
 - ML agent의 성능 평가를 위해 Kaggle 플랫폼을 벤치마크로 활용
 - 대표적인 AutoML 평가 프레임워크
-	- MLE-Bench []()
+	<!-- - MLE-Bench []()
 	- DS-Bench []()
-	- MLAgentBench []()
+	- MLAgentBench []() -->
 
 ### AI in Scientific Discovery
 
