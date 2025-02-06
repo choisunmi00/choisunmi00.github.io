@@ -2,7 +2,7 @@
 title: >-
     [논문 요약]  Agent Laboratory
 author: csm
-date: 2024-02-05 14:10:00 +0900
+date: 2025-02-05 14:10:00 +0900
 categories: [AI, AI agent]
 tags: [paper]
 description: >-
