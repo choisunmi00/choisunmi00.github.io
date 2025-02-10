@@ -195,13 +195,25 @@ math: true
 		- [How AI Processing Delays Foster Creativity: Exploring Research Question Co-Creation with an LLM-based Agent](https://dl.acm.org/doi/10.1145/3613904.3642698)
 	- AI와 협업할 경우 창의성 감소
 		- [Does Writing with Language Models Reduce Content Diversity?](https://arxiv.org/abs/2309.05196)
-- => LLM의 한계를 고려했을 때, 사람이 주도하는 아이디어 생성과 LLM 기반 워크플로우를 결합하는 방식이 가장 강력한한 시스템
+- => 현재 LLM의 한계를 고려했을 때, 연구에서 가장 강력한 시스템은 사람이 주도하는 아이디어 생성과 LLM 기반 워크플로우를 결합하는 방식이 될 것임을 시사사
 
 ### LLMs for autonomous research
+- 자율 연구를 위한 주요 LLM 시스템
+	- [The Virtual Lab: AI Agents Design New SARS-CoV-2 Nanobodies with Experimental Validation](https://www.biorxiv.org/content/10.1101/2024.11.11.623004v1)
+		- LLM 에이전트 팀이 연구자와 협력하여 연구 수행
+		- 연구자가 고차원적 피드백 제공, SARS-CoV-2의 최근 변이에 대응하는 새로운 nanobody 결합체를 생성하는 성과 달성
+	- ChemCrow [Augmenting large language models with chemistry tools](https://www.nature.com/articles/s42256-024-00832-8) & Coscientist [Autonomous chemical research with large language models](https://www.nature.com/articles/s41586-023-06792-0)
+		- 화학 분야에서 자율적인 연구 아이디어 생성 및 실험 수행 가능성 입증
+	- ResearchAgent [ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models](https://arxiv.org/abs/2404.07738)
+		- 연구 아이디어 생성, 실험 설계, 반복적 개선(iterative refinement) 과정 자동화
+		- human evaluation criteria에 맞춘 reviewing agents의 피드백을 반영하여 연구 품질 향상
+	- The AI Scientist [The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery](https://arxiv.org/abs/2408.06292)
+		- end-to-end scientific discovery 수행
+		- 코드 작성, 실험 실행, automated peer review를 포함한 완전한 연구 프로세스 자동화
+- LLM 연구 아이디어 생성의 한계
+	- [Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers](https://arxiv.org/abs/2409.04109) 실현 가능성과 구현 세부 사항에서 부족
+- => 현재 최적 연구 시스템은 LLM을 보조 도구로 활용하여 연구자가 더욱 효과적으로 아이디어를 구체화하고 실험을 진행하는 방식
 
-
-## 3. Agent Laboratory
----
 
 
 
