@@ -129,15 +129,58 @@ math: true
 	- Agent K [Large Language Models Orchestrating Structured Reasoning Achieve Kaggle Grandmaster Level](https://arxiv.org/abs/2411.03562) -> Kaggle 챌린지의 URL을 입력하면 인간 수준의 성능으로 문제 해결 
 
 ### AI in Scientific Discovery
-- Mathematics [Mathematical discoveries from program search with large language models](https://www.nature.com/articles/s41586-023-06924-6) -> 새로운 수학적 패턴 및 정리를 발견하는 데 활용
-- Material Science [Scaling deep learning for materials discovery](https://www.nature.com/articles/s41586-023-06735-9) -> 신소재 탐색 및 최적화
-- Chemistry []() -> 신약 개발 및 분자 구조 예측 
-- Algorithm Discovery []() -> 최적화 및 자동 알고리즘 생성
-- Computational Biology []() -> 유전체 분석 및 단백질 상호작용 예측
+- Mathematics: 새로운 수학적 패턴 및 정리를 발견하는 데 활용 [Mathematical discoveries from program search with large language models](https://www.nature.com/articles/s41586-023-06924-6) 
+- Material Science: 신소재 탐색 및 최적화 [Scaling deep learning for materials discovery](https://www.nature.com/articles/s41586-023-06735-9)
+- Chemistry: 신약 개발 및 분자 구조 예측 
+	- [Simulating 500 million years of evolution with a language model](https://www.biorxiv.org/content/10.1101/2024.07.01.600583v1)
+	- [Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2)
+- Algorithm Discovery: 최적화 및 자동 알고리즘 생성 [Discovering faster matrix multiplication algorithms with reinforcement learning](https://www.nature.com/articles/s41586-022-05172-4) 
+- Computational Biology: 유전체 분석 및 단백질 상호작용 예측 [Automating Exploratory Proteomics Research via Language Models](https://arxiv.org/abs/2411.03743)
 - => 연구들은 AI 연구 수행의 도구로 활용하여, AI가 연구를 자율적으로 수행하기 보단 연구를 보조하는 역할로 발전하고 있다.
 
 ### LLMs for research related tasks
-
+- Code Generation: 연구 및 개발 과정에서 코드 자동 생성
+	- [Evaluating Large Language Models Trained on Code](https://arxiv.org/abs/2107.03374)
+	- [CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis](https://arxiv.org/abs/2203.13474)
+- End-to-End Software Development: 전체 소프트웨어 개발 자동화
+	- [REPOEXEC: Evaluate Code Generation with a Repository-Level Executable Benchmark](https://arxiv.org/abs/2406.11927v2)
+	- [HyperAgent: Generalist Software Engineering Agents to Solve Coding Tasks at Scale](https://arxiv.org/abs/2409.16299)
+	- [Experiential Co-Learning of Software-Developing Agents](https://arxiv.org/abs/2312.17025)
+	- [ChatDev: Communicative Agents for Software Development](https://arxiv.org/abs/2307.07924)
+- Code Generation for Discovery: 새로운 연구 아이디어 탐색 및 구현
+	- [ScienceAgentBench: Toward Rigorous Assessment of Language Agents for Data-Driven Scientific Discovery](https://arxiv.org/abs/2410.05080)
+	- [ProtAgents: Protein discovery via large language model multi-agent collaborations combining physics and machine learning](https://arxiv.org/abs/2402.04268)
+	- [BLADE: Benchmarking Language Model Agents for Data-Driven Science](https://arxiv.org/abs/2408.09667)
+	- [DS-Agent: Automated Data Science by Empowering Large Language Models with Case-Based Reasoning](https://arxiv.org/abs/2402.17453)
+	- [InfiAgent-DABench: Evaluating Agents on Data Analysis Tasks](https://arxiv.org/abs/2401.05507)
+	- [Autonomous LLM-driven research from data to human-verifiable research papers](https://arxiv.org/abs/2404.17605)
+	- [Navigating LLM Ethics: Advancements, Challenges, and Future Directions](https://arxiv.org/abs/2406.18841)
+- Research Question-Answering: 논문 및 연구 자료에 대한 질의응답 지원
+	- [ScholarChemQA: Unveiling the Power of Language Models in Chemical Research Question Answering](https://arxiv.org/abs/2407.16931)
+	- [PaperQA: Retrieval-Augmented Generative Agent for Scientific Research](https://arxiv.org/abs/2312.07559)
+	- [BioKGBench: A Knowledge Graph Checking Benchmark of AI Agent for Biomedical Science](https://arxiv.org/abs/2407.00466)
+	- [CS-Bench: A Comprehensive Benchmark for Large Language Models towards Computer Science Mastery](https://arxiv.org/abs/2406.08587)
+- Research Ideation: 새로운 연구 주제 및 가설 탐색
+	- [ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models](https://arxiv.org/abs/2404.07738)
+	- [SciAgents: Automating scientific discovery through multi-agent intelligent graph reasoning](https://arxiv.org/abs/2409.05556)
+	- [Chain of Ideas: Revolutionizing Research Via Novel Idea Development with LLM Agents](https://arxiv.org/abs/2410.13185)
+	- [Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers](https://arxiv.org/abs/2409.04109)
+- Automated Paper Reviewing: 논문 평가 및 피드백 자동화
+	- [MARG: Multi-Agent Review Generation for Scientific Papers](https://arxiv.org/abs/2401.04259)
+	- [Can large language models provide useful feedback on research papers? A large-scale empirical analysis](https://arxiv.org/abs/2310.01783)
+	- [The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery](https://arxiv.org/abs/2408.06292)
+	- [CycleResearcher: Improving Automated Research via Automated Review](https://arxiv.org/abs/2411.00816)
+- Literature Search: 연구 논문 검색 및 분석
+	- []()
+	- []()
+	- []()
+	- []()
+- Predicting the Outcome of Experiments: 연구 실험의 가능성 및 결과 예측
+	- []()
+	- []()
+	- []()
+	- []()
+	- []()
 
 ### LLMs for autonomous research
 
