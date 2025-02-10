@@ -61,7 +61,9 @@ math: true
 	- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 - 대표적인 모델
 	- Claude [The claude 3 model family: Opus, sonnet, haiku](https://www.semanticscholar.org/paper/The-Claude-3-Model-Family%3A-Opus%2C-Sonnet%2C-Haiku/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627?utm_source=direct_link)
-	- Llama [The Llama 3 Herd of Models](https://arxiv.org/abs/2407.21783) [LLaMA: Open and Efficient Foundation Language Models
+	- Llama 
+		- [The Llama 3 Herd of Models](https://arxiv.org/abs/2407.21783) 
+		- [LLaMA: Open and Efficient Foundation Language Models
 ](https://arxiv.org/abs/2302.13971)
 	- ChatGPT [GPT-4 Technical Report](https://arxiv.org/abs/2303.08774) [Gpt-4o system card](https://arxiv.org/abs/2410.21276)
 - LLM은 번역, 요약, 추론과 같이 다양한 작업 수행, 사전 훈련 과정에서 학습한 패턴을 일반화하여 새로운 입력에 대해 대응하는 능력을 갖춤
@@ -117,13 +119,28 @@ math: true
 ### Automated machine learning
 - ML agent의 성능 평가를 위해 Kaggle 플랫폼을 벤치마크로 활용
 - 대표적인 AutoML 평가 프레임워크
-
+	- MLE-Bench [MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering](https://arxiv.org/abs/2410.07095) -> 74개 챌린지를 벤치마크롤 활용
+	- DS-Bench [DSBench: How Far Are Data Science Agents to Becoming Data Science Experts?](https://arxiv.org/abs/2409.07703) -> 74개 챌린지를 벤치마크로 활용
+	- MLAgentBench [MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation](https://arxiv.org/abs/2310.03302) -> 6개 챌린지를 벤치마크로 활용
+- ML solver: Kaggle 챌린지를 자동으로 해결
+	- AIDE [AIDE: Human-Level Performance in Data Science Competitions](https://www.weco.ai/blog/technical-report) -> 머신러닝 코드 내 특징(feature) 구현, 버그 수정, 코드 리팩토링 자동화
+	- CodeActAgent(OpenHands) [OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://arxiv.org/abs/2407.16741) -> ML 문제 해결을 위한 자동 코드 작성 및 최적화 수행
+	- ReseartchAgent(MLAB) [MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation](https://arxiv.org/abs/2310.03302) -> MLAgentBench의 일부. 자동 모델링 및 최적화 수행
+	- Agent K [Large Language Models Orchestrating Structured Reasoning Achieve Kaggle Grandmaster Level](https://arxiv.org/abs/2411.03562) -> Kaggle 챌린지의 URL을 입력하면 인간 수준의 성능으로 문제 해결 
 
 ### AI in Scientific Discovery
+- Mathematics [Mathematical discoveries from program search with large language models](https://www.nature.com/articles/s41586-023-06924-6) -> 새로운 수학적 패턴 및 정리를 발견하는 데 활용
+- Material Science [Scaling deep learning for materials discovery](https://www.nature.com/articles/s41586-023-06735-9) -> 신소재 탐색 및 최적화
+- Chemistry []() -> 신약 개발 및 분자 구조 예측 
+- Algorithm Discovery []() -> 최적화 및 자동 알고리즘 생성
+- Computational Biology []() -> 유전체 분석 및 단백질 상호작용 예측
+- => 연구들은 AI 연구 수행의 도구로 활용하여, AI가 연구를 자율적으로 수행하기 보단 연구를 보조하는 역할로 발전하고 있다.
 
 ### LLMs for research related tasks
 
+
 ### LLMs for autonomous research
+
 
 ## 3. Agent Laboratory
 ---
