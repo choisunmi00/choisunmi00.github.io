@@ -170,17 +170,32 @@ math: true
 	- [Can large language models provide useful feedback on research papers? A large-scale empirical analysis](https://arxiv.org/abs/2310.01783)
 	- [The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery](https://arxiv.org/abs/2408.06292)
 	- [CycleResearcher: Improving Automated Research via Automated Review](https://arxiv.org/abs/2411.00816)
-- Literature Search: 연구 논문 검색 및 분석
-	- []()
-	- []()
-	- []()
-	- []()
+- Literature Search: 문헌 검색 및 분석
+	- [LitSearch: A Retrieval Benchmark for Scientific Literature Search](https://arxiv.org/abs/2407.18940)
+	- [ResearchArena: Benchmarking LLMs' Ability to Collect and Organize Information as Research Agents](https://arxiv.org/abs/2406.10291)
+	- [SciLitLLM: How to Adapt LLMs for Scientific Literature Understanding](https://arxiv.org/abs/2408.15545)
+	- [CiteME: Can Language Models Accurately Cite Scientific Claims?](https://arxiv.org/abs/2407.12861)
 - Predicting the Outcome of Experiments: 연구 실험의 가능성 및 결과 예측
-	- []()
-	- []()
-	- []()
-	- []()
-	- []()
+	- [Predicting Results of Social Science Experiments Using Large Language Models](https://docsend.com/view/ity6yf2dansesucf)
+	- [ChatGPT as Research Scientist: Probing GPT's Capabilities as a Research Librarian, Research Ethicist, Data Generator and Data Predictor](https://arxiv.org/abs/2406.14765)
+	- [Large language models surpass human experts in predicting neuroscience results](https://www.nature.com/articles/s41562-024-02046-9)
+	- [Automated Social Science: Language Models as Scientist and Subjects](https://arxiv.org/abs/2404.11794)
+	- [MASSW: A New Dataset and Benchmark Tasks for AI-Assisted Scientific Workflows](https://arxiv.org/abs/2406.06357)
+- Reasearch Ideation 분야에서의 상반된 연구 결과
+	- LLM이 연구자보다 더 참신한 아이디어 생성
+		- [Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers](https://arxiv.org/abs/2409.04109)
+	- LLM을 사용할 때 창의성 감소
+		- [Art or Artifice? Large Language Models and the False Promise of Creativity](https://arxiv.org/abs/2309.14556)
+	- LLM이 생성하는 아이디어의 균질화(homogeneous effects) 경향
+		- [Homogenization Effects of Large Language Models on Human Creative Ideation](https://dl.acm.org/doi/10.1145/3635636.3656204)
+		- [Shared Imagination: LLMs Hallucinate Alike](https://arxiv.org/abs/2407.16604)
+- Human-AI collaboration에서 상반된 연구 결과
+	- AI와 협력할 때 더 참신한 아이디어 도출
+		- [How AI Ideas Affect the Creativity, Diversity, and Evolution of Human Ideas: Evidence From a Large, Dynamic Experiment](https://arxiv.org/abs/2401.13481)
+		- [How AI Processing Delays Foster Creativity: Exploring Research Question Co-Creation with an LLM-based Agent](https://dl.acm.org/doi/10.1145/3613904.3642698)
+	- AI와 협업할 경우 창의성 감소
+		- [Does Writing with Language Models Reduce Content Diversity?](https://arxiv.org/abs/2309.05196)
+- => LLM의 한계를 고려했을 때, 사람이 주도하는 아이디어 생성과 LLM 기반 워크플로우를 결합하는 방식이 가장 강력한한 시스템
 
 ### LLMs for autonomous research
 
