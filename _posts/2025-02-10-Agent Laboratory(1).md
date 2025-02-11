@@ -56,7 +56,7 @@ math: true
 
 ## 2. Background & Related Work
 ---
-### Large language models
+#### Large language models
 - 본 연구의 agent는 autoregressive LLM을 기반으로 구축됨
 - LLM은 Transfomer 아키텍처를 활용
 	- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
@@ -70,7 +70,7 @@ math: true
 - LLM은 번역, 요약, 추론과 같이 다양한 작업 수행, 사전 훈련 과정에서 학습한 패턴을 일반화하여 새로운 입력에 대해 대응하는 능력을 갖춤
 	- [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
 
-### LLM Agents
+#### LLM Agents
 - agent: LLM에 구조화된 프레임워크를 도입하여 자율적 및 반자율적 작업을 수행하도록 확장하는 방식의 LLM 기반 시스템
 	- [AgentVerse: Facilitating Multi-Agent Collaboration and Exploring Emergent Behaviors](https://arxiv.org/abs/2308.10848)
 	- [CAMEL: Communicative Agents for "Mind" Exploration of Large Language Model Society](https://arxiv.org/abs/2303.17760)
@@ -117,7 +117,7 @@ math: true
 		- [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://arxiv.org/abs/2305.16291)
 - LLM agent의 더 폭넓은 개요 ⟶ [A Survey on Large Language Model based Autonomous Agents](https://arxiv.org/abs/2308.11432)
 
-### Automated machine learning
+#### Automated machine learning
 - ML agent의 성능 평가를 위해 Kaggle 플랫폼을 벤치마크로 활용
 - 대표적인 AutoML 평가 프레임워크
 	- MLE-Bench [MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering](https://arxiv.org/abs/2410.07095) -> 74개 챌린지를 벤치마크롤 활용
@@ -129,7 +129,7 @@ math: true
 	- ReseartchAgent(MLAB) [MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation](https://arxiv.org/abs/2310.03302) -> MLAgentBench의 일부. 자동 모델링 및 최적화 수행
 	- Agent K [Large Language Models Orchestrating Structured Reasoning Achieve Kaggle Grandmaster Level](https://arxiv.org/abs/2411.03562) -> Kaggle 챌린지의 URL을 입력하면 인간 수준의 성능으로 문제 해결 
 
-### AI in Scientific Discovery
+#### AI in Scientific Discovery
 - Mathematics: 새로운 수학적 패턴 및 정리를 발견하는 데 활용 [Mathematical discoveries from program search with large language models](https://www.nature.com/articles/s41586-023-06924-6) 
 - Material Science: 신소재 탐색 및 최적화 [Scaling deep learning for materials discovery](https://www.nature.com/articles/s41586-023-06735-9)
 - Chemistry: 신약 개발 및 분자 구조 예측 
@@ -139,7 +139,7 @@ math: true
 - Computational Biology: 유전체 분석 및 단백질 상호작용 예측 [Automating Exploratory Proteomics Research via Language Models](https://arxiv.org/abs/2411.03743)
 - => 연구들은 AI 연구 수행의 도구로 활용하여, AI가 연구를 자율적으로 수행하기 보단 연구를 보조하는 역할로 발전하고 있다.
 
-### LLMs for research related tasks
+#### LLMs for research related tasks
 - Code Generation: 연구 및 개발 과정에서 코드 자동 생성
 	- [Evaluating Large Language Models Trained on Code](https://arxiv.org/abs/2107.03374)
 	- [CodeGen: An Open Large Language Model for Code with Multi-Turn Program Synthesis](https://arxiv.org/abs/2203.13474)
@@ -198,7 +198,7 @@ math: true
 		- [Does Writing with Language Models Reduce Content Diversity?](https://arxiv.org/abs/2309.05196)
 - => 현재 LLM의 한계를 고려했을 때, 연구에서 가장 강력한 시스템은 사람이 주도하는 아이디어 생성과 LLM 기반 워크플로우를 결합하는 방식이 될 것임을 시사사
 
-### LLMs for autonomous research
+#### LLMs for autonomous research
 - 자율 연구를 위한 주요 LLM 시스템
 	- [The Virtual Lab: AI Agents Design New SARS-CoV-2 Nanobodies with Experimental Validation](https://www.biorxiv.org/content/10.1101/2024.11.11.623004v1)
 		- LLM 에이전트 팀이 연구자와 협력하여 연구 수행
