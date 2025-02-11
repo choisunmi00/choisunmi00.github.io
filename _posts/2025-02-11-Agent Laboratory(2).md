@@ -11,3 +11,7 @@ math: true
 ---
 
 [Agent Laboratory: Using LLM Agents as Research Assistants](https://arxiv.org/abs/2501.04227)
+
+## 3. Agent Laboratory
+---
+<img src="https://github.com/SamuelSchmidgall/AgentLaboratory/raw/main/media/AgentLabWF.png" alt="1" width="50%" height="50%"/>
