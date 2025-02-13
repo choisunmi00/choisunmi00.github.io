@@ -14,7 +14,7 @@ math: true
 
 ## 3. Agent Laboratory
 ---
-<img src="https://github.com/SamuelSchmidgall/AgentLaboratory/raw/main/media/AgentLabWF.png" alt="1" width="50%" height="50%"/>
+<img src="https://github.com/SamuelSchmidgall/AgentLaboratory/raw/main/media/AgentLabWF.png" alt="1" width="80%" height="80%"/>
 
 - Agent Laboratory: 연구 논문의 독립적인 수집 및 분석 -> 협력적인 실험 설계 및 데이터 준비 -> 자동화된 실험 수행 및 연구 보고서 생성
 - Agent Laboratory Workflow
@@ -64,6 +64,13 @@ math: true
         - 코드 실행 단계: 컴파일러를 통해 runtime error확인 후, 성능 점수 반환하여 성능이 가장 높은 코드로 업데이트.
         - 코드 실행이 실패할 경우 agent가 복구 시도. 복구 시도 횟수는 $$N_{rep}$$로 제한(본 논문의 경우 $$N_{rep} = 3$$). 횟수 만큼 수정 시도 후에도 해결되지 않으면 코드 대체(`REPLACE`) 수행    
     - C. **Program Scoring**
-
+        - scoring function을 사용하여 기존 코드보다 우수한지 판별
+        - mle-solver가 생성한 코드를 평가하기 위해 LLM reward model 사용.
+        - reward model은 LM을 호출하여 연구 계획, 생성된 코드, 출력을 고려하여 초기 목표에 얼마나 부합하는지 0부터 1사이의 범위로 점수화
+        - [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601) LLM reasoning tree search와 유사, 다만 논리적 추론 아닌 코드 실행 결과를 기준으로 탐색
+        - [AIDE: Human-Level Performance in Data Science Competitions](https://www.weco.ai/blog/technical-report) ALDE의 Solutopm Space Search와 유사, 다만 코드 정확도 뿐만 아니라 코드의 품질 및 실험 목표와의 일치도를 종합적으로 평가
     - D. **Self Reflection**
+        - 코드 실행 결과에 상관없이 self-reflection 단계 수행
+        - [Self-Reflection in LLM Agents: Effects on Problem-Solving Performance](https://arxiv.org/abs/2405.06682) & [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366)
+        - `mle-solver`
     - E. **Performance Stabilization**

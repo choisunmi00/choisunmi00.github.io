@@ -197,7 +197,7 @@ description: reguloGPT Harnessing GPT for Knowledge Graph Construction of Molecu
   other(L)은 질병 표현형 또는 결과 정의.  
   other(H)는 화학적 자극 또는 환경적 자극.  
 
-  => MRP의 특징
+  ⇒ MRP의 특징
 
 ### C. m<sup>6</sup>A-KG는 다양한 암 유형에서 m<sup>6</sup> 기능의 독특한 메커니즘을 보여준다  
 

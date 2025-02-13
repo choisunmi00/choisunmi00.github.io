@@ -119,14 +119,14 @@ description: >-
 #### Automated machine learning
 - ML agent의 성능 평가를 위해 Kaggle 플랫폼을 벤치마크로 활용
 - 대표적인 AutoML 평가 프레임워크
-	- MLE-Bench [MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering](https://arxiv.org/abs/2410.07095) -> 74개 챌린지를 벤치마크롤 활용
-	- DS-Bench [DSBench: How Far Are Data Science Agents to Becoming Data Science Experts?](https://arxiv.org/abs/2409.07703) -> 74개 챌린지를 벤치마크로 활용
-	- MLAgentBench [MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation](https://arxiv.org/abs/2310.03302) -> 6개 챌린지를 벤치마크로 활용
+	- MLE-Bench [MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering](https://arxiv.org/abs/2410.07095) ⟶ 74개 챌린지를 벤치마크롤 활용
+	- DS-Bench [DSBench: How Far Are Data Science Agents to Becoming Data Science Experts?](https://arxiv.org/abs/2409.07703) ⟶ 74개 챌린지를 벤치마크로 활용
+	- MLAgentBench [MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation](https://arxiv.org/abs/2310.03302) ⟶ 6개 챌린지를 벤치마크로 활용
 - ML solver: Kaggle 챌린지를 자동으로 해결
-	- AIDE [AIDE: Human-Level Performance in Data Science Competitions](https://www.weco.ai/blog/technical-report) -> 머신러닝 코드 내 특징(feature) 구현, 버그 수정, 코드 리팩토링 자동화
-	- CodeActAgent(OpenHands) [OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://arxiv.org/abs/2407.16741) -> ML 문제 해결을 위한 자동 코드 작성 및 최적화 수행
-	- ReseartchAgent(MLAB) [MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation](https://arxiv.org/abs/2310.03302) -> MLAgentBench의 일부. 자동 모델링 및 최적화 수행
-	- Agent K [Large Language Models Orchestrating Structured Reasoning Achieve Kaggle Grandmaster Level](https://arxiv.org/abs/2411.03562) -> Kaggle 챌린지의 URL을 입력하면 인간 수준의 성능으로 문제 해결 
+	- AIDE [AIDE: Human-Level Performance in Data Science Competitions](https://www.weco.ai/blog/technical-report) ⟶ 머신러닝 코드 내 특징(feature) 구현, 버그 수정, 코드 리팩토링 자동화
+	- CodeActAgent(OpenHands) [OpenHands: An Open Platform for AI Software Developers as Generalist Agents](https://arxiv.org/abs/2407.16741) ⟶ ML 문제 해결을 위한 자동 코드 작성 및 최적화 수행
+	- ReseartchAgent(MLAB) [MLAgentBench: Evaluating Language Agents on Machine Learning Experimentation](https://arxiv.org/abs/2310.03302) ⟶ MLAgentBench의 일부. 자동 모델링 및 최적화 수행
+	- Agent K [Large Language Models Orchestrating Structured Reasoning Achieve Kaggle Grandmaster Level](https://arxiv.org/abs/2411.03562) ⟶ Kaggle 챌린지의 URL을 입력하면 인간 수준의 성능으로 문제 해결 
 
 #### AI in Scientific Discovery
 - Mathematics: 새로운 수학적 패턴 및 정리를 발견하는 데 활용 [Mathematical discoveries from program search with large language models](https://www.nature.com/articles/s41586-023-06924-6) 
@@ -136,7 +136,7 @@ description: >-
 	- [Highly accurate protein structure prediction with AlphaFold](https://www.nature.com/articles/s41586-021-03819-2)
 - Algorithm Discovery: 최적화 및 자동 알고리즘 생성 [Discovering faster matrix multiplication algorithms with reinforcement learning](https://www.nature.com/articles/s41586-022-05172-4) 
 - Computational Biology: 유전체 분석 및 단백질 상호작용 예측 [Automating Exploratory Proteomics Research via Language Models](https://arxiv.org/abs/2411.03743)
-- => 연구들은 AI 연구 수행의 도구로 활용하여, AI가 연구를 자율적으로 수행하기 보단 연구를 보조하는 역할로 발전하고 있다.
+- ⇒ 연구들은 AI 연구 수행의 도구로 활용하여, AI가 연구를 자율적으로 수행하기 보단 연구를 보조하는 역할로 발전하고 있다.
 
 #### LLMs for research related tasks
 - Code Generation: 연구 및 개발 과정에서 코드 자동 생성
@@ -195,7 +195,7 @@ description: >-
 		- [How AI Processing Delays Foster Creativity: Exploring Research Question Co-Creation with an LLM-based Agent](https://dl.acm.org/doi/10.1145/3613904.3642698)
 	- AI와 협업할 경우 창의성 감소
 		- [Does Writing with Language Models Reduce Content Diversity?](https://arxiv.org/abs/2309.05196)
-- => 현재 LLM의 한계를 고려했을 때, 연구에서 가장 강력한 시스템은 사람이 주도하는 아이디어 생성과 LLM 기반 워크플로우를 결합하는 방식이 될 것임을 시사사
+- ⇒ 현재 LLM의 한계를 고려했을 때, 연구에서 가장 강력한 시스템은 사람이 주도하는 아이디어 생성과 LLM 기반 워크플로우를 결합하는 방식이 될 것임을 시사사
 
 #### LLMs for autonomous research
 - 자율 연구를 위한 주요 LLM 시스템
@@ -212,7 +212,7 @@ description: >-
 		- 코드 작성, 실험 실행, automated peer review를 포함한 완전한 연구 프로세스 자동화
 - LLM 연구 아이디어 생성의 한계
 	- [Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers](https://arxiv.org/abs/2409.04109) 실현 가능성과 구현 세부 사항에서 부족
-- => 현재 최적 연구 시스템은 LLM을 보조 도구로 활용하여 연구자가 더욱 효과적으로 아이디어를 구체화하고 실험을 진행하는 방식
+- ⇒ 현재 최적 연구 시스템은 LLM을 보조 도구로 활용하여 연구자가 더욱 효과적으로 아이디어를 구체화하고 실험을 진행하는 방식
 
 
 
