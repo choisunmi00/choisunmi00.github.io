@@ -24,7 +24,7 @@ description: reguloGPT Harnessing GPT for Knowledge Graph Construction of Molecu
 ---
 - Motivation: MRP에 대한 KG 구축이 현재로선 미미하다.
 - Results: reguloGPT의 문헌에서 생물학적 지식 추출 가능성  
-  reguloGPT 통한 예측 -> m<sup>6</sup>A-KG 구축 -> m<sup>6</sup>A 조절 메커니즘 밝힘.       
+  reguloGPT 통한 예측 ⟶ m<sup>6</sup>A-KG 구축 ⟶ m<sup>6</sup>A 조절 메커니즘 밝힘.       
   컨텍스트 인식 관계형 그래프 도입 / m<sup>6</sup>A 제목 및 벤치마크 데이터 세트 제작        
   G-Eval 체계: 성능 평가 위해 GPT-4를 활용. 기존 주석 기반 평가와 일치.
 - Availability and implementation:     
@@ -37,7 +37,7 @@ description: reguloGPT Harnessing GPT for Knowledge Graph Construction of Molecu
 - 왜 필요한가   
   MRP: 생물의학 연구 핵심.     
   KG: MRP를 위한 도구. KG는 복잡한 생물학적 지식을 구조화하여 표현한다.  
-  -> 문헌에서 지식 추출 자동화: NLP(Natural Language Processing) 이용  
+  ⟶ 문헌에서 지식 추출 자동화: NLP(Natural Language Processing) 이용  
   
 - 현재는 어떤가  
   현재로서는 NLP를 통해 복잡한 MRP를 매핑하기에는 부적절하다.
@@ -87,7 +87,7 @@ description: reguloGPT Harnessing GPT for Knowledge Graph Construction of Molecu
 ### B. 벤치마크 및 지식 그래프 생성을 위한 데이터 세트 구축
 
 - m<sup>6</sup>A 연구와 관련된 문헌의 제목 추출: PubMed, PtbTator 검색 및 사용.  
-  완전한 문장, 여러 유전자에 대한 참조를 포함하는 제목 -> m<sup>6</sup>A와 유전자/단백질 사이의 경로 매핑  
+  완전한 문장, 여러 유전자에 대한 참조를 포함하는 제목 ⟶ m<sup>6</sup>A와 유전자/단백질 사이의 경로 매핑  
 
 - 벤치마크 데이터세트에 대한 주석 방법  
   컴퓨터 과학과 생물의학 분야 전문가 5명을 주석자로 삼고 400개의 제목에 주석을 달음. 세 단계를 거침.  

@@ -16,7 +16,7 @@ math: true
 ---
 <img src="https://github.com/SamuelSchmidgall/AgentLaboratory/raw/main/media/AgentLabWF.png" alt="1" width="80%" height="80%"/>
 
-- Agent Laboratory: 연구 논문의 독립적인 수집 및 분석 -> 협력적인 실험 설계 및 데이터 준비 -> 자동화된 실험 수행 및 연구 보고서 생성
+- Agent Laboratory: 연구 논문의 독립적인 수집 및 분석 ⟶ 협력적인 실험 설계 및 데이터 준비 ⟶ 자동화된 실험 수행 및 연구 보고서 생성
 - Agent Laboratory Workflow
     - phD 및 Postdoc Agents와 인간 연구자의 협력력
     1. 문헌 조사 (Literature Reiview)
@@ -43,7 +43,7 @@ math: true
 - 연구 계획 수립 단계: 문헌 조사 결과와 연구 목표를 바탕으로, 구체적이고 실행 가능한 연구 계획 작성
 - PhD agent와 Postdoc agent의 대화(collaborate through dialogue)
     - 실험 구성 요소 결정: 구현할 머신러닝, 사용할 데이터셋, 실험의 주요 단계
-    - PhD agent와 Postdic agent간의 합의 -> 연구 계획 확정
+    - PhD agent와 Postdic agent간의 합의 ⟶ 연구 계획 확정
 - Postdoc agent가 `plan` 명령을 사용해 연구 계획 제출
 #### Data Preparation
 - 데이터 준비 단계: 실험 실행을 위한 데이터 전처리 및 준비 작업을 수행하는 코드 작성
