@@ -72,6 +72,16 @@ math: true
     - D. **Self Reflection**
         - 코드 실행 결과에 상관없이 self-reflection 단계 수행
         - [Self-Reflection in LLM Agents: Effects on Problem-Solving Performance](https://arxiv.org/abs/2405.06682) & [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366)
-        - `mle-solver`
+        - `mle-solver`는 자신의 행동 결과에 대해 refelection 수행
+            - 컴파일 실패: solver는 이 문제를 다음 반복에서 어떻게 해결할지 self-reflection
+            - 컴파일 성공 및 점수 반환: solver는 이 점수를 어떻게 높일 수 있을 지 self-reflection
+        - ⟶ 생성된 코드의 품질과 견고성을 반복적인 주기를 통해 개선
     - E. **Performance Stabilization**
+        - performance drift를 방지하기 위해 두 가지 메커니즘 구현: top program sampling, batch-parallelization
+        - top program sampling: 최고 점수를 기록한 프로그램 모음을 유지, 명령을 실행하기 전 하나의 프로그램을 무작위로 샘플링
+        - batch-parallelizaionz: 각 해결 단계에서 N개의 수정을 동시 진행, 가장 높은 점수를 얻은 수정을 선택해 상위 프로그램 모음에서 점수가 가장 낮은 프로그램과 교체
+        - ⟶ 코드 수정을 위해 high-entrophy sampling 사용, 새로운 해결책을 탐색하는 것과 기존 해결책을 개선하는 것 간의 균형을 이루어 안정적인 코드 수정 유지 
+    - **Results Interpertation**'
         - 
+
+### 3.3 Report Writing
