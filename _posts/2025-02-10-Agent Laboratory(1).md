@@ -14,7 +14,7 @@ description: >-
 - LLM 기반 프레임워크 Agent Laboratory
 	- 과학적 발견 과정을 가속화하고 연구 비용을 절감하여 연구의 질 향상을 목적으로 함
 	- 자율적으로 전체 연구 과정을 수행
-		- 연구자가 제공한 연구 아이디어를 바탕으로 (1) 문헌 조사, 실험, 연구 보고서 작성의 세 가지 단계를 거쳐 연구결과 도출 ⟶ 코드 저장소 및 연구보고서를 포함한 종합적인 연구 산출물 생성
+		- 연구자가 제공한 연구 아이디어를 바탕으로 (1)문헌 조사, (2)실험, (3)연구 보고서 작성의 세 가지 단계를 거쳐 연구결과 도출 ⟶ 코드 저장소(repoisitory) 및 연구보고서를 포함한 종합적인 연구 산출물 생성
 		- 각 단계에서 연구자가 피드백과 지침 제공 가능
 	<img src="https://github.com/SamuelSchmidgall/AgentLaboratory/raw/main/media/AgentLab.png" alt="1" width="70%" height="70%"/>
 - Agent Laboratory의 배포와 연구자들의 평가로 도출된 결과
@@ -48,7 +48,7 @@ description: >-
 	3. NeurlPS 스타일 평가 결과
 		- 백엔드 중 o1-preview가 가장 우수한 성능
 		- 자동화 평가를 보완하기 위해 사람의 피드백 필수적
-	4. Agent Laboratoryd의 'Co-pilot' 모드(사용자가 직접 연구 진행 조율 모드)는 완전 자동 모드보다 높은 점수를 기록하나, 연구자의 의도와 모델 출력을 일치시키는 데 어려움이 존재
+	4. Agent Laboratory의 'Co-pilot' 모드(사용자가 직접 연구 진행을 조율하는 모드)는 완전 자동 모드보다 높은 점수를 기록하나, 연구자의 의도와 모델 출력을 일치시키는 데 어려움이 존재
 	5. Co-pilot 기능의 전반적인 유용성과 사용성은 높게 평가
 	6. 논문당 비용이 GPT-4o 백엔드 기준으로 2.33달러, 연구 수행 비용 대폭 절감
 	7. MLE-Bench challenge에서 제안된 mle-solver가 state-of-art를 기록
