@@ -38,18 +38,18 @@ math: true
     - 최대 문헌 수에 도달하면 최종 `add paper` 명령을 통해 최종 문헌 목록 확정
 
 ### 3.2 Experimentation
-- 실험 수행 단계
+- 실험 수행 단계  
 #### Plan Formulation
 - 연구 계획 수립 단계: 문헌 조사 결과와 연구 목표를 바탕으로, 구체적이고 실행 가능한 연구 계획 작성
 - PhD agent와 Postdoc agent의 대화(collaborate through dialogue)
     - 실험 구성 요소 결정: 구현할 머신러닝, 사용할 데이터셋, 실험의 주요 단계
     - PhD agent와 Postdic agent간의 합의 ⟶ 연구 계획 확정
-- Postdoc agent가 `plan` 명령을 사용해 연구 계획 제출
+- Postdoc agent가 `plan` 명령을 사용해 연구 계획 제출   
 #### Data Preparation
 - 데이터 준비 단계: 실험 실행을 위한 데이터 전처리 및 준비 작업을 수행하는 코드 작성
 - ML Engineer agent: `Python` command 사용, 출력 결과 확인, Hugging Face 데이터셋 검색(`search HF` command)
-- SW Engineer agent: `submit code` command 사용, 제출 전 python 컴파일러를 통해 코드 오류 검증
-#### Running Experiments
+- SW Engineer agent: `submit code` command 사용, 제출 전 python 컴파일러를 통해 코드 오류 검증   
+#### Running Experiments  
 - 실험 실행 단계: 연구 계획을 구현 및 실행
 - `mle-solver`: 머신러닝 코드를 자동으로 생성, 테스트, 개선
     <img src="https://github.com/user-attachments/assets/878af2b7-7207-40f3-89dc-3e6dcef215ca" alt="2" width="70%" height="70%"/>
@@ -88,6 +88,17 @@ math: true
     
 ### 3.3 Report Writing
 #### Report Writing
-- 
+- 보고서 작성 단계에서는 PhD agnet와 Professor agnet가 연구 결과를 종합하여 포괄적인 학술 보고서 작성
+- `paper-solver`라는 모듈을 통해 보고서를 반복적으로 생성하고 수정. 이전 단계에서 `Agent Laboratory`가 생성한 연구 성과를 체계적으로 정리. 출력된 보고서는 학술 논문의 표준 구조.
+- `paper-solver`의 workflow: 
     - A. **Initial Report Scaffold**
-    - B. Arxiv Res
+        - 연구 논문의 초기 구조 생성
+        - 8가지 standardized sections: Abstract, Introduction, Background, Related Work, Methods, Experimental Setup, Results, Discussion
+        - 
+    - B. **Arxiv Research**
+    - C. **Report Editing**
+    - D. **Paper Review**  
+      
+#### Paper Refinement
+
+#### 3.3.1 *Autonomous versus Co-Pilot Mode:*
