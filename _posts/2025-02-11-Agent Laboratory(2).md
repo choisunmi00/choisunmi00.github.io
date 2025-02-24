@@ -14,7 +14,7 @@ math: true
 
 ## 3. Agent Laboratory
 ---
-<img src="https://github.com/SamuelSchmidgall/AgentLaboratory/raw/main/media/AgentLabWF.png" alt="1" width="80%" height="80%"/>
+<img src="https://github.com/SamuelSchmidgall/AgentLaboratory/raw/main/media/AgentLabWF.png" alt="1" width="100%" height="100%"/>
 
 - Agent Laboratory: 연구 논문의 독립적인 수집 및 분석 ⟶ 협력적인 실험 설계 및 데이터 준비 ⟶ 자동화된 실험 수행 및 연구 보고서 생성
 - Agent Laboratory Workflow
@@ -55,7 +55,7 @@ math: true
 #### Running Experiments  
 - 실험 실행 단계: 연구 계획을 구현 및 실행
 - `mle-solver`: 머신러닝 코드를 자동으로 생성, 테스트, 개선
-    <img src="https://github.com/user-attachments/assets/878af2b7-7207-40f3-89dc-3e6dcef215ca" alt="2" width="70%" height="70%"/>
+    <img src="https://github.com/user-attachments/assets/878af2b7-7207-40f3-89dc-3e6dcef215ca" alt="2" width="100%" height="100%"/>
 
     - 연구 계획과 문헌 조사를 바탕으로 초기 코드 생성
     - 가장 성능이 뛰어난 코드를 최적 코드(*top scoring program*)로 유지 
@@ -93,7 +93,7 @@ math: true
 #### Report Writing
 - 보고서 작성 단계에서는 PhD agnet와 Professor agnet가 연구 결과를 종합하여 포괄적인 학술 보고서 작성
 - `paper-solver`: 모듈을 통해 보고서를 반복적으로 생성하고 수정. 이전 단계에서 `Agent Laboratory`가 생성한 연구 성과를 체계적으로 정리. 출력된 보고서는 학술 논문의 표준 구조.
-    <img src="https://github.com/user-attachments/assets/68a24557-db7f-4829-a1df-face731243a1" alt="3" width="70%" height="70%"/>   
+    <img src="https://github.com/user-attachments/assets/68a24557-db7f-4829-a1df-face731243a1" alt="3" width="100%" height="100%"/>   
  
     - A. **Initial Report Scaffold**
         - 연구 논문의 초기 구조(scaffold) 생성
