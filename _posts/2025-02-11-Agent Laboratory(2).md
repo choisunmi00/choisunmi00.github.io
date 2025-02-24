@@ -81,7 +81,12 @@ math: true
         - top program sampling: 최고 점수를 기록한 프로그램 모음을 유지, 명령을 실행하기 전 하나의 프로그램을 무작위로 샘플링
         - batch-parallelizaionz: 각 해결 단계에서 N개의 수정을 동시 진행, 가장 높은 점수를 얻은 수정을 선택해 상위 프로그램 모음에서 점수가 가장 낮은 프로그램과 교체
         - ⟶ 코드 수정을 위해 high-entrophy sampling 사용, 새로운 해결책을 탐색하는 것과 기존 해결책을 개선하는 것 간의 균형을 이루어 안정적인 코드 수정 유지 
-    - **Results Interpertation**'
-        - 
-
+#### Results Interpertation
+- 결과 해석 단계에서 도출된 통찰을 최종 보고서 작성에 활용
+- PhD agent와 Postdoc agent는 `mle-solver`가 생성한 실험 결과를 해석하며 논의 ⟶ 학술 논문을 작성하는데 기여할 수 있는 의미 있는 해석에 동의 ⟶ Postdoc agent가 `interpretation` 명령을 통해 제출 ⟶ 보고서 작성 단계의 기초
+    
 ### 3.3 Report Writing
+#### Report Writing
+- 
+    - A. **Initial Report Scaffold**
+    - B. Arxiv Res
