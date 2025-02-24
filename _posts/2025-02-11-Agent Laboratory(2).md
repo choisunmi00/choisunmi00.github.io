@@ -93,8 +93,7 @@ math: true
 #### Report Writing
 - 보고서 작성 단계에서는 PhD agnet와 Professor agnet가 연구 결과를 종합하여 포괄적인 학술 보고서 작성
 - `paper-solver`: 모듈을 통해 보고서를 반복적으로 생성하고 수정. 이전 단계에서 `Agent Laboratory`가 생성한 연구 성과를 체계적으로 정리. 출력된 보고서는 학술 논문의 표준 구조.
-    <img src="https://github.com/user-attachments/assets/878af2b7-7207-40f3-89dc-3e6dcef215ca" alt="3" width="70%" height="70%"/>
-    - 
+    <img src="https://github.com/user-attachments/assets/878af2b7-7207-40f3-89dc-3e6dcef215ca" alt="3" width="70%" height="70%"/>   
  
     - A. **Initial Report Scaffold**
         - 연구 논문의 초기 구조(scaffold) 생성
