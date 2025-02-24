@@ -92,8 +92,10 @@ math: true
 ### 3.3 Report Writing
 #### Report Writing
 - 보고서 작성 단계에서는 PhD agnet와 Professor agnet가 연구 결과를 종합하여 포괄적인 학술 보고서 작성
-- `paper-solver`라는 모듈을 통해 보고서를 반복적으로 생성하고 수정. 이전 단계에서 `Agent Laboratory`가 생성한 연구 성과를 체계적으로 정리. 출력된 보고서는 학술 논문의 표준 구조.
-- `paper-solver`의 workflow:   
+- `paper-solver`: 모듈을 통해 보고서를 반복적으로 생성하고 수정. 이전 단계에서 `Agent Laboratory`가 생성한 연구 성과를 체계적으로 정리. 출력된 보고서는 학술 논문의 표준 구조.
+    <img src="https://github.com/user-attachments/assets/878af2b7-7207-40f3-89dc-3e6dcef215ca" alt="3" width="70%" height="70%"/>
+    - 
+ 
     - A. **Initial Report Scaffold**
         - 연구 논문의 초기 구조(scaffold) 생성
         - 8가지 standardized sections: Abstract, Introduction, Background, Related Work, Methods, Experimental Setup, Results, Discussion
@@ -107,8 +109,48 @@ math: true
         - `EDIT` 명령어: 연구 계획과 논리적 흐름에 맞게 내용을 조정, 논리적 일관성과 명료함 보장, 학술 논문 포맷 유지 ⟶ LaTeX 코드의 특정 부분을 정밀하게 수정
         - 수정 사항을 적용하기 전 LaTeX를 컴파일하여 오류가 없는지 확인, 문서의 무결성(integrity) 유지
     - D. **Paper Review**  
+        - 논문 점수를 평가하기 위해 automated review system([https://github.com/user-attachments/assets/56f7c539-d54b-45cf-b9ac-b7f2314be1da](https://arxiv.org/abs/2408.06292))의 변형을 활용
+        - LLM을 기반으로 한 agent를 활용하여 NeurlPS 학회 가이드라인에 따라 과학 논문을 리뷰하는 방식으로 작동
+        - ICLR 2022의 OpenReview 데이터셋에서 500개 논문을 평가한 결과, 자동 리뷰 시스템의 정확도는 65%(인간 리뷰어: 66%)로 인간 수준의 평가 정확도에 도달했으며 F1 점수는 0.57(인간 리뷰어: 0.49)로 보정(calibration) 이후에는 인간을 능가하는 수준
+        - Examlple Review(o1-mini|Word Order Sensitivity)
+            ```
+             "Strengths": [
+                "Comprehensive experimental design and methodology.",
+                "Use of a well-known dataset (RACE) for evaluation.",
+                "Empirical validation of bias mitigation strategies.",
+                "Clear presentation of results and analysis."],
+            Weaknesses": [
+                "Limited exploration of additional bias mitigation techniques.",
+                "Lack of in-depth discussion on limitations
+                and societal impacts.",
+                "The originality could be enhanced by exploring novel
+                strategies."],
+            "Originality": 3, "Quality": 4, "Clarity": 3, "Significance": 3,
+            "Questions": [
+                "Have you considered exploring additional bias
+                mitigation techniques beyond majority voting and entropy-based
+                thresholding?",
+                "Can you provide more details on the potential societal impacts
+                of the model’s sensitivity to option order?",
+                "What are the limitations of the current study, and how
+                might they be addressed in future work?"],
+            "Limitations": [
+                "The study is limited to the RACE dataset and may not generalize
+                to other datasets.",
+                "The bias mitigation strategies, while effective,
+                do not completely eliminate sensitivity to option order."],
+            "Ethical Concerns": false,
+            "Soundness": 3, "Presentation": 3, "Contribution": 3,
+            "Overall": 7, "Confidence": 4,
+            "Decision": "Accept"
+            ```   
 
-      
 #### Paper Refinement
+- 논문 수정 단계에서 PhD agent는 논문을 수정할지 최종적으로 완성할지 결정
+- 세 명의 reviewer agent가 NeurlPS 학술지의 peer review 피드백을 모방하여 논문을 평가 ⟶ reviewer들은 독창성(originality), 연구 품질(quality), 명확성(clarity), 의의(significance) 등의 기준에 따라 점수를 부여 ⟶ PhD agent는 평가를 바탕으로 논문 확정 또는 수정 선택
+- 실제 학계에서 이루어지는 논문 수정 및 심사 절차를 시뮬레이션하는 과정
 
-#### 3.3.1 *Autonomous versus Co-Pilot Mode:*
+#### *3.3.1 Autonomous versus Co-Pilot Mode:*
+- `Agent Laboratory`는 두 가지 방식으로 운영될 수 있다
+- Autonomous mode: 사람은 초기 연구 아이디어만 제공. 각 작업이 완료되면 자동으로 다음 하위 작업이 진행
+- Co-Pilot mode: 사람은 연구 아이디어를 제공하는 것 외에도 각 하위 작업 끝의 체크포인트에서 agnet가 생성한 작업결과를 검토. 다음 하위 작업으로 진행할지, 수정을 수행할지 선택
