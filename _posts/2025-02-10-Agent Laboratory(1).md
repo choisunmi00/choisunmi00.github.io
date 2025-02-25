@@ -14,7 +14,7 @@ description: >-
 - LLM 기반 프레임워크 Agent Laboratory
 	- 과학적 발견 과정을 가속화하고 연구 비용을 절감하여 연구의 질 향상을 목적으로 함
 	- 자율적으로 전체 연구 과정을 수행
-		- 연구자가 제공한 연구 아이디어를 바탕으로 (1)문헌 조사, (2)실험, (3)연구 보고서 작성의 세 가지 단계를 거쳐 연구결과 도출 ⟶ 코드 저장소(repoisitory) 및 연구보고서를 포함한 종합적인 연구 산출물 생성
+		- 연구자가 제공한 연구 아이디어를 바탕으로 (1) 문헌 조사, (2) 실험, (3) 연구 보고서 작성의 세 가지 단계를 거쳐 연구결과 도출 ⟶ 코드 저장소(repoisitory) 및 연구보고서를 포함한 종합적인 연구 산출물 생성
 		- 각 단계에서 연구자가 피드백과 지침 제공 가능
 	<img src="https://github.com/SamuelSchmidgall/AgentLaboratory/raw/main/media/AgentLab.png" alt="1" width="70%" height="70%"/>
 - Agent Laboratory의 배포와 연구자들의 평가로 도출된 결과
