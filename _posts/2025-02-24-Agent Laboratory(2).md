@@ -7,7 +7,6 @@ categories: [AI, AI agent]
 tags: [paper]
 description: >-
  Agent Laboratory: Using LLM Agents as Research Assistants
-math: true
 ---
 
 [Agent Laboratory: Using LLM Agents as Research Assistants](https://arxiv.org/abs/2501.04227)
