@@ -122,7 +122,7 @@ description: >-
 - workflow에서 강제되는 구조로 인해 발생하는 한계
     1. `paper-solver`는 고정된 구조로 조직하도록 권장되며, 독특한 논문 구성이나 섹션 순서를 허용하지 않음
     2. `mle-solver`와 `paper-solver`가 논문에 대해 두 개의 그림만 생성
-    3. `Agent Laboratory`는 자체적으로 repository 수준의 코드를 관리할 수 없으며, 대신 각 단계에서 적절한 파일을 제공받고, 파일은 어느 단꼐에서 생성되었는지에 따라 저장
+    3. `Agent Laboratory`는 자체적으로 repository 수준의 코드를 관리할 수 없으며, 대신 각 단계에서 적절한 파일을 제공받고, 파일은 어느 단계계에서 생성되었는지에 따라 저장
 
 #### Challenges with hallucination
 - gpt-4o와 관련하여 hallucination 발생. 실제로는 발생하지 않은 실험 결과에 대한 언급.
@@ -133,8 +133,8 @@ description: >-
     - 그림을 생성할 때 `mle-solver`가 종종 그림 제목, 설명 등을 누락
     - `mle-solver`는 코드에서 0번 줄을 다른 줄보다 자주 수정하는 경향
     - 데이터 준비나 실험 결과에서 출력할 때 LLM이 토큰 한도에 도달하는 경우
-    - `mle-solver`가 `exie()` 명령얼르 사용하여 전체 프로세스가 종류되는 문제
-    - `mle-solver`가 `subprocess.run()` 명령어를 사용하여 호스트 컴퓨터에서 시스템 명령어를 실행한느 경우
+    - `mle-solver`가 `exit()` 명령어를 사용하여 전체 프로세스가 종류되는 문제
+    - `mle-solver`가 `subprocess.run()` 명령어를 사용하여 호스트 컴퓨터에서 시스템 명령어를 실행하는 경우
     - `paper-solver`는 arXiv 엔진을 사용해 관련 논문을 검색하는 데 어려움을 겪음(검색 시도 횟수 제한)
 
 ### 5.3 Ethical considerations
