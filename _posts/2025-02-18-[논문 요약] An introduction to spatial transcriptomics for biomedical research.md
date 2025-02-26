@@ -3,7 +3,7 @@ title: >-
     [논문 요약] An introduction to spatial transcriptomics for biomedical research
 author: csm
 date: 2025-02-18 14:10:00 +0900
-categories: [Biology, biomedical]
+categories: [Biology, Biomedical]
 tags: [paper]
 description: An introduction to spatial transcriptomics for biomedical research
 math: true
