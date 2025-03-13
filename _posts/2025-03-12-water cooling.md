@@ -1,7 +1,7 @@
 ---
 title: water cooling
 author: csm
-date: 2024-12-05 14:10:00 +0900
+date: 2025-03-13 14:10:00 +0900
 categories: [Biology, Network science]
 tags: [study]
 description: 디지털 트윈과 수냉 시스템에 관련된 자료 조사
