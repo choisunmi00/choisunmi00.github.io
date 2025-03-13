@@ -2,7 +2,7 @@
 title: LPF_Supplementary Data(2)
 author: csm
 date: 2024-12-04 14:10:00 +0900
-categories: [Biology, LPF]
+categories: [Biology, System dynamics]
 tags: [paper]
 description: >-
     LPF: a framework for exploring the wing color pattern formation of ladybird beetles in Python
