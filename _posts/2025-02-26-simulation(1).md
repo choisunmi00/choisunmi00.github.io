@@ -1,11 +1,11 @@
 ---
 title: >-
-    [프로젝트] Synthetic dataset 생성 도구 제작(1)
+    [프로젝트] Simulation 제작(1)
 author: csm
 date: 2025-02-26 14:10:00 +0900
 categories: [Research, Framework]
 tags: [project]
-description: 단일세포 및 공간전사체에 대한 합성데이터셋을 생성하는 프로젝트
+description: 단일세포 및 공간전사체에 합성데이터셋을 생성하기 위한 동역학 모델 프레임워크
 ---
 
 ## 개요
