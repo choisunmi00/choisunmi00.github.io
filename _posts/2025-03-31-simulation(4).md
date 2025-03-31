@@ -8,4 +8,6 @@ tags: [project]
 description: 단일세포 및 공간전사체에 합성데이터셋을 생성하기 위한 동역학 모델 프레임워크
 ---
 
-## 시뮬레이션 제작
+## OmniPath
+---
+- OmniPath 문서: [https://omnipath.readthedocs.io/en/latest/index.html](https://omnipath.readthedocs.io/en/latest/index.html)
