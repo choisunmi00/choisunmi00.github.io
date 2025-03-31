@@ -21,6 +21,7 @@ description: 단일세포 및 공간전사체에 합성데이터셋을 생성하
     ```
 
 ## omnipath의 상호작용 유형(type)
+- `omnipath.interactions.AllInteractions.get()`를 통해 추출
 - `post_transcriptional`: 전사 후 조절. 유전자 전사가 완료된 후, mRNA 수준에서 이루어지는 조절 과정
 - `mirna_transcriptional`: miRNA에 의한 전사 조절. miRNA가 직접적인 전사 조절에 관여. 특정 전사인자(transcription factor, TF)를 조절하거나, 크로마틴 구조를 변화시키는 방식
 - `post_translational`: 번역 후 조절. 단백질이 합성(번역)된 후, 기능이나 안정성을 조절하는 과정
