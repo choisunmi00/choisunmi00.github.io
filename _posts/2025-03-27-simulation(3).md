@@ -31,3 +31,7 @@ description: 단일세포 및 공간전사체에 합성데이터셋을 생성하
 - ⟶ 세포 간 상호작용 유형: `small_molecule_protein`, `lncrna_post_transcriptional`, `mirna_transcriptional`
 
 <script src="https://gist.github.com/choisunmi00/8272b03a29270b164773e36787ee1900.js"></script>
+
+## omnipath
+---
+- OmniPath 문서: [https://omnipath.readthedocs.io/en/latest/index.html](https://omnipath.readthedocs.io/en/latest/index.html)
