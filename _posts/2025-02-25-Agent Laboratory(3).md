@@ -1,6 +1,6 @@
 ---
 title: >-
-    [논문 요약]  Agent Laboratory(3)
+    [논문] Agent Laboratory(3)
 author: csm
 date: 2025-02-25 14:10:00 +0900
 categories: [AI, AI agent]

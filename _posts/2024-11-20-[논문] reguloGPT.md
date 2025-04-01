@@ -1,6 +1,6 @@
 ---
 title: >-
-  [논문 요약] reguloGPT
+  [논문] reguloGPT
 author: csm
 date: 2024-11-20 14:10:00 +0900
 categories: [Biology, Network science]
