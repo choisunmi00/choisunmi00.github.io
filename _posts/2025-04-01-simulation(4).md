@@ -16,7 +16,7 @@ image:
 - `sclae_free_graph()`: scale-free + 방향성 네트워크
 - boolean expression
 
-<script src="https://gist.github.com/choisunmi00/9c05013e646e9459688bc97a6a979e27.js"></script>
+<script src="https://gist.github.com/choisunmi00/5a0c8b1665508992d0c8cf483170ae03.js"></script>
 
 - 다음 단계
     -  자극과 억제 선택 
