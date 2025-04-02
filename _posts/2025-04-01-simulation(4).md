@@ -14,6 +14,9 @@ description: 단일세포 및 공간전사체에 합성데이터셋을 생성하
 - `sclae_free_graph()`: scale-free + 방향성 네트워크
 - boolean expression
 
+- img
+      ![Figure 1](assets\img\post\Gene_Boolean_Regulatory_Network.png){: w="70%" h="70%" }
+
 <script src="https://gist.github.com/choisunmi00/9c05013e646e9459688bc97a6a979e27.js"></script>
 
 - 다음 연구
@@ -22,3 +25,5 @@ description: 단일세포 및 공간전사체에 합성데이터셋을 생성하
     3. scale_free_graph 특징을 반영한 네트워크
         - preferential attachment
         - alpha, beta, gamma 값으로 연결 확률 조정 가능
+    4. omnipath 및 kegg 데이터와 연결
+    5. network motif 참고
