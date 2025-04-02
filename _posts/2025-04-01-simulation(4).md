@@ -16,16 +16,13 @@ image:
 - `sclae_free_graph()`: scale-free + 방향성 네트워크
 - boolean expression
 
-- img
-      ![Figure 1](assets/img/post/Gene_Boolean_Regulatory_Network.webp){: w="70%" h="70%" }
-
 <script src="https://gist.github.com/choisunmi00/9c05013e646e9459688bc97a6a979e27.js"></script>
 
-- 다음 연구
-    1. 자극과 억제 선택 
-    2. 발현 데이터값의 범위를 따르는 output
-    3. scale_free_graph 특징을 반영한 네트워크
+- 다음 단계
+    -  자극과 억제 선택 
+    - 발현 데이터값의 범위를 따르는 output
+    - scale_free_graph 특징을 반영한 네트워크
         - preferential attachment
         - alpha, beta, gamma 값으로 연결 확률 조정 가능
-    4. omnipath 및 kegg 데이터와 연결
-    5. network motif 참고
+    - omnipath 및 kegg 데이터와 연결
+    - network motif 참고
