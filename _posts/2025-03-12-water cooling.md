@@ -2,7 +2,7 @@
 title: Water cooling
 author: csm
 date: 2025-03-12 14:10:00 +0900
-categories: [Engineering, Visualization]
+categories: [Engineering, Digital Twin]
 tags: [study]
 description: 디지털 트윈과 수냉 시스템에 관련된 자료 조사
 ---
