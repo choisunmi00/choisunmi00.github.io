@@ -6,6 +6,8 @@ date: 2025-04-01 14:10:00 +0900
 categories: [Research, Simulation]
 tags: [project]
 description: 단일세포 및 공간전사체에 합성데이터셋을 생성하기 위한 동역학 모델 프레임워크
+image:
+  path: assets/img/post/Gene_Boolean_Regulatory_Network.webp
 ---
 
 ## sketch2
@@ -15,7 +17,7 @@ description: 단일세포 및 공간전사체에 합성데이터셋을 생성하
 - boolean expression
 
 - img
-      ![Figure 1](assets\img\post\Gene_Boolean_Regulatory_Network.png){: w="70%" h="70%" }
+      ![Figure 1](assets/img/post/Gene_Boolean_Regulatory_Network.webp){: w="70%" h="70%" }
 
 <script src="https://gist.github.com/choisunmi00/9c05013e646e9459688bc97a6a979e27.js"></script>
 
