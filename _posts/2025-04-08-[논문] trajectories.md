@@ -6,6 +6,7 @@ date: 2025-04-08 14:10:00 +0900
 categories: [Biology, System dynaimcs]
 tags: [paper]
 description: Reconstructing growth and dynamic trajectories from single-cell transcriptomics data
+math: True
 ---
 
 [Reconstructing growth and dynamic trajectories from single-cell transcriptomics data](https://www.nature.com/articles/s42256-023-00763-w)
@@ -51,9 +52,9 @@ description: Reconstructing growth and dynamic trajectories from single-cell tra
     - TrajectoryNet은 연속적인 OT 모델 환경에서 growth/death를 별개의 이산적이고 정적(static)이며 불균형(unbalanced)한 OT 모델로 통합한 최초의 방법
 - 개별 세포 수준의 유전자 발현 속도와 전체 세포 집단의 성장을 동시에 통합할 수 있는 모델과 계산 도구는 아직 부족한 실정
 
-- Fig. 1: Illustrative diagram of TIGON  
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs42256-023-00763-w/MediaObjects/42256_2023_763_Fig1_HTML.png?as=webp" alt="1" width="100%" height="100%"/>  
 
-    <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs42256-023-00763-w/MediaObjects/42256_2023_763_Fig1_HTML.png?as=webp" alt="1" width="100%" height="100%"/>  
+- Fig. 1: Illustrative diagram of TIGON  
 
     - (a): 세포 성장, 상태 전이, GRN이 포함된 세포 계통 역학 설명
     - (b): 연속적인 세포 역학
