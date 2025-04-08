@@ -1,6 +1,6 @@
 ---
 title: >-
-    [연구] Simulation 제작(7)
+    [연구] Simulation 제작(8)
 author: csm
 date: 2025-04-07 14:10:00 +0900
 categories: [Research, Simulation]
@@ -17,3 +17,6 @@ description: 단일세포 및 공간전사체에 합성데이터셋을 생성하
     2. Negative Bionomial part: 0이 아닌 경우는 실제 발현값처럼 overdispersion된 count 데이터 모델링
 - scRNA-seq 데이터에서 dropout 현상(유전자가 발현되었지만 0으로 기록되는 경우)을 모델링
 
+## dynamics network
+---
+- 서로 다른 생물학적 데이터베이스는 서로 다른 유전자 리스트를 제공하기에, 추정된 성장 결과는 데이터베이스 선택에 따라 크게 달라질 수 있음(TIGON 관련 논문)
