@@ -102,12 +102,13 @@ math: True
 - $${\partial }_{t}\rho \left(x,t\right)+\nabla \cdot \left(\mathbf{v}\left(x,t\right)\rho \left(x,t\right)\right)=g\left(x,t\right)\rho \left(x,t\right)$$
 
     - convection term $$\nabla \cdot \left(\mathbf{v}\left(x,t\right)\rho \left(x,t\right)\right)$$: 세포 밀도($$\rho$$)의 이동
-    - velocity $$\mathbf{v}\left(x,t\right)\in {{\mathbb{R}}}^{d}$$: 시간 $$t$$에서의 유전자 발현 상태 $$x$$에 있는 세포들의 유전자 발현의 순간적인 변화(속도)
+    - velocity $$\mathbf{v}(x,t) \in \mathbb{R}^d$$: 시간 $$t$$에서의 유전자 발현 상태 $$x$$에 있는 세포들의 유전자 발현의 순간적인 변화(속도)
     - growth term $$g(x, t)$$: 순간적인 세포 개체수의 변화, 즉 세포 집단의 증감
     - ⟶ 속도 $$v$$와 성장률 $$g$$가 세포 밀도의 시간적 변화(동역학)를 결정
     - WFR 비용(Wasserstein-Fisher-Rao cost)를 최적화해 불균형 최적 수송(unbalanced optimal transport, OT) 방식으로 해결
 
-- $${W}_{0,T}=T\mathop{\int}\limits_{0}^{T}\mathop{\int }\limits_{{{\mathbb{R}}}^{d}}\left({\left|\mathbf{v}\left(x,t\right)\right|}^{2}+\alpha {\left|g\left(x,t\right)\right|}^{2}\right)\rho \left(x,t\right){{\mathrm {d}}x\; {\mathrm {d}}t}$$
+- $$W_{0,T} = T \int_0^T \int_{\mathbb{R}^d} \left( |\mathbf{v}(x,t)|^2 + \alpha |g(x,t)|^2 \right) \rho(x,t) \, \mathrm{d}x \, \mathrm{d}t$$
+
 
     - [An Interpolating Distance between Optimal Transport and Fisher-Rao](https://arxiv.org/abs/1506.06430): WFR 거리를 통해 유체 시스템에서 2차 Wasserstein 거리와 Fisher-Rao 거리를 활용, kinetic energy와 energy of growth를 설명
     - 목적 함수의 최소화 위해 유전자 발현 공간의 고차원 적분 계산 필요
