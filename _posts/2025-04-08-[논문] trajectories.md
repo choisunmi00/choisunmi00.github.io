@@ -140,5 +140,39 @@ math: True
         ⟶ gradient of growth를 직접 근사하고, regulatory matirx를 계산
 - 각 측정된 시점에서의 세포 집단(cell population) 입력 필요. 정보가 없는 경우에는 각 시간 지점에서 수집된 세포의 수가 해당 시점의 세포 집단을 대표한다고 가정
 
-## Benchmark on a three-gene model
----
+### Benchmark on a three-gene model
+
+- TIGON의 기능 테스트, 기존의 trajectory inference 및 GRN 추론 방법들과 비교 실험 수행
+    - 세 개의 유전자로 구성된 GRN을 기반으로 한 in-silico 확률 모델 사용
+    - 모델은 세 가지 세포 상태(Fig.2a 참고)
+    - 시뮬레이션은 서로 다른 역학(dynamics)을 가진 두 집단의 세포 생성(Supplementary Fig.1a 참고)
+        <img src="assets/img/post/tigon_sup_fig_1a.webp" alt="2" width="100%" height="100%"/>  
+        - 첫 번째 세포 집단은 유전자 C가 높게 발현, 정지(quiescent) 상태
+        - 다른 세포 집단은 상태 A에서 상태 B로 전이, B가 세포 분열을 촉진하여 세포 수의 증가(population growth) 유도 
+<img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs42256-023-00763-w/MediaObjects/42256_2023_763_Fig2_HTML.png?as=webp" alt="3" width="100%" height="100%"/>  
+
+- Fig.2: TIGON's performance on three-gene simulated data
+    - (a): 세 유전자 모델의 GRN을 도식화
+    - (b): 시점 t=0에서 샘플링된 세포들의 세포 역학(dynamics) 
+        - 세포의 속도(검은 화살표)와 궤적(회색 곡선). 시점 t=0 초기 밀도에서 무작위로 20개의 세포 샘플링.
+    - (c): 시점 t=0에서 샘플링된 세포들의 세포 역학(dynamics)  
+        - 성장 값(색으로 구분)과 성장의 기울기(붉은 화살표). 시점마다 100개의 세포 샘플링. 
+    - 전이 중인 세포들(transition cells)에 대한 유전자 분석
+        - (d): 성장의 기울기
+        - (e): 조절 행렬(regulatory matrix)
+        - (f): GRN을 weighted directed graph 형식으로 시각화
+            - 화살표 종류는 activation/inhibition 을, 선의 굵기는 regulatroy strength를 나타냄
+    - (g): TIGON에서 성장 항(growth term)을 이동시키는 방식으로 균형 최적 수송(balanced OT)을 통해 추론된 속도 및 궤적
+        - (b)와 동일한 20개의 세포(t=0 기준) 사용
+    - TIGON과 다른 OT 기반 궤적 추론 방법들의 성능 비교
+        - 정확도는 m.s.e.로 측정
+        - 오차 막대는 각 방법에 대해 n=5번의 독립 실험에서 평균 대비 표준편차(1±SD)
+        - 각 점은 반복 실험별 정확도
+        - (h): 속도 예측 정확도에 대한 비교
+        - (i): 전이 세포와 정지 세포간 세포 비율 예측 정확도에 대한 비교
+    - (j): GRN 추론 기법들 간의 비교
+        - 전이 세포에 대해 시점 t=0, 10, 20, ..., 40에서 계산된 GRN을 기반으로 평가
+        - 막대그래프는 시점 전반에 걸친 GRN 엣지 분류 정확도의 평균, 정밀도-재현율 곡선 하의 면적(AUPRC)으로 정량화
+        - 각 방법의 기능은 막대 위의 사각형 박스에 요약
+
+- 시뮬레이션된 데이터 다섯 개 시점(snapshots)을 활용하여 TIGON은 두 개의 세포 집단(Fig.2b)과 성장 정보(Fig.2c)를 추론 ⟶ 정답 데이터(ground truth)와 일치
