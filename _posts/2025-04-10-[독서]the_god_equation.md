@@ -3,10 +3,10 @@ title: >-
     [독서] 단 하나의 방정식
 author: csm
 date: 2025-04-10 14:10:00 +0900
-categories: [Writing, System dynaimcs]
+categories: [Physics, Popular Science]
 tags: [book]
 description: >-
-    2024.03.28 - 2024.04.10, ⟪The God Equation⟫, 미치오 카쿠
+    2024.03.28 - 2024.04.10, ⟪The God Equation: The Quest for a Theory of Everything⟫, Michio Kaku
 math: True
 ---
 
