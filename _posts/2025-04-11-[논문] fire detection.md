@@ -64,7 +64,7 @@ math: True
 
     - 실제 환경과 가상 화재의 합성 과정
     
-- Unity3D의 캔버스 위에 원본 RGB 프레임을 생성한 후, 카메라로부터 가장 멀리 있는 화재부터 렌더링 -> 각 화재를 순차적으로 그리며 해당 화재와 가상 카메라 사이의 거리 계산 -> 더 먼 거리 값을 가진 모든 픽셀에 대해 배경 분할을 투명하게 수행한 결과를 렌더링하여 화재에 가장 가까운 픽셀만을 남김 -> 모든 화재를 이와 깉이 깊이 정보를 고려하여 그리면, Figure 5와 같이 카메라 시점에서 화재 앞에 잇는 객체가 화재를 가리는 자연스러운 상황 재현 가능
+- Unity3D의 캔버스 위에 원본 RGB 프레임을 생성한 후, 카메라로부터 가장 멀리 있는 화재부터 렌더링 ⟶ 각 화재를 순차적으로 그리며 해당 화재와 가상 카메라 사이의 거리 계산 ⟶ 더 먼 거리 값을 가진 모든 픽셀에 대해 배경 분할을 투명하게 수행한 결과를 렌더링하여 화재에 가장 가까운 픽셀만을 남김 ⟶ 모든 화재를 이와 깉이 깊이 정보를 고려하여 그리면, Figure 5와 같이 카메라 시점에서 화재 앞에 잇는 객체가 화재를 가리는 자연스러운 상황 재현 가능
 
 - Figure 5
     <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g005-550.jpg" alt="1" width="100%" height="100%"/>  
@@ -82,7 +82,7 @@ math: True
 ### *2.3. Automatic Dataset Generation*
 
 - 가상 화재 자동 생성 방식에서 화재가 배치될 때 화재의 위치를 적절히 조정하는 기술 필요
-    - 가상 카메라 앞에 가상 충돌체 배치. Figure 7a와 같이 해당 스크린 좌푤르 기준으로 가상 공간 내에 광선(ray)을 생성하고, Raycast를 실행하여 충돌체와 만나는 지점에 임시로 화재를 배치 -> 화재가 렌더링되는 지점에서 깊이 데이터를 이용해 실제 공간의 거리 값을 읽어오고, 가상 화재와 카메라 사이의 거리를 일정 값 이하가 되도록 조정
+    - 가상 카메라 앞에 가상 충돌체 배치. Figure 7a와 같이 해당 스크린 좌푤르 기준으로 가상 공간 내에 광선(ray)을 생성하고, Raycast를 실행하여 충돌체와 만나는 지점에 임시로 화재를 배치 ⟶ 화재가 렌더링되는 지점에서 깊이 데이터를 이용해 실제 공간의 거리 값을 읽어오고, 가상 화재와 카메라 사이의 거리를 일정 값 이하가 되도록 조정
 
 - Figure 7
     <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g007-550.jpg" alt="1" width="100%" height="100%"/>  
@@ -90,7 +90,7 @@ math: True
     - (a): 화면 상의 임의 좌표를 이용한 화재의 임시 배치 
     - (b): 가상 화재에 대한 자동 거리 조정
 
-- 자동 배치된 화재에 화재 시뮬레이션 이미지 추출. 화재 또는 연기의 범위를 지정하기 위해 BoxColider의 좌표(𝑥ₘᵢₙ, 𝑦ₘᵢₙ, 𝑧ₘᵢₙ; 𝑥ₘₐₓ, 𝑦ₘₐₓ, 𝑧ₘₐₓ)를 annotation 정보로 사용 -> 가상 화재를 생성할 때 학습 데이터를 추출하기 위해 BoxColider가 화면상에 형성하는 직육면체 (모든 면이 서로 수직인 기준 벡터를 가지는 axis-aligned bounding box, AABB)를 계산하여 출력.
+- 자동 배치된 화재에 화재 시뮬레이션 이미지 추출. 화재 또는 연기의 범위를 지정하기 위해 BoxColider의 좌표(𝑥ₘᵢₙ, 𝑦ₘᵢₙ, 𝑧ₘᵢₙ; 𝑥ₘₐₓ, 𝑦ₘₐₓ, 𝑧ₘₐₓ)를 annotation 정보로 사용 ⟶ 가상 화재를 생성할 때 학습 데이터를 추출하기 위해 BoxColider가 화면상에 형성하는 직육면체 (모든 면이 서로 수직인 기준 벡터를 가지는 axis-aligned bounding box, AABB)를 계산하여 출력.
 
 - Figure 8
     <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g008-550.jpg" alt="1" width="100%" height="100%"/>  
@@ -138,8 +138,8 @@ math: True
 - 가상 데이터를 학습한 현장 최적화 모델은 각 현장에 배치된 AI 디바이스를 통해 추론 수행. NVIDIA TAO와 연동 가능한 디바이스에는 NVIDIA Jetson의 Xavier 시리즈오 Orin 시리즈가 있으며, 본 연구에서는 Jetson Xavier NX를 사용
 - DeepStream: 딥러닝 기반 추론 과정을 가속화할 수 있는 GStreamer 기반의 플러그인 및 라이브러리
     - Transfer Learning Toolkit(TLT)을 통해 학습된 모델은 DeepStream 환경에서 배포 가능. 
-    - 내부적으로 TensorRT 추론 엔진 사용 -> TAO에서 배포된 암호화된 모델 파일은 TAO Converter를 이용해 TensorRT용 엔진 파일로 변환
-    - DeepStream 애플리케이션에서 GStreamer 파이프라인 구성 -> 입력 영상(CCTV 등)의 디코딩부터 실험 현장에서 발생 가능한 문제를 해결하기 위한 후처리(post-processing) -> 최종 화재 감지 결과를 화면 표시(OSD)를 통해 외부로 전송하는 과정까지 수행
+    - 내부적으로 TensorRT 추론 엔진 사용 ⟶ TAO에서 배포된 암호화된 모델 파일은 TAO Converter를 이용해 TensorRT용 엔진 파일로 변환
+    - DeepStream 애플리케이션에서 GStreamer 파이프라인 구성 ⟶ 입력 영상(CCTV 등)의 디코딩부터 실험 현장에서 발생 가능한 문제를 해결하기 위한 후처리(post-processing) ⟶ 최종 화재 감지 결과를 화면 표시(OSD)를 통해 외부로 전송하는 과정까지 수행
     - 추론 결과 혹은 영상은 외부 데이터로 전송 가능, 본 연구에서는 외부 Kafka 서버를 구축하여 화재 감지 정보를 Kafka 메시지로 전송
 
 - Figure 13
@@ -213,14 +213,14 @@ math: True
 - Table 2: The final evaluation results of the trained model.
     <img src="assets/img/post/fire_detection_tab2.webp" alt="1" width="100%" height="100%"/> 
 
-- 현장 최적화 측면에서 학습에 사용되지 않은 새로운 데이터를 추론하기 위해 화재 입자를 활용하여 가상 데이터 생성. 기존 형태의 화재 입자를 사용할 경우 어떤 모델을 사용하더라도 confidence가 0.95 이상으로 문제 없이 탐지되었고, 오탐지(false detection)도 발생하지 않음 -> Figure 20
+- 현장 최적화 측면에서 학습에 사용되지 않은 새로운 데이터를 추론하기 위해 화재 입자를 활용하여 가상 데이터 생성. 기존 형태의 화재 입자를 사용할 경우 어떤 모델을 사용하더라도 confidence가 0.95 이상으로 문제 없이 탐지되었고, 오탐지(false detection)도 발생하지 않음 ⟶ Figure 20
 
 - Figure 20
     <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g020-550.jpg" alt="1" width="100%" height="100%"/>  
 
     - 학습 데이터 생성을 위해 사용된 화재로부터 새로운 화재 영상 추론
 
-- 사용하지 않은 형태의 다른 화재 입자를 이용해 화재 이미지를 생성한 경우 높은 탐지율을 보였지만, 일부 오탐지 결과 존재 -> Figure 21
+- 사용하지 않은 형태의 다른 화재 입자를 이용해 화재 이미지를 생성한 경우 높은 탐지율을 보였지만, 일부 오탐지 결과 존재 ⟶ Figure 21
 
 - Figure 21
     <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g021-550.jpg" alt="1" width="100%" height="100%"/>  
@@ -255,7 +255,7 @@ math: True
     - 실세계 화재 추론은 YOLOv4 모델의 backbone(기반 신경망 구조)에 따라 달라짐
 
 - Figure 24에서 볼 수 있듯이 resnet50과 cspdarknet19는 화재 초기에 잘 감지되지만 오탐지가 자주 발생되는 반면, resnet101은 오탐지는 거의 없었지만 작은 초기 화재를 빠르게 감지하지 못함. resnet18의 경우 화재의 초기 상태를 잘 감지했으며 오탐률도 매우 낮음
-- 아주 작은 화재에 대해 테스트 진행 -> Figure 25
+- 아주 작은 화재에 대해 테스트 진행 ⟶ Figure 25
 
 - Figure 25
     <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g025-550.jpg" alt="1" width="100%" height="100%"/>  
@@ -269,7 +269,7 @@ math: True
 - Figure 26: Examples of false positives in YOLOv4+resnet18 model inference.
     <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g026-550.jpg" alt="1" width="100%" height="100%"/>  
 
-- deepstream 파이프라인의 추론 요소 중 nvTracker 요소는 모델이 추론한 화재 객체 추적 -> 추적된 화재의 이전 프레임들에서 탐지된 바운딩 박스의 크기나 형태 변화 계산 -> 일정 기준을 초과할 경우 불꽃의 특성으로 판탄 -> 비화재 객체가 최종적으로 화재로 탐지되는 경우 제거
+- deepstream 파이프라인의 추론 요소 중 nvTracker 요소는 모델이 추론한 화재 객체 추적 ⟶ 추적된 화재의 이전 프레임들에서 탐지된 바운딩 박스의 크기나 형태 변화 계산 ⟶ 일정 기준을 초과할 경우 불꽃의 특성으로 판탄 ⟶ 비화재 객체가 최종적으로 화재로 탐지되는 경우 제거
 
 - Figure 27: Inference results after post-processing.
     <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g027-550.jpg" alt="1" width="100%" height="100%"/>  
@@ -290,6 +290,6 @@ math: True
 - 한계점
     - 가상 화재는 불이 배경에 반사되거나, 배경 요소가 불에 타서 재로 변하는 등의 세밀한 묘사까지는 구현하지 않음. 다만 화재 탐지를 위한 데이터에는 큰 영향을 미치지 않을 수 있음
     - 실제 현장에서 발생할 수 있는 다양한 시나리오를 충분히 반영한 영상 데이터 수집 중요
-    - 카메라가 이동하는 상황 고려. 화재 탐지 상황에 따라 시야 및 각도 조절 -> 추가적인 연구와 실험 필요
+    - 카메라가 이동하는 상황 고려. 화재 탐지 상황에 따라 시야 및 각도 조절 ⟶ 추가적인 연구와 실험 필요
     - NVIDIA TAO 플랫폼은 지원하는 모델이 제한적. 향후 YOLOv8 등 최신 비전 모델을 테스트
 - 궁극적으로 본 연구는 조기 화재 감지를 핵심 기술로 삼아, 화재 대피를 위한 정교한 디지털 트윈 시스템을 구축하는 데 중추적인 역할
