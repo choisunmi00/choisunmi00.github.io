@@ -154,21 +154,21 @@ math: True
 
     - DeepStream에서 전송한 감지 결과에 대한 메시지
 
-- 화재 추적을 위한 후처리(post-processing) 기법: 추적된 화재의 첫 번째 바운딩 박스의 대각선 길이와 이후 바운딩 박스들의 대각선 길이 간의 창 저장, 최근 15개의 차이값으로부터 누적값($$d_(cummulative)$$)계산, 특정 임계값과 비교하여 화재의 움직임 여부 확인
-    - $$d_(cummulative)$$: 화재 크기(또는 위치)변화의 누적량.
+- 화재 추적을 위한 후처리(post-processing) 기법: 추적된 화재의 첫 번째 바운딩 박스의 대각선 길이와 이후 바운딩 박스들의 대각선 길이 간의 창 저장, 최근 15개의 차이값으로부터 누적값($$d_{cummulative}$$)계산, 특정 임계값과 비교하여 화재의 움직임 여부 확인
+    - $$d_{cummulative}$$: 화재 크기(또는 위치)변화의 누적량.
 
 - $$d_t =  \left| \mathbf{p}_{0_{RB}} - \mathbf{p}_{0_{LT}} \right| - \left| \mathbf{p}_{t_{RB}} - \mathbf{p}_{t_{LT}} \right| ;\quad d_{\text{cumulative}} = \sqrt{ \sum_{t=1}^{n} (d_0 - d_t)^2 }$$
-    - $$p_RB$$, $$p_LT$$는 각각 바운딩 박스의 Right-Bottom, Left-Top 꼭짓점 의미
+    - $$p_{RB}$$, $$p_{LT}$$는 각각 바운딩 박스의 Right-Bottom, Left-Top 꼭짓점 의미
     - $$d_t$$: $$t$$ 시점에서의 바운딩 박스 대각선 길이의 변화량
-    - $$d_(cummulative)$$: 기준 시점 $$t=0$$에서의 길이와 현재까지의 변화량을 누적해 제곱 평균 제곱근(RMSE) 형태로 계산한 값
+    - $$d_{cummulative}$$: 기준 시점 $$t=0$$에서의 길이와 현재까지의 변화량을 누적해 제곱 평균 제곱근(RMSE) 형태로 계산한 값
 
-- Figure 15와 같이, 추적된 화재의 첫 번째 바운딩 박스 중심에서, 첫 번째 바운딩 박스의 좌상단까지의 벡터 $$\vec{v}_{0LT}$$와, $$t$$번째 바운딩 박스의 좌상단까지의 벡터 $$\vec{v}_{tLT}$$ 사이의 각도 $$\theta_{tLT}$$의 코사인 값을 계산하고, 해당 값이 특정 임계값 내에 있는지 확인하여 화재 여부 검증. 
+- Figure 15와 같이, 추적된 화재의 첫 번째 바운딩 박스 중심에서, 첫 번째 바운딩 박스의 좌상단까지의 벡터 $$\vec{v}_{0_{LT}}$$와, $$t$$번째 바운딩 박스의 좌상단까지의 벡터 $$\vec{v}_{t_{LT}}$$ 사이의 각도 $$\theta_{t_{LT}}$$의 코사인 값을 계산하고, 해당 값이 특정 임계값 내에 있는지 확인하여 화재 여부 검증. 
     - 실험 결과, 화재 여부를 판단하는 데 가장 적절한 코사인 유사도 임계값은 0.9-0.98 범위
 
-- $$\cos{\theta_{tLT}} = \frac{\vec{v}_{0LT} \cdot \vec{v}_{tLT}}{|\vec{v}_{0LT}||\vec{v}_{tLT}|} \quad ; \quad \cos{\theta_{tRB}} = \frac{\vec{v}_{0RB} \cdot \vec{v}_{tRB}}{|\vec{v}_{0RB}||\vec{v}_{tRB}|}$$
+- $$\cos{\theta_{t_{LT}} = \frac{\vec{v}_{0_{LT}} \cdot \vec{v}_{t_{LT}}{|\vec{v}_{0_{LT}}||\vec{v}_{t_{LT}|} \quad ; \quad \cos{\theta_{t_{RB}} = \frac{\vec{v}_{0_{RB}} \cdot \vec{v}_{t_{RB}}{|\vec{v}_{0_{RB}}||\vec{v}_{t_{RB}}|}$$
     - 두 벡터 간의 방향이 얼마나 유사한지 나타내는, Cosine Similarity(코사인 유사도)를 구하는 공식
-    - $$\theta_{tLT}$$: 첫 번째 프레임과 $$t$$번째 프레임의 좌상단 벡터 간의 각도
-    - $$\theta_{tRB}$$: 우하단 벡터 간의 각도
+    - $$\theta_{t_{LT}}$$: 첫 번째 프레임과 $$t$$번째 프레임의 좌상단 벡터 간의 각도
+    - $$\theta_{t_{RB}}$$: 우하단 벡터 간의 각도
 
 - Figure 15
     <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g015-550.jpg" alt="1" width="100%" height="100%"/>  
