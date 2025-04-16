@@ -57,7 +57,7 @@ math: True
 
     - Unity3D의 파티클 시스템을 사용하여 점차 커지는 가상 화재의 예시
 
-- RealSense SDK를 사용하여 실제 환경에서 촬영된 이미지와 Unity 3D의 화재 파티클 시스템과 합성. RealSense SDK의 RGB 및 Depth 데이터를 활용하는 Background Segmentation Shader는 각 구간별 거리만큼의 픽셀을 남기고 나머지를 토명하게 처리 ⟶ 실제 공간의 배경 판별, 가상 공간 내 화재와 가상 카메라 사이의 거리를 측정하고 배경 분할(Backdrop Segmentation) 파라미터를 조정함으로 마치 화재가 실제 공간에 도달한 것 처럼 표현. 
+- RealSense SDK를 사용하여 실제 환경에서 촬영된 이미지와 Unity 3D의 화재 파티클 시스템과 합성. RealSense SDK의 RGB 및 Depth 데이터를 활용하는 Background Segmentation Shader는 각 구간별 거리만큼의 픽셀을 남기고 나머지를 투명하게 처리 ⟶ 실제 공간의 배경 판별, 가상 공간 내 화재와 가상 카메라 사이의 거리를 측정하고 배경 분할(Backdrop Segmentation) 파라미터를 조정함으로 마치 화재가 실제 공간에 도달한 것 처럼 표현. 
 
 - Figure 4
     <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g004-550.jpg" alt="1" width="100%" height="100%"/>  
@@ -82,7 +82,7 @@ math: True
 ### *2.3. Automatic Dataset Generation*
 
 - 가상 화재 자동 생성 방식에서 화재가 배치될 때 화재의 위치를 적절히 조정하는 기술 필요
-    - 가상 카메라 앞에 가상 충돌체 배치. Figure 7a와 같이 해당 스크린 좌푤르 기준으로 가상 공간 내에 광선(ray)을 생성하고, Raycast를 실행하여 충돌체와 만나는 지점에 임시로 화재를 배치 ⟶ 화재가 렌더링되는 지점에서 깊이 데이터를 이용해 실제 공간의 거리 값을 읽어오고, 가상 화재와 카메라 사이의 거리를 일정 값 이하가 되도록 조정
+    - 가상 카메라 앞에 가상 충돌체 배치. Figure 7a와 같이 해당 스크린 좌표를 기준으로 가상 공간 내에 광선(ray)을 생성하고, Raycast를 실행하여 충돌체와 만나는 지점에 임시로 화재를 배치 ⟶ 화재가 렌더링되는 지점에서 깊이 데이터를 이용해 실제 공간의 거리 값을 읽어오고, 가상 화재와 카메라 사이의 거리를 일정 값 이하가 되도록 조정
 
 - Figure 7
     <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g007-550.jpg" alt="1" width="100%" height="100%"/>  
@@ -126,7 +126,7 @@ math: True
         - Retrain: 가지치기 후 다시 학습하여 성능 보완
         - Deploy: 최종적으로 경량화된 모델을 엣지 디바이스(데이터를 클라우드나 중앙 서버로 보내지 않고, 장치 자체에서 실시간으로 처리할 수 있는 장치)나 실제 운영 환경에 배포 
 
-- 전이 학습은 사전 학습된 모델을 활용하여 수행, 학습이 완료된 후에는 파라미터 수를 줄이기 위한 가지치기 과정을 거쳐 한 번 더 학습을 진행. 이후 모델은 엣지 디바이스 배포를 위해 암호화된 형태로 변환. 모델 변환 과정은 추론 단계에서 사용되는 DeepSteream 활용.
+- 전이 학습은 사전 학습된 모델을 활용하여 수행, 학습이 완료된 후에는 파라미터 수를 줄이기 위한 가지치기 과정을 거쳐 한 번 더 학습을 진행. 이후 모델은 엣지 디바이스 배포를 위해 암호화된 형태로 변환. 모델 변환 과정은 추론 단계에서 사용되는 DeepStream 활용.
 
 - Figure 12
     <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g012-550.jpg" alt="1" width="100%" height="100%"/>  
@@ -135,7 +135,7 @@ math: True
 
 ### *2.5. AI Inference and Post-Processing*
 
-- 가상 데이터를 학습한 현장 최적화 모델은 각 현장에 배치된 AI 디바이스를 통해 추론 수행. NVIDIA TAO와 연동 가능한 디바이스에는 NVIDIA Jetson의 Xavier 시리즈오 Orin 시리즈가 있으며, 본 연구에서는 Jetson Xavier NX를 사용
+- 가상 데이터를 학습한 현장 최적화 모델은 각 현장에 배치된 AI 디바이스를 통해 추론 수행. NVIDIA TAO와 연동 가능한 디바이스에는 NVIDIA Jetson의 Xavier 시리즈와 Orin 시리즈가 있으며, 본 연구에서는 Jetson Xavier NX를 사용
 - DeepStream: 딥러닝 기반 추론 과정을 가속화할 수 있는 GStreamer 기반의 플러그인 및 라이브러리
     - Transfer Learning Toolkit(TLT)을 통해 학습된 모델은 DeepStream 환경에서 배포 가능. 
     - 내부적으로 TensorRT 추론 엔진 사용 ⟶ TAO에서 배포된 암호화된 모델 파일은 TAO Converter를 이용해 TensorRT용 엔진 파일로 변환
@@ -154,15 +154,15 @@ math: True
 
     - DeepStream에서 전송한 감지 결과에 대한 메시지
 
-- 화재 추적을 위한 후처리(post-processing) 기법: 추적된 화재의 첫 번째 바운딩 박스의 대각선 길이와 이후 바운딩 박스들의 대각선 길이 간의 창 저장, 최근 15개의 차이값으로부터 누적값($$d_cummulative$$)계산, 특정 임계값과 비교하여 화재의 움직임 여부 확인
-    - $$d_cummulative$$: 화재 크기(또는 위치)변화의 누적량.
+- 화재 추적을 위한 후처리(post-processing) 기법: 추적된 화재의 첫 번째 바운딩 박스의 대각선 길이와 이후 바운딩 박스들의 대각선 길이 간의 창 저장, 최근 15개의 차이값으로부터 누적값($$d_(cummulative)$$)계산, 특정 임계값과 비교하여 화재의 움직임 여부 확인
+    - $$d_(cummulative)$$: 화재 크기(또는 위치)변화의 누적량.
 
-- $$d_t = \left| \left| \mathbf{p}_{0_{RB}} - \mathbf{p}_{0_{LT}} \right| - \left| \mathbf{p}_{t_{RB}} - \mathbf{p}_{t_{LT}} \right| \right|;\quad d_{\text{cumulative}} = \sqrt{ \sum_{t=1}^{n} (d_0 - d_t)^2 }$$
+- $$d_t =  \left| \mathbf{p}_{0_{RB}} - \mathbf{p}_{0_{LT}} \right| - \left| \mathbf{p}_{t_{RB}} - \mathbf{p}_{t_{LT}} \right| ;\quad d_{\text{cumulative}} = \sqrt{ \sum_{t=1}^{n} (d_0 - d_t)^2 }$$
     - $$p_RB$$, $$p_LT$$는 각각 바운딩 박스의 Right-Bottom, Left-Top 꼭짓점 의미
     - $$d_t$$: $$t$$ 시점에서의 바운딩 박스 대각선 길이의 변화량
-    - $$d_cummulative$$: 기준 시점 $$t=0$$에서의 길이와 현재까지의 변화량을 누적해 제곱 평균 제곱근(RMSE) 형태로 계산한 값
+    - $$d_(cummulative)$$: 기준 시점 $$t=0$$에서의 길이와 현재까지의 변화량을 누적해 제곱 평균 제곱근(RMSE) 형태로 계산한 값
 
-- Figure 15와 같이, 추적된 화재의 첫 번째 바운딩 박스 중심에서, 첫 번째 바운딩 박스의 좌상단까지의 벡터 $$\vec{v}_{0LT}$$와, $$t$$번째 바운딩 박스의 좌상단까지의 벡터 $$\vec{v}_{t}_{LT}$$ 사이의 각도 \theta_{tLT}의 코사인 값을 계산하고, 해당 값이 특정 임계값 내에 있는지 확인하여 화재 여부 검증. 
+- Figure 15와 같이, 추적된 화재의 첫 번째 바운딩 박스 중심에서, 첫 번째 바운딩 박스의 좌상단까지의 벡터 $$\vec{v}_{0LT}$$와, $$t$$번째 바운딩 박스의 좌상단까지의 벡터 $$\vec{v}_{tLT}$$ 사이의 각도 $$\theta_{tLT}$$의 코사인 값을 계산하고, 해당 값이 특정 임계값 내에 있는지 확인하여 화재 여부 검증. 
     - 실험 결과, 화재 여부를 판단하는 데 가장 적절한 코사인 유사도 임계값은 0.9-0.98 범위
 
 - $$\cos{\theta_{tLT}} = \frac{\vec{v}_{0LT} \cdot \vec{v}_{tLT}}{|\vec{v}_{0LT}||\vec{v}_{tLT}|} \quad ; \quad \cos{\theta_{tRB}} = \frac{\vec{v}_{0RB} \cdot \vec{v}_{tRB}}{|\vec{v}_{0RB}||\vec{v}_{tRB}|}$$
