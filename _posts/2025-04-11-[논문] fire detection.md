@@ -101,12 +101,12 @@ math: True
 - 학습 단계에서 활용될 데이터셋은 자동으로 생성된 가상 데이터와 실제 데이터를 병합하여 구축. 실제 화재 데이터는 FireNET에서 제공하는 데이터셋 사용
 
 - Figure 9
-    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g009-550.jpg" alt="1" width="100%" height="100%"/>
+    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g009-550.jpg" alt="1" width="80%" height="80%"/>
 
     - FireNET에서 제공한 실제 환경의 화재 학습 데이터
 
 - Figure 10
-    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g010-550.jpg" alt="1" width="100%" height="100%"/>  
+    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g010-550.jpg" alt="1" width="80%" height="80%"/>  
 
     - 사용자 환경에 최적화된 자동 생성 가상 화재 데이터
 
@@ -129,7 +129,7 @@ math: True
 - 전이 학습은 사전 학습된 모델을 활용하여 수행, 학습이 완료된 후에는 파라미터 수를 줄이기 위한 가지치기 과정을 거쳐 한 번 더 학습을 진행. 이후 모델은 엣지 디바이스 배포를 위해 암호화된 형태로 변환. 모델 변환 과정은 추론 단계에서 사용되는 DeepStream 활용.
 
 - Figure 12
-    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g012-550.jpg" alt="1" width="60%" height="60%"/>  
+    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g012-550.jpg" alt="1" width="80%" height="80%"/>  
 
     - 바운딩 박스 표시 임계값(객체 탐지 모델이 예측한 신뢰도가 특정 임계값 이상일 때만 바운딩 박스를 시각적으로 표시하는 기준)을 0.6으로 설정하여 테스트 데이터를 추론한 결과
 
@@ -172,7 +172,7 @@ math: True
     - $$\theta_{t_{RB}}$$: 우하단 벡터 간의 각도
 
 - Figure 15
-    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g015-550.jpg" alt="1" width="80%" height="80%"/>  
+    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g015-550.jpg" alt="1" width="60%" height="60%"/>  
 
     - 화재 추적을 위한 두 바운딩 박스 분석 
 
@@ -209,7 +209,7 @@ math: True
 - 학습 단계에서는 NVIDIA의 DGX A100이 학습 환경으로 사용됨. NVIDIA TAO에서 제공하는 Object Detection 모델인 DetectNet_v2, FastRCNN, YOLOv4, EfficientDet, DINO를 개발하고 학습. 모든 학습 모델에 대해 테스트 세트를 사용하여 평가한 결과는 Talbe 2에 제시.
 
 - Figure 19: The NVIDIA DGX A100, which was used as a training environment.
-    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g019-550.jpg" alt="1" width="100%" height="100%"/>  
+    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g019-550.jpg" alt="1" width="80%" height="80%"/>  
 
 - Table 2: The final evaluation results of the trained model.
     <img src="assets/img/post/fire_detection_tab2.webp" alt="1" width="100%" height="100%"/> 
@@ -217,14 +217,14 @@ math: True
 - 현장 최적화 측면에서 학습에 사용되지 않은 새로운 데이터를 추론하기 위해 화재 입자를 활용하여 가상 데이터 생성. 기존 형태의 화재 입자를 사용할 경우 어떤 모델을 사용하더라도 confidence가 0.95 이상으로 문제 없이 탐지되었고, 오탐지(false detection)도 발생하지 않음 ⟶ Figure 20
 
 - Figure 20
-    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g020-550.jpg" alt="1" width="100%" height="100%"/>  
+    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g020-550.jpg" alt="1" width="80%" height="80%"/>  
 
     - 학습 데이터 생성을 위해 사용된 화재로부터 새로운 화재 영상 추론
 
 - 사용하지 않은 형태의 다른 화재 입자를 이용해 화재 이미지를 생성한 경우 높은 탐지율을 보였지만, 일부 오탐지 결과 존재 ⟶ Figure 21
 
 - Figure 21
-    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g021-550.jpg" alt="1" width="100%" height="100%"/>  
+    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g021-550.jpg" alt="1" width="80%" height="80%"/>  
 
 - 모든 모델의 성능 지표는 높게 나타남 
 - 높은 성능 평가 점수와 달리 일부 모델은 일반적인 화재 영상에 대해 추론하지 못하거나 오탐지
