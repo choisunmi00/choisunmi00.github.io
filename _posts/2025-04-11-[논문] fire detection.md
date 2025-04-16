@@ -298,4 +298,4 @@ math: True
 ## Presentation
 ---
 
-<pre><code>{% raw %} <iframe src="https://docs.google.com/gview?url=https://choisunmi00.github.io/assets/pdf/DT_fire_detection.pdf&embedded=true" style="width:100%; height:1200px;" frameborder="0"> </iframe> {% endraw %}</code></pre>
+<pre><code>{% raw %} <iframe src="https://docs.google.com/gview?url=https://choisunmi00.github.io/assets/pdf/DT_fire_detection.pdf&embedded=true" style="width:100%; height:600px;" frameborder="0"> </iframe> {% endraw %}</code></pre>
