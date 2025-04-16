@@ -53,7 +53,7 @@ math: True
 - 가상 화재를 구현하기 위해 Particle System 사용. 
 
 - Figure 3
-    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g003-550.jpg" alt="1" width="100%" height="100%"/>  
+    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g003-550.jpg" alt="1" width="60%" height="60%"/>  
 
     - Unity3D의 파티클 시스템을 사용하여 점차 커지는 가상 화재의 예시
 
@@ -67,7 +67,7 @@ math: True
 - Unity3D의 캔버스 위에 원본 RGB 프레임을 생성한 후, 카메라로부터 가장 멀리 있는 화재부터 렌더링 ⟶ 각 화재를 순차적으로 그리며 해당 화재와 가상 카메라 사이의 거리 계산 ⟶ 더 먼 거리 값을 가진 모든 픽셀에 대해 배경 분할을 투명하게 수행한 결과를 렌더링하여 화재에 가장 가까운 픽셀만을 남김 ⟶ 모든 화재를 이와 깉이 깊이 정보를 고려하여 그리면, Figure 5와 같이 카메라 시점에서 화재 앞에 있는 객체가 화재를 가리는 자연스러운 상황 재현 가능
 
 - Figure 5
-    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g005-550.jpg" alt="1" width="100%" height="100%"/>  
+    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g005-550.jpg" alt="1" width="60%" height="60%"/>  
 
     - 깊이 정보를 고려한 가상 화재 시뮬레이션 결과
 
@@ -129,7 +129,7 @@ math: True
 - 전이 학습은 사전 학습된 모델을 활용하여 수행, 학습이 완료된 후에는 파라미터 수를 줄이기 위한 가지치기 과정을 거쳐 한 번 더 학습을 진행. 이후 모델은 엣지 디바이스 배포를 위해 암호화된 형태로 변환. 모델 변환 과정은 추론 단계에서 사용되는 DeepStream 활용.
 
 - Figure 12
-    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g012-550.jpg" alt="1" width="100%" height="100%"/>  
+    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g012-550.jpg" alt="1" width="60%" height="60%"/>  
 
     - 바운딩 박스 표시 임계값(객체 탐지 모델이 예측한 신뢰도가 특정 임계값 이상일 때만 바운딩 박스를 시각적으로 표시하는 기준)을 0.6으로 설정하여 테스트 데이터를 추론한 결과
 
@@ -150,7 +150,7 @@ math: True
 - 화재 감지 정보를 포함한 메시지는 Figure 14와 같이 구성. 감지된 객체(화재)에 대해 화재 또는 연기를 구분하는 classID, 감지된 위치를 나타내는 바운딩 박스(rectangle), 해당 감지에 대한 모델의 신뢰도(confidence score)가 포함되며, 엣지 디바이스의 ID 값이 메타데이터로 첨부됨
 
 - Figure 14
-    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g014-550.jpg" alt="1" width="100%" height="100%"/>  
+    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g014-550.jpg" alt="1" width="40%" height="40%"/>  
 
     - DeepStream에서 전송한 감지 결과에 대한 메시지
 
@@ -172,7 +172,7 @@ math: True
     - $$\theta_{t_{RB}}$$: 우하단 벡터 간의 각도
 
 - Figure 15
-    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g015-550.jpg" alt="1" width="100%" height="100%"/>  
+    <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g015-550.jpg" alt="1" width="80%" height="80%"/>  
 
     - 화재 추적을 위한 두 바운딩 박스 분석 
 
