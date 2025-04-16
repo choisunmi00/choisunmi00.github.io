@@ -64,7 +64,7 @@ math: True
 
     - 실제 환경과 가상 화재의 합성 과정
     
-- Unity3D의 캔버스 위에 원본 RGB 프레임을 생성한 후, 카메라로부터 가장 멀리 있는 화재부터 렌더링 ⟶ 각 화재를 순차적으로 그리며 해당 화재와 가상 카메라 사이의 거리 계산 ⟶ 더 먼 거리 값을 가진 모든 픽셀에 대해 배경 분할을 투명하게 수행한 결과를 렌더링하여 화재에 가장 가까운 픽셀만을 남김 ⟶ 모든 화재를 이와 깉이 깊이 정보를 고려하여 그리면, Figure 5와 같이 카메라 시점에서 화재 앞에 잇는 객체가 화재를 가리는 자연스러운 상황 재현 가능
+- Unity3D의 캔버스 위에 원본 RGB 프레임을 생성한 후, 카메라로부터 가장 멀리 있는 화재부터 렌더링 ⟶ 각 화재를 순차적으로 그리며 해당 화재와 가상 카메라 사이의 거리 계산 ⟶ 더 먼 거리 값을 가진 모든 픽셀에 대해 배경 분할을 투명하게 수행한 결과를 렌더링하여 화재에 가장 가까운 픽셀만을 남김 ⟶ 모든 화재를 이와 깉이 깊이 정보를 고려하여 그리면, Figure 5와 같이 카메라 시점에서 화재 앞에 있는 객체가 화재를 가리는 자연스러운 상황 재현 가능
 
 - Figure 5
     <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g005-550.jpg" alt="1" width="100%" height="100%"/>  
@@ -165,7 +165,8 @@ math: True
 - Figure 15와 같이, 추적된 화재의 첫 번째 바운딩 박스 중심에서, 첫 번째 바운딩 박스의 좌상단까지의 벡터 $$\vec{v}_{0_{LT}}$$와, $$t$$번째 바운딩 박스의 좌상단까지의 벡터 $$\vec{v}_{t_{LT}}$$ 사이의 각도 $$\theta_{t_{LT}}$$의 코사인 값을 계산하고, 해당 값이 특정 임계값 내에 있는지 확인하여 화재 여부 검증. 
     - 실험 결과, 화재 여부를 판단하는 데 가장 적절한 코사인 유사도 임계값은 0.9-0.98 범위
 
-- $$\cos{\theta_{t_{LT}}} = \frac{\vec{v}_{0_{LT}}} \cdot \vec{v}_{t_{LT}}{|\vec{v}_{0_{LT}}}||\vec{v}_{t_{LT}|} \quad ; \quad \cos{\theta_{t_{RB}}} = \frac{\vec{v}_{0_{RB}}} \cdot \vec{v}_{t_{RB}}{|\vec{v}_{0_{RB}}||\vec{v}_{t_{RB}}|}$$
+- $$\cos{\theta_{t_{LT}}} = \frac{\vec{v}_{0_{LT}} \cdot \vec{v}_{t_{LT}}}{|\vec{v}_{0_{LT}}||\vec{v}_{t_{LT}}|} \quad ; \quad \cos{\theta_{t_{RB}}} = \frac{\vec{v}_{0_{RB}} \cdot \vec{v}_{t_{RB}}}{|\vec{v}_{0_{RB}}||\vec{v}_{t_{RB}}|}$$
+
     - 두 벡터 간의 방향이 얼마나 유사한지 나타내는, Cosine Similarity(코사인 유사도)를 구하는 공식
     - $$\theta_{t_{LT}}$$: 첫 번째 프레임과 $$t$$번째 프레임의 좌상단 벡터 간의 각도
     - $$\theta_{t_{RB}}$$: 우하단 벡터 간의 각도
@@ -173,7 +174,7 @@ math: True
 - Figure 15
     <img src="https://www.mdpi.com/applsci/applsci-14-01801/article_deploy/html/images/applsci-14-01801-g015-550.jpg" alt="1" width="100%" height="100%"/>  
 
-        - 화재 추적을 위한 두 바운딩 박스 분석 
+    - 화재 추적을 위한 두 바운딩 박스 분석 
 
 ## 3. Experimental Results
 ---
@@ -293,3 +294,8 @@ math: True
     - 카메라가 이동하는 상황 고려. 화재 탐지 상황에 따라 시야 및 각도 조절 ⟶ 추가적인 연구와 실험 필요
     - NVIDIA TAO 플랫폼은 지원하는 모델이 제한적. 향후 YOLOv8 등 최신 비전 모델을 테스트
 - 궁극적으로 본 연구는 조기 화재 감지를 핵심 기술로 삼아, 화재 대피를 위한 정교한 디지털 트윈 시스템을 구축하는 데 중추적인 역할
+
+## Presentation
+---
+
+<pre><code>{% raw %} <iframe src="https://docs.google.com/gview?url=https://choisunmi00.github.io/assets/pdf/DT_fire_detection.pdf&embedded=true" style="width:100%; height:1200px;" frameborder="0"> </iframe> {% endraw %}</code></pre>
