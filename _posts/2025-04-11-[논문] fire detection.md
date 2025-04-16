@@ -165,7 +165,7 @@ math: True
 - Figure 15와 같이, 추적된 화재의 첫 번째 바운딩 박스 중심에서, 첫 번째 바운딩 박스의 좌상단까지의 벡터 $$\vec{v}_{0_{LT}}$$와, $$t$$번째 바운딩 박스의 좌상단까지의 벡터 $$\vec{v}_{t_{LT}}$$ 사이의 각도 $$\theta_{t_{LT}}$$의 코사인 값을 계산하고, 해당 값이 특정 임계값 내에 있는지 확인하여 화재 여부 검증. 
     - 실험 결과, 화재 여부를 판단하는 데 가장 적절한 코사인 유사도 임계값은 0.9-0.98 범위
 
-- $$\cos{\theta_{t_{LT}} = \frac{\vec{v}_{0_{LT}} \cdot \vec{v}_{t_{LT}}{|\vec{v}_{0_{LT}}||\vec{v}_{t_{LT}|} \quad ; \quad \cos{\theta_{t_{RB}} = \frac{\vec{v}_{0_{RB}} \cdot \vec{v}_{t_{RB}}{|\vec{v}_{0_{RB}}||\vec{v}_{t_{RB}}|}$$
+- $$\cos{\theta_{t_{LT}}} = \frac{\vec{v}_{0_{LT}}} \cdot \vec{v}_{t_{LT}}{|\vec{v}_{0_{LT}}}||\vec{v}_{t_{LT}|} \quad ; \quad \cos{\theta_{t_{RB}}} = \frac{\vec{v}_{0_{RB}}} \cdot \vec{v}_{t_{RB}}{|\vec{v}_{0_{RB}}||\vec{v}_{t_{RB}}|}$$
     - 두 벡터 간의 방향이 얼마나 유사한지 나타내는, Cosine Similarity(코사인 유사도)를 구하는 공식
     - $$\theta_{t_{LT}}$$: 첫 번째 프레임과 $$t$$번째 프레임의 좌상단 벡터 간의 각도
     - $$\theta_{t_{RB}}$$: 우하단 벡터 간의 각도
