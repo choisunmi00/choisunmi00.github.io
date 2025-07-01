@@ -2,7 +2,7 @@
 title: >-
     [논문] Early Fire Detection System by Using Automatic Synthetic Dataset Generation Model Based on Digital Twins
 author: csm
-date: 2025-04-08 14:10:00 +0900
+date: 2025-04-11 14:10:00 +0900
 categories: [Digital Technologies, Digital Twin]
 tags: [paper]
 description: Early Fire Detection System by Using Automatic Synthetic Dataset Generation Model Based on Digital Twins
