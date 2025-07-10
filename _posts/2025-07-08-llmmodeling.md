@@ -1,11 +1,11 @@
 ---
 title: >-
-    25.07.04 LLM modeling 회의
+    25.07.08 LLM modeling 회의
 author: csm
 date: 2025-07-08 10:10:00 +0900
 categories: [Meeting, LLM modeling]
 tags: [project]
-description: 홈페이지 및 로그인 구현 https://www.cgv.co.kr/
+description: 25.07.08 LLM modeling 회의
 ---
 
 ## 주제 선택
