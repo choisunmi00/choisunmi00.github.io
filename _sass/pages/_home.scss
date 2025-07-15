@@ -20,6 +20,8 @@
   }
 
   .card {
+    --bs-card-border-width: 0;
+    border: none !important;
     border: 0;
     background: none;
 
