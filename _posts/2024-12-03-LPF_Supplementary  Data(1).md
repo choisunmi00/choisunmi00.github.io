@@ -26,8 +26,8 @@ math: true
 ---
 ### 2.1 Basic workflow
 1. 모델 파일들로부터 Conditions, Initial states, Parameters로 Mini batch 구성
-2. Initializer 생성 -> Initial states
-3. Parameter sets 생성 -> Parameters
+2. Initializer 생성 ⟶ Initial states
+3. Parameter sets 생성 ⟶ Parameters
 4. PDE model 생성
 5. numerical simulation 수행: Model / PDE solver / CPU, GPU 
 6. 결과 시각화  
